@@ -1,0 +1,14 @@
+Name,Type,ParentInstrument.Name,Translator.Name,CodingSystem.Name,DefaultSampleType.Name,DefaultContainerType.Name,CommentStorage,UnknownFlagComment,RequestScheduling,DownloadByWorkList,OnAllQueryMatchTarget,OnAllQueryMaxSamples,MaxPrevResults,FullSampleUpload,DefaultLISChannel.Name,LASChannel.Name,LASConnectionActive,CountedTest.Name,CountCycle,CountLimit,PatDemographicsDownld,CheckUnits,RqstGroupsIncludeImgs,BarcodeTranslation.Description,OnEndResultMessage.Description
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: Instrument
+%% Exported on: 05/10/16 at 01:25:34
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Advia2400_1,Normal,?,Advia2400_1_Translator,?,?,?,Code only,?,Once,no,yes,?,0,no,?,Aptio,yes,?,?,?,Always,yes,no,?,OERM_CHEM
+Advia2400_2,Normal,?,Advia2400_2_Translator,?,?,?,Code only,?,Once,no,yes,?,0,no,?,Aptio,yes,?,?,?,Always,yes,no,?,OERM_CHEM
+CentaurXP_1,Normal,?,CentaurXP_1_Translator,?,?,?,Text or Code,?,Once,no,no,?,0,no,?,Aptio,yes,?,?,?,Always,no,no,?,OERM_CENTAUR
+CentaurXP_2,Normal,?,CentaurXP_2_Translator,?,?,?,Text or Code,?,Once,no,no,?,0,no,?,Aptio,no,?,?,?,Always,no,no,?,OERM_CENTAUR

@@ -1,0 +1,798 @@
+Table.Name,Description,DataType,Definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_SiteFunction
+%% Exported on: 05/09/17 at 22:05:34
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,OERM_CENTAUR,Logical,"/* Variables */ 
+Logical SkipQC;
+String Requests; 
+Integer i,n; 
+Request RQ; 
+Result RES; 
+String Manual_Disable_Err_Msg, SchInst; /* Comment added when a manually disabled method is detected*/ 
+Logical Manual_Disable_Hold_Future; /* If a result is associated with a manually disabled test hold subsequent results  */ 
+
+Logical ReviewSort;
+String Result1, Result2, Result3;
+Fractional fResult1,fResult2,fResult3;
+
+String strComments;
+
+String strComment4LS,strComment4SS,strComment4OS;
+
+Requests :=.Attribute(""Testlist"");  
+i :=1;                          
+n :=NumEntries(Requests,?); 
+SkipQC := False;
+
+strComment4LS := ""LS=5"";
+strComment4SS := ""SS=5"";
+strComment4OS := ""OS=5"";
+
+/*************************************************************************************
+--------------------------------- Auto Validation-------------------------------------
+**************************************************************************************/
+WHILE i<=n DO   
+    RQ:= .Getrequest(Entry(i,Requests,?));
+
+    /*Add NS,IS,QS,DS comments*/
+	if(? <> RQ.Result.Value) then
+		if (GetSiteAttribute(""Result"", RQ.Result.id, ""CommentFlag"") <> ""Flaged"" ) then 
+			RQ.Result.AddComment(""NS=""+ToString(RQ.NormSeverity,""%d""), YES);
+			RQ.Result.AddComment(""IS=""+ToString(RQ.InstrumentSeverity,""%d""), YES);
+			RQ.Result.AddComment(""QS=""+ToString(RQ.QCSeverity,""%d""), YES);
+			RQ.Result.AddComment(""DS=""+ToString(RQ.DeltaNormSeverity,""%d""), YES);
+                  /**** Not a non-zero number, i.e. ""/////"", "">"", ""<"", ""Error"", ""0"", negative ****/
+                  if NOT(Matches(RQ.Result.Value, ""^[0-9.]+$"", No) and Matches(RQ.Result.Value, ""[^0]"", No)) then
+                    if NOT(Matches(RQ.Result.Value,""^[<>]"", No)) then     
+                      RQ.Result.AddComment(""Not a numeric result!"", YES);
+                      RQ.Result.AddComment(strComment4OS, YES);
+                    endif;
+                  endif;
+                  SetSiteAttribute(""Result"", RQ.Result.id, ""CommentFlag"", ""Flaged"");                              
+		endif;
+	endif;
+
+   
+    if RQ.GetResult(0).value=""X-NORESULT"" then
+       RQ.AdvancedRerun(?,?,?,?,""Rerun NoResult""); 
+     endif; 
+
+     i := i + 1;
+Done;
+
+/***********************/ 
+/***** GPS MISPL *******/
+/***** Reagent Sync ****/
+/***********************/ 
+/*Check that the method associated with a result has not been enabled by a reagent update 
+after being manually disabled */  
+ 
+/* 20-Dec-2013 */ 
+/* 
+Manual_Disable_Err_Msg  := ""Manually Disabled Method""; 
+Manual_Disable_Hold_Future := TRUE; 
+ 
+Requests :=.Attribute(""Testlist"");  
+i :=1;                            
+n :=NumEntries(Requests,?);  
+ 
+WHILE i<=n DO   
+RQ:= .getrequest(Entry(i,Requests,?)); 
+                        /***************************************/
+                        /***** Raymond Date: 21 March 2014 *****/
+                        /** To Add IFlagSort Test for Centaur **/  /** Testing! **/
+                        /***************************************/
+if RQ.InstrumentSeverity >= 1 and RQ.GetResult(0).HasFlag(""Waived"") = False then           
+   .ProcessRequest(""IFlagSort"");
+endif;
+
+IF (RQ.Status = RequestStatus[""Rerun""] OR  RQ.Status = RequestStatus[""Review""] OR RQ.Status = 
+RequestStatus[""Validated""] ) THEN 
+  RES := RQ.Getresult(0); 
+  IF RES.Method <> ?                           /* Do not apply to manually edited results without an instrument */ 
+    AND RES.Method.Instrument.LASChannel <> ?  /* Do not apply to results from instruments that are not on automation */ 
+    AND RQ.Test.Calculation = ? THEN           /* Do not apply to results for calculated tests  */ 
+     IF  GetSiteAttribute(""Method"",RES.Method.ID,""AptioEnableMethod"") = ? THEN 
+        SetSiteAttribute(""Method"",RES.Method.ID,""AptioEnableMethod"",""no""); /* If Site attribute exists,set it to ""no"" as it hasn't been set but appears unticked */ 
+     ENDIF; 
+     IF GetSiteAttribute(""Method"",RES.Method.ID,""AptioEnableMethod"") = ""no"" THEN 
+       IF RQ.Status=RequestStatus[""Validated""] THEN  
+         RQ.Invalidate(); 
+       ENDIF; 
+       IF RES.UserComment = ? OR INDEX(RES.UserComment,Manual_Disable_Err_Msg) = 0  THEN  
+         RES.AddComment(Manual_Disable_Err_Msg,TRUE);  
+       ENDIF; 
+       IF Manual_Disable_Hold_Future = TRUE THEN 
+         RQ.SetAutovalidationMode(RequestAutovalidationMode[""Never""]); 
+       ENDIF; 
+       RES.Method.SetupWorkOrderDownload(NO); 
+     ENDIF; 
+ ENDIF; 
+ENDIF; 
+i :=i + 1; 
+DONE;
+*/
+/*************************************************************/
+/******* Dai Han Peng & Raymond Date: 12 November 2014 *******/
+/**************** Customized REVIEW Conditions ***************/
+/*************************************************************/
+ReviewSort:=False;
+strComments := """";
+
+Result1 := .GetRequest(""FT3"").GetResult(0).Value;
+Result2 := .GetRequest(""T3"").GetResult(0).Value;
+Result3 := .GetRequest(""TSH3UL"").GetResult(0).Value;
+fResult1 := StringToFractional(Result1);
+fResult2 := StringToFractional(Result2);
+fResult3 := StringToFractional(Result3);
+
+/**** 1.TSH3UL < 0.34 and ((FT3 < 6) or (T3 < 2.73)), sort ****/
+if((fResult3 < 0.34) and ((fResult1 < 6.0) or (fResult2 < 2.73))) then
+    .GetRequest(""TSH3UL"").Result.AddComment(""TSH3UL< 0.34 and ((FT3< 6) or (T3< 2.73))"", YES);
+    .GetRequest(""TSH3UL"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True;*/
+endif;
+
+/**** 2.TSH3UL > 0.34 and ((FT3 > 6) or (T3 > 2.73)), sort ****/
+if((fResult3 > 0.34) and ((fResult1 > 6.0) or (fResult2 > 2.73))) then
+    .GetRequest(""TSH3UL"").Result.AddComment(""TSH3UL> 0.34 and ((FT3> 6) or (T3> 2.73))"", YES);
+    .GetRequest(""TSH3UL"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True;*/
+endif;
+
+/**** 3.(FT3 and T3) opposite ****/
+if((fResult1 < 3.50) and (fResult2 > 2.79)) then
+  .GetRequest(""FT3"").Result.AddComment(""FT3(<3.5) and T3(>2.79) opposite"", YES);
+  .GetRequest(""FT3"").Result.AddComment(strComment4LS, YES);  
+  /*ReviewSort:=True;*/
+else 
+  if((fResult1 > 6.50) and (fResult2 < 0.92)) then
+    .GetRequest(""FT3"").Result.AddComment(""FT3(>6.5) and T3(<0.92) opposite"", YES);
+    .GetRequest(""FT3"").Result.AddComment(strComment4LS, YES); 
+    /*ReviewSort:=True;*/
+  endif;
+endif;
+
+Result1 := .GetRequest(""FT4"").GetResult(0).Value;
+Result2 := .GetRequest(""T4"").GetResult(0).Value;
+fResult1 := StringToFractional(Result1);
+fResult2 := StringToFractional(Result2);
+/**** 4.TSH3UL < 0.34 and ((FT4 < 14.4) or (T4 < 157.4)), sort ****/
+if((fResult3 < 0.34) and ((fResult1 < 14.4) or (fResult2 < 157.4))) then
+    .GetRequest(""TSH3UL"").Result.AddComment(""TSH3UL < 0.34 and ((FT4 < 14.4) or (T4 < 157.4))"", YES);
+    .GetRequest(""TSH3UL"").Result.AddComment(strComment4LS, YES);
+    /*ReviewSort:=True;*/
+endif;
+
+
+/**** 5.(FT4 and T4) opposite ****/
+if((fResult1 < 11.5) and (fResult2 > 140.6)) then
+  .GetRequest(""FT4"").Result.AddComment(""FT4(<11.5) and T4(>140.6) opposite"", YES);
+  .GetRequest(""FT4"").Result.AddComment(strComment4LS, YES);  
+else 
+  if((fResult1 > 22.7) and (fResult2 < 58.1)) then
+    .GetRequest(""FT4"").Result.AddComment(""FT4(>22.7) and T4(<58.1) opposite"", YES);
+    .GetRequest(""FT4"").Result.AddComment(strComment4LS, YES); 
+    /*ReviewSort:=True;*/
+  endif;
+endif;
+
+/**** 6. PSA<cPSA ****/
+Result1 := .GetRequest(""PSA"").GetResult(0).Value;
+Result2 := .GetRequest(""cPSA"").GetResult(0).Value;
+fResult1 := StringToFractional(Result1);
+fResult2 := StringToFractional(Result2);
+
+if fResult1 < fResult2 then
+    .GetRequest(""PSA"").Result.AddComment(""PSA<cPSA"", YES);
+    .GetRequest(""PSA"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True;*/
+endif;
+
+
+
+/*
+if ReviewSort=True then
+   SetSiteAttribute(""Sample"", .id, ""Reason_For_Review"", strComments);
+   .ProcessRequest(""REVIEW"");
+endif;
+*/
+
+/*** end of all calculations ***/
+
+/***************************************/
+/***** Raymond Date: 23 March 2014 *****/
+/******* To add REVIEW sort test *******/
+/***************************************/
+If .GetRequest(""PARK"").Status = RequestStatus[""Pending""] AND
+   .PendingCount = 1 AND 
+   .ScheduledCount = 0 AND
+   .RerunCount = 0 AND
+   .ReviewCount <> 0 Then
+/* .ValidatedCount = 0 */
+  .ProcessRequest(""REVIEW"");
+Endif;
+
+/****************************************************************/
+/****************** GPS Date: 23 March 2014 *********************/
+/******** Delete Route On LAS For Front-Loaded Samples **********/
+/***** Note: Below Code has to place at the last section ********/
+/****************************************************************/
+Requests :=.Attribute(""Testlist"");  
+i :=1;                            
+n :=NumEntries(Requests,?);  
+If .inlabbed or .LASGeneralArea.Name <> ? THEN    /*** Double Confirmation ***/
+Return True;
+endif;
+While (i <= n) DO
+   rq := .GetRequest(Entry(i,Requests,?));
+   If (rq.Status = RequestStatus[""Validated""] or
+       rq.Status = RequestStatus[""Review""] or
+       rq.Status = RequestStatus[""Uploaded""]) and
+       (RQ.GetRequestLASDownload(FindLASChannelByName(""Aptio"")).LastLASAction <> LASRequestAction[""Delete""]) then
+       rq.DeleteRouteOnLAS(""Delete"",False);                                                      /*** Delete LAS Route for Front-loaded Samples ***/ 
+   Endif;
+   i := i + 1;
+Done;
+
+if .GetRequest(""PARK"") <> ? and .GetRequest(""PARK"").Status <> RequestStatus[""Omitted""] then /*** Omit PARK Test for Front-loaded Samples ***/
+   .GetRequest(""PARK"").Omit("""");
+endif;
+if .GetRequest(""PANIC"") <> ? and .GetRequest(""PANIC"").Status <> RequestStatus[""Omitted""] then /*** Omit PANIC Test for Front-loaded Samples ***/
+   .GetRequest(""PANIC"").Omit("""");
+endif; 
+if .GetRequest(""HILSORT"") <> ? and .GetRequest(""HILSORT"").Status <> RequestStatus[""Omitted""] then /*** Omit HILSORT Test for Front-loaded Samples ***/
+   .GetRequest(""HILSORT"").Omit("""");
+endif; 
+if .GetRequest(""REVIEW"") <> ? and .GetRequest(""REVIEW"").Status <> RequestStatus[""Omitted""] then /*** Omit REVIEW Test for Front-loaded Samples ***/
+   .GetRequest(""REVIEW"").Omit("""");
+endif; 
+if .GetRequest(""IFlagSort"") <> ? and .GetRequest(""IFlagSort"").Status <> RequestStatus[""Omitted""] then /*** Omit IFlagSort Test ***/
+   .GetRequest(""IFlagSort"").Omit("""");
+endif; 
+if .GetRequest(""I2000"") <> ? and .GetRequest(""I2000"").Status <> RequestStatus[""Omitted""] then /*** Omit I2000 Test for Front-loaded Samples ***/
+   .GetRequest(""I2000"").Omit("""");
+endif; 
+if .GetRequest(""XP"") <> ? and .GetRequest(""XP"").Status <> RequestStatus[""Omitted""] then /*** Omit XP Test for Front-loaded Samples ***/
+   .GetRequest(""XP"").Omit("""");
+endif; 
+RETURN TRUE;"
+Sample,OERM_CHEM,Logical,"/* Variables */
+Logical SkipQC; 
+String Requests; 
+Integer i,n; 
+Request RQ; 
+Result RES; 
+String Manual_Disable_Err_Msg, SchInst; /* Comment added when a manually disabled method is detected*/ 
+Logical Manual_Disable_Hold_Future; /* If a result is associated with a manually disabled test hold subsequent results  */ 
+
+String Result1, Result2, Result3;
+Fractional Value1, Value2, Value3;
+String BUN_Result, CREA_Result;
+Fractional BUN_Low,BUN_High,CREA_High,BUN_Value,CREA_Value,fResult1,fResult2,fResult3,fResultDelta;
+String NA_Result, CL_Result;
+Fractional NA_Low,NA_High,CL_High,CL_Low,NA_Value,CL_Value;
+Logical ReviewSort, ReviewFlag1,ReviewFlag2;
+
+DateTime lastDT;
+integer days;
+
+String strComments;
+String strComment4LS,strComment4SS,strComment4OS;
+
+Requests :=.Attribute(""Testlist"");  
+i :=1;                          
+n :=NumEntries(Requests,?); 
+SkipQC := False;
+
+strComment4LS := ""LS=5"";
+strComment4SS := ""SS=5"";
+strComment4OS := ""OS=5"";
+
+
+/*************************************************************************************
+--------------------------------- Auto Validation-------------------------------------
+**************************************************************************************/
+WHILE i<=n DO   
+    RQ:= .Getrequest(Entry(i,Requests,?));
+
+    /*Add NS,IS,QS,DS comments*/
+    /*Once the request is scheduled, RQ.Result is created, but RQ.Result.Value can be get until result is received from analyzers.*/
+	if(? <> RQ.Result.Value) then
+		if (GetSiteAttribute(""Result"", RQ.Result.id, ""CommentFlag"") <> ""Flaged"" ) then 
+			RQ.Result.AddComment(""NS=""+ToString(RQ.NormSeverity,""%d""), YES);
+			RQ.Result.AddComment(""IS=""+ToString(RQ.InstrumentSeverity,""%d""), YES);
+			RQ.Result.AddComment(""QS=""+ToString(RQ.QCSeverity,""%d""), YES);
+			RQ.Result.AddComment(""DS=""+ToString(RQ.DeltaNormSeverity,""%d""), YES);
+
+                  /**** Not a non-zero number, i.e. ""/////"", "">"", ""<"", ""Error"", ""0"", negative ****/
+                  if NOT(Matches(RQ.Result.Value, ""^[0-9.]+$"", No) and Matches(RQ.Result.Value, ""[^0]"", No)) then
+                    if NOT(Matches(RQ.Result.Value,""^[<>]"", No)) then     
+                      if index(""Hemo,Lipe,Icte,"",RQ.Test.Name+"","")=0 then 
+                        RQ.Result.AddComment(""Not a numeric result!"", YES);
+                        RQ.Result.AddComment(strComment4OS, YES);
+                      endif;
+                    endif;
+                  endif; 
+                  SetSiteAttribute(""Result"", RQ.Result.id, ""CommentFlag"", ""Flaged"");                                    
+		endif;
+	endif;
+
+     
+     if RQ.GetResult(0).value=""X-NORESULT"" then
+       RQ.AdvancedRerun(?,?,?,?,""Rerun NoResult""); 
+     endif; 
+     
+     if (RQ.NumericValue<=0) and (RQ.GetResult(1)=?) then
+       RQ.AdvancedRerun(?,?,?,?,""Rerun NoResult"");
+     endif;
+  
+     i := i + 1;
+Done;
+
+
+/***********************/ 
+/***** GPS MISPL *******/
+/***** Reagent Sync ****/
+/***********************/ 
+/*Check that the method associated with a result has not been enabled by a reagent update 
+after being manually disabled */  
+ 
+/* 20-Dec-2013 */ 
+/* 
+Manual_Disable_Err_Msg  := ""Manually Disabled Method""; 
+Manual_Disable_Hold_Future := TRUE; 
+ 
+Requests :=.Attribute(""Testlist"");  
+i :=1;                            
+n :=NumEntries(Requests,?);  
+
+WHILE i<=n DO   
+RQ:= .getrequest(Entry(i,Requests,?)); 
+
+IF (RQ.Status = RequestStatus[""Rerun""] OR  RQ.Status = RequestStatus[""Review""] OR RQ.Status = 
+RequestStatus[""Validated""] ) THEN 
+  RES := RQ.Getresult(0); 
+  IF RES.Method <> ?                           /* Do not apply to manually edited results without an instrument */ 
+    AND RES.Method.Instrument.LASChannel <> ?  /* Do not apply to results from instruments that are not on automation */ 
+    AND RQ.Test.Calculation = ? THEN           /* Do not apply to results for calculated tests  */ 
+     IF  GetSiteAttribute(""Method"",RES.Method.ID,""AptioEnableMethod"") = ? THEN 
+        SetSiteAttribute(""Method"",RES.Method.ID,""AptioEnableMethod"",""no""); /* If Site attribute exists,set it to ""no"" as it hasn't been set but appears unticked */ 
+     ENDIF; 
+     IF GetSiteAttribute(""Method"",RES.Method.ID,""AptioEnableMethod"") = ""no"" THEN 
+       IF RQ.Status=RequestStatus[""Validated""] THEN  
+         RQ.Invalidate(); 
+       ENDIF; 
+       IF RES.UserComment = ? OR INDEX(RES.UserComment,Manual_Disable_Err_Msg) = 0  THEN  
+         RES.AddComment(Manual_Disable_Err_Msg,TRUE);  
+       ENDIF; 
+       IF Manual_Disable_Hold_Future = TRUE THEN 
+         RQ.SetAutovalidationMode(RequestAutovalidationMode[""Never""]); 
+       ENDIF; 
+       RES.Method.SetupWorkOrderDownload(NO); 
+     ENDIF; 
+ ENDIF; 
+ENDIF; 
+i :=i + 1; 
+DONE;
+
+*/
+
+/***************************************/
+/***** Raymond Date: 23 March 2014 *****/
+/******* To add REVIEW sort test *******/
+/***************************************/
+If .GetRequest(""PARK"").Status = RequestStatus[""Pending""] AND
+   .PendingCount = 1 AND 
+   .ScheduledCount = 0 AND
+   .RerunCount = 0 AND
+   .ReviewCount <> 0 Then
+/* .ValidatedCount = 0 */
+  .ProcessRequest(""REVIEW"");
+Endif;
+
+/*******************************************/
+/******* Raymond Date: 23 March 2014 *******/
+/******* Customized REVIEW Conditions ******/
+/*******************************************/
+ReviewSort:=False;
+strComments := """";
+
+/*  Add Calculate Test */
+If .GetRequest(""TP"") <> ? and .GetRequest(""ALB"") <> ? Then
+   .ProcessRequest(""GLB""); 
+   .ProcessRequest(""A/G"");  
+Endif;
+If .GetRequest(""TP_QT"") <> ? and .GetRequest(""ALB_QT"") <> ? Then
+   .ProcessRequest(""GLB_QT""); 
+   .ProcessRequest(""A/G_QT"");  
+Endif;
+If .GetRequest(""TBIL"") <> ? and .GetRequest(""DBIL"") <> ? Then
+   .ProcessRequest(""IBIL""); 
+Endif;
+If .GetRequest(""ALT"") <> ? and .GetRequest(""AST"") <> ? Then
+   .ProcessRequest(""ALT/AST""); 
+Endif;
+If .GetRequest(""TBIL-YL"") <> ? and .GetRequest(""DBIL-YL"") <> ? Then
+   .ProcessRequest(""IBIL-YL""); 
+Endif;
+If .GetRequest(""CREA"") <> ? Then
+   .ProcessRequest(""GFR"");  
+Endif;
+If .GetRequest(""CREA-U"") <> ? Then
+   .ProcessRequest(""GFR-U"");  
+Endif;
+If .GetRequest(""CREA-YL"") <> ? Then
+   .ProcessRequest(""GFR-YL"");  
+Endif;
+
+
+      
+/**** 1. DBIL > TBIL ****/
+Result1 := .GetRequest(""DBIL"").GetResult(0).Value;
+Result2 := .GetRequest(""TBIL"").GetResult(0).Value;
+if StringToFractional(Result1) > StringToFractional(Result2) then
+   .GetRequest(""DBIL"").Result.AddComment(""DBIL > TBIL"", YES);
+   .GetRequest(""DBIL"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 2. New born baby, TBIL > 300  ****/
+Result1 := .GetRequest(""TBIL"").GetResult(0).Value;
+if((today() - .Patient.BirthDate) < 31) then
+    if(StringToFractional(Result1) > 300.0) then
+       .GetRequest(""TBIL"").Result.AddComment(""New born baby,TBIL > 300"", YES);
+       .GetRequest(""TBIL"").Result.AddComment(strComment4LS, YES);
+        /* ReviewSort:=True; */
+    endif;
+endif;
+
+/*** 3. ALB > TP ****/
+Result1 := .GetRequest(""ALB"").GetResult(0).Value;
+Result2 := .GetRequest(""TP"").GetResult(0).Value;
+if StringToFractional(Result1) > StringToFractional(Result2) then
+   .GetRequest(""ALB"").Result.AddComment(""ALB > TP"", YES);
+   .GetRequest(""ALB"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/*** 4. A/G?3.0??0.5 ****/
+Result1 := .GetRequest(""TP"").GetResult(0).Value;
+Result2 := .GetRequest(""ALB"").GetResult(0).Value;
+Value1 := StringToFractional(Result1); 
+Value2 := StringToFractional(Result2); 
+if Value2 > 3*(Value1-Value2) then
+   .GetRequest(""ALB"").Result.AddComment(""A/G > 3.0"", YES);
+   .GetRequest(""ALB"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+else
+  if Value2 < 0.5*(Value1-Value2) then 
+     .GetRequest(""ALB"").Result.AddComment(""A/G < 0.5"", YES);
+     .GetRequest(""ALB"").Result.AddComment(strComment4LS, YES);
+     /* ReviewSort:=True; */   
+  endif; 
+endif;
+
+/**** 5. HDLC+LDLC> TC ****/
+Result1 := .GetRequest(""HDLC"").GetResult(0).Value;
+Result2 := .GetRequest(""LDLC"").GetResult(0).Value;
+Result3 := .GetRequest(""TC"").GetResult(0).Value;
+Value1 := StringToFractional(Result1); 
+Value2 := StringToFractional(Result2); 
+Value3 := StringToFractional(Result3); 
+if Value1 + Value2 > Value3 then
+   .GetRequest(""HDLC"").Result.AddComment(""HDLC+LDLC> TC"", YES);
+   .GetRequest(""HDLC"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 6.NA normal, CL>125 ****/
+NA_Result := .GetRequest(""NA"").GetResult(0).Value;
+CL_Result := .GetRequest(""CL"").GetResult(0).Value;
+NA_Low := 137; 
+NA_High := 147; 
+CL_High := 125;
+NA_Value := StringToFractional(NA_Result); 
+CL_Value := StringToFractional(CL_Result); 
+if (NA_Low < NA_Value AND NA_Value < NA_High) And 
+   (CL_Value> CL_High) then
+   .GetRequest(""NA"").Result.AddComment(""NA normal, CL>125"", YES);
+   .GetRequest(""NA"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 7.NA normal, CL<90 ****/
+NA_Result := .GetRequest(""NA"").GetResult(0).Value;
+CL_Result := .GetRequest(""CL"").GetResult(0).Value;
+NA_Low := 137; 
+NA_High := 147; 
+CL_Low := 90;
+NA_Value := StringToFractional(NA_Result); 
+CL_Value := StringToFractional(CL_Result); 
+if (NA_Low < NA_Value AND NA_Value < NA_High) And 
+   (CL_Value < CL_Low) then
+   .GetRequest(""NA"").Result.AddComment(""NA normal, CL<90"", YES);
+   .GetRequest(""NA"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 8.CL normal, NA>150 ****/
+NA_Result := .GetRequest(""NA"").GetResult(0).Value;
+CL_Result := .GetRequest(""CL"").GetResult(0).Value;
+CL_Low := 99; 
+CL_High := 110; 
+NA_High := 150;
+NA_Value := StringToFractional(NA_Result); 
+CL_Value := StringToFractional(CL_Result); 
+if (CL_Low < CL_Value AND CL_Value < CL_High) And 
+   (NA_Value > NA_High) then
+   .GetRequest(""NA"").Result.AddComment(""CL normal, NA>150"", YES);
+   .GetRequest(""NA"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 9.CL normal, NA<130 ****/
+NA_Result := .GetRequest(""NA"").GetResult(0).Value;
+CL_Result := .GetRequest(""CL"").GetResult(0).Value;
+CL_Low := 99; 
+CL_High := 110; 
+NA_Low := 130;
+NA_Value := StringToFractional(NA_Result); 
+CL_Value := StringToFractional(CL_Result); 
+if (CL_Low < CL_Value AND CL_Value < CL_High) And 
+   (NA_Value < NA_Low) then
+   .GetRequest(""NA"").Result.AddComment(""CL normal, NA<130"", YES);
+   .GetRequest(""NA"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 10. BUN normal, CREA>150 ****/
+BUN_Result := .GetRequest(""BUN"").GetResult(0).Value;
+CREA_Result := .GetRequest(""CREA"").GetResult(0).Value;
+BUN_Low := 2.6; 
+BUN_High := 9.5; 
+CREA_High := 150;
+BUN_Value := StringToFractional(BUN_Result); 
+CREA_Value := StringToFractional(CREA_Result); 
+if (BUN_Low < BUN_Value AND BUN_Value < BUN_High) And 
+   (CREA_Value> CREA_High) then
+   .GetRequest(""BUN"").Result.AddComment(""BUN normal, CREA>150"", YES);
+   .GetRequest(""BUN"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 11. AST > 5*ALT ****/
+Result1 := .GetRequest(""AST"").GetResult(0).Value;
+Result2 := .GetRequest(""ALT"").GetResult(0).Value;
+Value1 := StringToFractional(Result1); 
+Value2 := StringToFractional(Result2);
+if Value1 > 5*Value2 then
+   .GetRequest(""AST"").Result.AddComment(""AST > 5*ALT"", YES);
+   .GetRequest(""AST"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+/**** 12.  ALT > 5*AST ****/
+Result1 := .GetRequest(""ALT"").GetResult(0).Value;
+Result2 := .GetRequest(""AST"").GetResult(0).Value;
+Value1 := StringToFractional(Result1); 
+Value2 := StringToFractional(Result2);
+if Value1 > 5*Value2 then
+   .GetRequest(""ALT"").Result.AddComment(""ALT > 5*AST"", YES);
+   .GetRequest(""ALT"").Result.AddComment(strComment4LS, YES);
+   /* ReviewSort:=True; */
+endif;
+
+
+/*** end of all calculations ***/
+
+
+/*******************************************/
+/******* Raymond Date: 10 Sept 2015 *******/
+/************** Effects of HIL ************/
+/*******************************************/
+If .GetRequest(""HEMO"") <> ? then 
+   if .StringValue(""HEMO"") = ""+"" then 
+      if .GetRequest(""K"") <> ? then 
+         .GetRequest(""K"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""K"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif;
+   if .StringValue(""HEMO"") = ""++"" or .StringValue(""HEMO"") = ""+++"" or .StringValue(""HEMO"") = ""++++"" then 
+      if .GetRequest(""TBil"") <> ? then 
+         .GetRequest(""TBil"").Result.AddComment(""Hemolyzd-Res Dec"", true);
+         .GetRequest(""TBil"").Result.AddComment(strComment4SS, YES);		 
+      endif; 
+      if .GetRequest(""AST"") <> ? then 
+         .GetRequest(""AST"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""AST"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""CK"") <> ? then 
+         .GetRequest(""CK"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""CK"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""K"") <> ? then 
+         .GetRequest(""K"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""K"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""LDH"") <> ? then 
+         .GetRequest(""LDH"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""LDH"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; 
+   if .StringValue(""Hemo"") = ""+++"" or .StringValue(""Hemo"") = ""++++"" then 
+      /*if .GetRequest(""ALT"") <> ? then 
+         .GetRequest(""ALT"").Result.AddComment(""Hemolyzd-Res Dec"", true); 
+		 .GetRequest(""ALT"").Result.AddComment(strComment4SS, YES);
+      endif; */
+      if .GetRequest(""P"") <> ? then 
+         .GetRequest(""P"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""P"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; 
+
+   if .StringValue(""Hemo"") = ""++++"" then 
+      if .GetRequest(""BUN"") <> ? then 
+         .GetRequest(""BUN"").Result.AddComment(""Hemolyzd-Res Dec"", true);
+         .GetRequest(""BUN"").Result.AddComment(strComment4SS, YES);		 
+      endif; 
+      if .GetRequest(""CRP"") <> ? then 
+         .GetRequest(""CRP"").Result.AddComment(""Hemolyzd-Res Dec"", true); 
+		 .GetRequest(""CRP"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""UIBC"") <> ? then 
+         .GetRequest(""UIBC"").Result.AddComment(""Hemolyzd-Res Dec"", true); 
+		 .GetRequest(""UIBC"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""Alb"") <> ? then 
+         .GetRequest(""Alb"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""Alb"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""Mg"") <> ? then 
+         .GetRequest(""Mg"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""Mg"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""TG"") <> ? then 
+         .GetRequest(""TG"").Result.AddComment(""Hemolyzd-Res Inc"", true); 
+		 .GetRequest(""TG"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; /* from if on line 2 */
+endif; /* from if on 18 lines above */
+ 
+If .GetRequest(""Lipe"") <> ? then 
+   if .StringValue(""Lipe"") = ""++"" or .StringValue(""Lipe"") = ""+++"" or .StringValue(""Lipe"") = ""++++"" then 
+      if .GetRequest(""DBil"") <> ? then 
+         .GetRequest(""DBil"").Result.AddComment(""Lipemic-Res Inc"", true); 
+		 .GetRequest(""DBil"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""Mg"") <> ? then 
+         .GetRequest(""Mg"").Result.AddComment(""Lipemic-Res Inc"", true); 
+		 .GetRequest(""Mg"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; 
+   if .StringValue(""Lipe"") = ""+++"" or .StringValue(""Lipe"") = ""++++"" then 
+      if .GetRequest(""IRON"") <> ? then 
+         .GetRequest(""IRON"").Result.AddComment(""Lipemic-Res Dec"", true); 
+		 .GetRequest(""IRON"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""CHOL"") <> ? then 
+         .GetRequest(""CHOL"").Result.AddComment(""Lipemic-Res Inc"", true);
+		 .GetRequest(""CHOL"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""TBil"") <> ? then 
+         .GetRequest(""TBil"").Result.AddComment(""Lipemic-Res Inc"", true); 
+		 .GetRequest(""TBil"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; 
+
+   if .StringValue(""Lipe"") = ""++++"" then 
+      if .GetRequest(""ALT"") <> ? then 
+         .GetRequest(""ALT"").Result.AddComment(""Lipemic-Res Dec"", true); 
+		 .GetRequest(""ALT"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""AST"") <> ? then 
+         .GetRequest(""AST"").Result.AddComment(""Lipemic-Res Dec"", true); 
+		 .GetRequest(""AST"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""CRP"") <> ? then 
+         .GetRequest(""CRP"").Result.AddComment(""Lipemic-Res Dec"", true); 
+		 .GetRequest(""CRP"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""URIC"") <> ? then 
+         .GetRequest(""URIC"").Result.AddComment(""Lipemic-Res Dec"", true);
+         .GetRequest(""URIC"").Result.AddComment(strComment4SS, YES);		 
+      endif; 
+      if .GetRequest(""ALB"") <> ? then 
+        .GetRequest(""ALB"").Result.AddComment(""Lipemic-Res Inc"", true); 
+		.GetRequest(""ALB"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""LDL"") <> ? then 
+         .GetRequest(""LDL"").Result.AddComment(""Lipemic-Res Inc"", true); 
+		 .GetRequest(""LDL"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; 
+endif; 
+
+If .GetRequest(""Icte"") <> ? then 
+   if .StringValue(""Icte"") = ""++"" or .StringValue(""Icte"") = ""+++"" or .StringValue(""Icte"") = ""++++"" then 
+      if .GetRequest(""CREA"") <> ? then 
+         .GetRequest(""CREA"").Result.AddComment(""Icteric-Res Dec"", true); 
+		 .GetRequest(""CREA"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; 
+   if .StringValue(""ICTE"") = ""+++"" or .StringValue(""ICTE"") = ""++++"" then 
+      if .GetRequest(""Mg"") <> ? then 
+         .GetRequest(""Mg"").Result.AddComment(""Icteric-Res Inc"", true); 
+		 .GetRequest(""Mg"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""TRIG"") <> ? then 
+         .GetRequest(""TRIG"").Result.AddComment(""Icteric-Res Inc"", true); 
+		 .GetRequest(""TRIG"").Result.AddComment(strComment4SS, YES);
+      endif; 
+   endif; 
+   if .StringValue(""Icte"") = ""++++"" then 
+      if .GetRequest(""ALT"") <> ? then 
+         .GetRequest(""ALT"").Result.AddComment(""Icteric-Res Dec"", true); 
+		 .GetRequest(""ALT"").Result.AddComment(strComment4SS, YES);
+      endif; 
+      if .GetRequest(""AST"") <> ? then 
+         .GetRequest(""AST"").Result.AddComment(""Icteric-Res Dec"", true);
+         .GetRequest(""AST"").Result.AddComment(strComment4SS, YES);		 
+      endif; 
+   endif; 
+endif; 
+
+/****************************************************************/
+/****************** GPS Date: 23 March 2014 *********************/
+/******** Delete Route On LAS For Front-Loaded Samples **********/
+/***** Note: Below Code has to place at the last section ********/
+/****************************************************************/
+Requests :=.Attribute(""Testlist"");  
+i :=1;                            
+n :=NumEntries(Requests,?);  
+If .inlabbed or .LASGeneralArea.Name <> ? THEN    /*** Double Confirmation ***/
+Return True;
+endif;
+While (i <= n) DO
+   rq := .GetRequest(Entry(i,Requests,?));
+   If (rq.Status = RequestStatus[""Validated""] or
+       rq.Status = RequestStatus[""Review""] or
+       rq.Status = RequestStatus[""Uploaded""]) and
+       (RQ.GetRequestLASDownload(FindLASChannelByName(""Aptio"")).LastLASAction <> LASRequestAction[""Delete""]) then
+       rq.DeleteRouteOnLAS(""Delete"",False);                                                      /*** Delete LAS Route for Front-loaded Samples ***/ 
+   Endif;
+   i := i + 1;
+Done;
+
+if .GetRequest(""PARK"") <> ? and .GetRequest(""PARK"").Status <> RequestStatus[""Omitted""] then /*** Omit PARK Test for Front-loaded Samples ***/
+   .GetRequest(""PARK"").Omit("""");
+endif;
+if .GetRequest(""PANIC"") <> ? and .GetRequest(""PANIC"").Status <> RequestStatus[""Omitted""] then /*** Omit PANIC Test for Front-loaded Samples ***/
+   .GetRequest(""PANIC"").Omit("""");
+endif; 
+if .GetRequest(""HILSORT"") <> ? and .GetRequest(""HILSORT"").Status <> RequestStatus[""Omitted""] then /*** Omit HILSORT Test for Front-loaded Samples ***/
+   .GetRequest(""HILSORT"").Omit("""");
+endif; 
+if .GetRequest(""REVIEW"") <> ? and .GetRequest(""REVIEW"").Status <> RequestStatus[""Omitted""] then /*** Omit REVIEW Test for Front-loaded Samples ***/
+   .GetRequest(""REVIEW"").Omit("""");
+endif; 
+if .GetRequest(""IFlagSort"") <> ? and .GetRequest(""IFlagSort"").Status <> RequestStatus[""Omitted""] then /*** Omit IFlagSort Test ***/
+   .GetRequest(""IFlagSort"").Omit("""");
+endif; 
+if .GetRequest(""I2000"") <> ? and .GetRequest(""I2000"").Status <> RequestStatus[""Omitted""] then /*** Omit I2000 Test for Front-loaded Samples ***/
+   .GetRequest(""I2000"").Omit("""");
+endif; 
+if .GetRequest(""XP"") <> ? and .GetRequest(""XP"").Status <> RequestStatus[""Omitted""] then /*** Omit XP Test for Front-loaded Samples ***/
+   .GetRequest(""XP"").Omit("""");
+endif; 
+
+
+RETURN TRUE;
+
+"

@@ -1,0 +1,11 @@
+Table.Name,Order,Name,Label,Help,DataType,Widget,Width,MaxChars,ValueList,TargetTable.Name,Category.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_SiteAttribute
+%% Exported on: 05/15/16 at 22:32:39
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Result,1,CommentFlag,CommentFlag,CommentFlag,String,Fill-in,?,?,?,?,?
