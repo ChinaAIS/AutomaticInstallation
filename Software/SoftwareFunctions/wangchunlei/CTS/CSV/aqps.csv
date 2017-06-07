@@ -1,0 +1,22 @@
+Query.Table.Name,Query.Mnemonic,ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_ActualQueryParameterSet
+%% Exported on: 02/14/17 at 11:23:45
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Default,Dispatchable Samples
+Sample,Default,Eligible for LAS info upload
+Sample,Default,KeepAlive
+Sample,Default,MarkForDelQry
+Sample,Default,MarkForDelQryManualSample
+Sample,Default,QPS_Automatic_Unschedule_query
+Sample,Default,QPS_Find_Waiting
+Sample,Default,QPS_OmitPendingSample
+Sample,Default,QPS_PARK
+Sample,Default,QPS_U09andNotInlabbed
+Sample,Default,Unreported validated samples
+Sample,Default,Validated Samples By Priority

@@ -1,0 +1,25 @@
+Name,InternalLanguage,Type,AutoStart,SeqNo,Description,SpecificOptions,LoginUser.LoginName,Host,Port,ProcessId,ApplicationRootFolder,LogVerbosity,LogToDatabase,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,RestartFailures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_Service
+%% Exported on: 02/14/17 at 11:14:43
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Advia2400_Service_1_2,URL,Translator server,yes,?,Advia2400_Service_1_2,?,batch,?,3170,3456,?,High,no,1,Day,21,Day,10,yes,0
+Advia2400_Service_3_4,URL,Translator server,yes,?,Advia2400_Service_3_4,?,batch,?,3171,628,?,High,no,1,Day,21,Day,10,yes,0
+Audit_Log_Purge_Task_Scheduler,URL,Task scheduler,yes,?,Audit Log Purge Task Scheduler,?,batch,?,7001,3300,?,High,no,1,Day,21,Day,10,yes,0
+CentaurXP_Service_1_2,URL,Translator server,yes,?,CentaurXP_Service_1_2,?,batch,?,3230,3524,?,High,no,1,Day,21,Day,10,yes,0
+CentaurXP_Service_3_4,URL,Translator server,yes,?,CentaurXP_Service_3_4,?,batch,?,3231,848,?,High,no,1,Day,21,Day,10,yes,0
+DB_Maintenance_Task_Scheduler,URL,Task scheduler,yes,?,DB_Maintenance_Task_Scheduler,?,batch,?,9901,2800,?,Medium,no,1,Day,21,Day,10,yes,0
+General_Task_Scheduler,URL,Task scheduler,yes,?,General Task Scheduler,?,batch,?,3902,3396,?,High,no,1,Day,21,Day,10,yes,0
+LAS_Download_Scheduler,URL,Task scheduler,yes,?,LAS_Download_Scheduler,?,batch,?,3900,2512,?,High,no,1,Day,21,Day,10,yes,0
+LIS_Service,URL,Translator server,yes,?,LIS_Service ,?,batch,?,3440,3584,?,High,no,1,Day,21,Day,10,yes,0
+LIS_Upload_Scheduler,URL,Task scheduler,yes,?,LIS_Upload_Scheduler,?,batch,?,3901,3988,?,High,no,1,Day,21,Day,10,yes,0
+LIS_Upload_Service,URL,Task scheduler,yes,?,LIS_Upload_Service,?,batch,?,3600,2936,?,High,no,1,Day,21,Day,10,yes,0
+Mark_For_Del_Task_Scheduler,URL,Task scheduler,yes,?,Mark_For_Del_Task_Scheduler,?,batch,?,9903,?,?,High,no,1,Day,21,Day,10,yes,0
+Online_Backup_Task_Scheduler,URL,Task scheduler,yes,?,Online_Backup_Task_Scheduler,?,batch,?,9902,3052,?,High,no,1,Day,21,Day,10,yes,0
+ServerAuto,XML,Translator server,yes,?,?,?,batch,?,3666,3364,?,High,no,1,Day,21,Day,10,yes,0
+XML_ControlService,XML,Translator server,yes,?,Dashboard Controller,?,batch,?,3510,3240,?,High,no,1,Day,21,Day,10,yes,0

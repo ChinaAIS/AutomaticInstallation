@@ -1,0 +1,5 @@
+Command.Table.Name,Command.Description,Name,StartDate,StartDayTime,EndDate,EndDayTime,Type,Interval,LatestRun,NextRun,Running,ExecutingService.Name,ExecutingSvcHost,ExecutingSvcProcessId,OnHoliday,OnMonday,OnTuesday,OnWednesday,OnThursday,OnFriday,OnSaturday,OnSunday,DayTypeInMonth,DayType,Day,Month,$ImportLog
+Sample,Dispatch to LAS,Dispatch to LAS Task,2016/9/6,0:01:00,?,23:59:00,Instantly,1,2017/2/13 14:35:00,2017/2/13 14:36:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January,Command not available
+Sample,Upload LAS info,Upload LAS info Task,2016/9/12,0:01:00,?,23:59:00,Instantly,1,2017/2/13 14:35:00,2017/2/13 14:36:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January,Command not available
+QCPopulation,QC Purge,QC Purge,2016/11/3,3:30:00,?,?,Daily,1,2017/1/14 03:30:00,2017/2/14 03:30:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January,Command not available
+QCPopulation,ResetQCSeverity,ResetQCSeverity,2016/11/3,5:30:00,?,?,Daily,1,2017/1/14 05:30:00,2017/2/14 05:30:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January,Command not available

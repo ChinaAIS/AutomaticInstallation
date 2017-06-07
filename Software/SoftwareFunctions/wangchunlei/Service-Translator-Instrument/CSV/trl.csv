@@ -1,0 +1,20 @@
+Name,InternalLanguage,AutoStart,SeqNo,Description,Host,Port,TimeOut,Server.Name,ExternalHost,ExternalPort,ExternalTimeOut,Driver,DriverVersion,IsBetaDriverVersion,SpecificOptions,ProcessId,LogVerbosity,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,RestartFailures,~Options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_Translator
+%% Exported on: 04/17/17 at 11:08:31
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Advia2400_1_Translator,URL,yes,?,Advia2400_1_Translator,?,?,20,Advia2400_Service_1_2,192.168.1.55,3001,10,advc,?,no,-a,?,Medium,1,Day,21,Day,10,yes,0,""
+Advia2400_2_Translator,URL,yes,?,Advia2400_1_Translator,?,?,20,Advia2400_Service_1_2,192.168.1.55,3002,10,advc,?,no,-a,?,Medium,1,Day,21,Day,10,yes,0,""
+Auto_Receive,XML,yes,?,?,?,?,10,ServerAuto,?,?,10,auto,?,no,-s 9002,?,Medium,1,Day,21,Day,10,yes,0,?
+Auto_Transmit,XML,yes,?,?,?,?,10,ServerAuto,?,?,10,auto,?,no,-s 9001,?,Medium,1,Day,21,Day,10,yes,0,?
+CentaurXP_1_Translator,URL,yes,?,CentaurXP_1_Translator,?,?,20,CentaurXP_Service_1_2,192.168.1.55,3005,10,cent,?,no,-q -c -p 1,?,Medium,1,Day,21,Day,10,yes,0,""
+CentaurXP_2_Translator,URL,yes,?,CentaurXP_2_Translator,?,?,20,CentaurXP_Service_1_2,192.168.1.55,3006,10,cent,?,no,-q -c -p 1,?,Medium,1,Day,21,Day,10,yes,0,""
+ChemXPT_1_Translator,URL,yes,?,ChemXPT_1_Translator,192.168.1.221,56728,20,ChemXPT_Service_1_2,192.168.1.55,3001,10,uiw,1.2.0,no,-s 9500 -q -u,6076,Medium,1,Day,21,Day,10,yes,0,""
+ChemXPT_2_Translator,URL,yes,?,ChemXPT_2_Translator,192.168.1.221,56735,20,ChemXPT_Service_1_2,192.168.1.55,3002,10,uiw,1.2.0,no,-s 9501 -q -u ,1996,Medium,1,Day,21,Day,10,yes,0,""
+LIS_In_Translator,URL,yes,?,LIS_In_Translator,?,?,105,LIS_Service,?,?,10,ASTS,?,no,-s 7777,?,Medium,1,Day,21,Day,10,yes,0,""
+LIS_Out_Translator,URL,yes,?,LIS_Out_Translator,?,?,105,LIS_Service,?,?,10,ASTS,?,no,-s 9999,?,Medium,1,Day,21,Day,10,yes,0,""
