@@ -138,7 +138,7 @@ def GenerateDsCsvFile():
                         txtFile.write('String Message_LB, Message_UB;\n')
                         txtFile.write('Message_LB := '+'\""'+'<'+DsValue+'%'+'\""'+';\n')
                         txtFile.write('Message_UB := '+'\""'+'>'+DsValue+'%'+'\""'+';\n')
-                        txtFile.write('If .NormSeverity < 0 Then\n')
+                        txtFile.write('If .DeltaNormSeverity < 0 Then\n')
                         txtFile.write('   Return Message_LB;\n')
                         txtFile.write('Else\n')
                         txtFile.write('   Return Message_UB;\n')
