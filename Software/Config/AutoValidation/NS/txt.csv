@@ -1,0 +1,1981 @@
+Mnemonic,Class,Description,Table.Name,Text:E,StartDate,EndDate
+NS_Comment_TC,?,NS_Comment_TC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.800"";
+Message_UB := "">15.510"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TC,?,NS_Comment_TC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.800"";
+Message_UB := "">15.510"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TG,?,NS_Comment_TG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.240"";
+Message_UB := "">5.070"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TG,?,NS_Comment_TG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.240"";
+Message_UB := "">5.070"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_HDL-C,?,NS_Comment_HDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.728"";
+Message_UB := "">4.620"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_HDL-C,?,NS_Comment_HDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.728"";
+Message_UB := "">4.620"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LDL-C,?,NS_Comment_LDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">10.080"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LDL-C,?,NS_Comment_LDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">10.080"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_APOA,?,NS_Comment_APOA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.840"";
+Message_UB := "">5.280"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_APOA,?,NS_Comment_APOA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.840"";
+Message_UB := "">5.280"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_APOB,?,NS_Comment_APOB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.441"";
+Message_UB := "">3.420"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_APOB,?,NS_Comment_APOB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.441"";
+Message_UB := "">3.420"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TP,?,NS_Comment_TP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<45.500"";
+Message_UB := "">255.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TP,?,NS_Comment_TP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<45.500"";
+Message_UB := "">255.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ALB,?,NS_Comment_ALB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<28.000"";
+Message_UB := "">165.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ALB,?,NS_Comment_ALB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<28.000"";
+Message_UB := "">165.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PA,?,NS_Comment_PA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<140.000"";
+Message_UB := "">1200.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PA,?,NS_Comment_PA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<140.000"";
+Message_UB := "">1200.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TBIL,?,NS_Comment_TBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.197"";
+Message_UB := "">78.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TBIL,?,NS_Comment_TBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.197"";
+Message_UB := "">78.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_DBIL,?,NS_Comment_DBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.197"";
+Message_UB := "">20.520"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_DBIL,?,NS_Comment_DBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.197"";
+Message_UB := "">20.520"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ALT,?,NS_Comment_ALT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<6.300"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ALT,?,NS_Comment_ALT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<4.900"";
+Message_UB := "">135.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AST,?,NS_Comment_AST,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<10.500"";
+Message_UB := "">135.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AST,?,NS_Comment_AST,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<9.100"";
+Message_UB := "">120.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_GGT,?,NS_Comment_GGT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<7.000"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_GGT,?,NS_Comment_GGT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<4.900"";
+Message_UB := "">135.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ALP,?,NS_Comment_ALP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<31.500"";
+Message_UB := "">375.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ALP,?,NS_Comment_ALP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<24.500"";
+Message_UB := "">300.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ALP,?,NS_Comment_ALP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<35.000"";
+Message_UB := "">405.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TBA,?,NS_Comment_TBA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<15.000"";
+Message_UB := "">45.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TBA,?,NS_Comment_TBA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<15.000"";
+Message_UB := "">45.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_GLU,?,NS_Comment_GLU,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.730"";
+Message_UB := "">16.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_GLU,?,NS_Comment_GLU,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.730"";
+Message_UB := "">16.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BUN,?,NS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.170"";
+Message_UB := "">24.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BUN,?,NS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.520"";
+Message_UB := "">28.500"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BUN,?,NS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.820"";
+Message_UB := "">22.500"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BUN,?,NS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.170"";
+Message_UB := "">26.400"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CREA,?,NS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<39.900"";
+Message_UB := "">291.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CREA,?,NS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<39.900"";
+Message_UB := "">333.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CREA,?,NS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<28.700"";
+Message_UB := "">219.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CREA,?,NS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<28.700"";
+Message_UB := "">243.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_UA,?,NS_Comment_UA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<95.900"";
+Message_UB := "">1089.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_UA,?,NS_Comment_UA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<100.100"";
+Message_UB := "">1017.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA,?,NS_Comment_CA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.477"";
+Message_UB := "">7.560"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA,?,NS_Comment_CA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.477"";
+Message_UB := "">7.560"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_MG,?,NS_Comment_MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.525"";
+Message_UB := "">3.060"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_MG,?,NS_Comment_MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.525"";
+Message_UB := "">3.060"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_P,?,NS_Comment_P,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.595"";
+Message_UB := "">4.530"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_P,?,NS_Comment_P,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.595"";
+Message_UB := "">4.530"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_NA,?,NS_Comment_NA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<95.900"";
+Message_UB := "">441.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_NA,?,NS_Comment_NA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<95.900"";
+Message_UB := "">441.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_K,?,NS_Comment_K,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.450"";
+Message_UB := "">15.900"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_K,?,NS_Comment_K,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.450"";
+Message_UB := "">15.900"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CL,?,NS_Comment_CL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<69.300"";
+Message_UB := "">330.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CL,?,NS_Comment_CL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<69.300"";
+Message_UB := "">330.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_Fe,?,NS_Comment_Fe,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<7.420"";
+Message_UB := "">110.100"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_Fe,?,NS_Comment_Fe,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<5.460"";
+Message_UB := "">96.600"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AMY_S,?,NS_Comment_AMY_S,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<24.500"";
+Message_UB := "">405.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AMY_S,?,NS_Comment_AMY_S,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<24.500"";
+Message_UB := "">405.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_SFA,?,NS_Comment_SFA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">855.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_SFA,?,NS_Comment_SFA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">855.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CYSC,?,NS_Comment_CYSC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.413"";
+Message_UB := "">3.090"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CYSC,?,NS_Comment_CYSC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.413"";
+Message_UB := "">3.090"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CK,?,NS_Comment_CK,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<35.000"";
+Message_UB := "">930.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CK,?,NS_Comment_CK,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<28.000"";
+Message_UB := "">600.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AMON,?,NS_Comment_AMON,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<7.000"";
+Message_UB := "">141.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AMON,?,NS_Comment_AMON,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<7.000"";
+Message_UB := "">141.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_B-2MG,?,NS_Comment_B-2MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">6.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_B-2MG,?,NS_Comment_B-2MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">6.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ADA,?,NS_Comment_ADA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.800"";
+Message_UB := "">54.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ADA,?,NS_Comment_ADA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.800"";
+Message_UB := "">54.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LDH,?,NS_Comment_LDH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<84.000"";
+Message_UB := "">750.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LDH,?,NS_Comment_LDH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<84.000"";
+Message_UB := "">750.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LPa,?,NS_Comment_LPa,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<6.000"";
+Message_UB := "">900.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LPa,?,NS_Comment_LPa,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<6.000"";
+Message_UB := "">900.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LA,?,NS_Comment_LA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">6.660"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LA,?,NS_Comment_LA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">6.660"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LIP,?,NS_Comment_LIP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<13.300"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LIP,?,NS_Comment_LIP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<13.300"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PCHE,?,NS_Comment_PCHE,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2800.000"";
+Message_UB := "">37800.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PCHE,?,NS_Comment_PCHE,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<3570.000"";
+Message_UB := "">35100.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_HCY,?,NS_Comment_HCY,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<3.500"";
+Message_UB := "">45.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_HCY,?,NS_Comment_HCY,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<3.500"";
+Message_UB := "">45.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ThCG,?,NS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.400"";
+Message_UB := "">30.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ThCG,?,NS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.400"";
+Message_UB := "">30.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ThCG,?,NS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<35.000"";
+Message_UB := "">1500.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ThCG,?,NS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<350.000"";
+Message_UB := "">30000.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ThCG,?,NS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<7000.000"";
+Message_UB := "">300000.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ThCG,?,NS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<10500.000"";
+Message_UB := "">600000.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_ThCG,?,NS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<7000.000"";
+Message_UB := "">300000.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.623"";
+Message_UB := "">11.640"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.252"";
+Message_UB := "">13.350"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<9.884"";
+Message_UB := "">267.420"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<7.434"";
+Message_UB := "">243.840"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.252"";
+Message_UB := "">6.960"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<24.976"";
+Message_UB := "">858.600"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<56.875"";
+Message_UB := "">852.870"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PROG,?,NS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<107.737"";
+Message_UB := "">4030.500"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PRL,?,NS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<31.500"";
+Message_UB := "">1125.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PRL,?,NS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<41.300"";
+Message_UB := "">1857.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PRL,?,NS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<144.200"";
+Message_UB := "">13260.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PRL,?,NS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<26.600"";
+Message_UB := "">1290.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LH,?,NS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">103.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LH,?,NS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.330"";
+Message_UB := "">37.500"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LH,?,NS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<6.090"";
+Message_UB := "">228.900"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LH,?,NS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">50.700"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LH,?,NS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.200"";
+Message_UB := "">4.500"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LH,?,NS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<11.130"";
+Message_UB := "">162.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_LH,?,NS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.490"";
+Message_UB := "">16.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FSH,?,NS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.980"";
+Message_UB := "">54.300"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FSH,?,NS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.750"";
+Message_UB := "">30.600"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FSH,?,NS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.380"";
+Message_UB := "">100.200"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FSH,?,NS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.050"";
+Message_UB := "">27.300"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FSH,?,NS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.360"";
+Message_UB := "">0.900"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FSH,?,NS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<16.100"";
+Message_UB := "">348.900"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_E2,?,NS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<52.320"";
+Message_UB := "">438.300"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_E2,?,NS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.120"";
+Message_UB := "">1587.600"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_E2,?,NS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<164.150"";
+Message_UB := "">3927.300"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_E2,?,NS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<143.360"";
+Message_UB := "">2358.300"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_E2,?,NS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<52.320"";
+Message_UB := "">354.600"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TESTO,?,NS_Comment_TESTO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<5.880"";
+Message_UB := "">86.100"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TESTO,?,NS_Comment_TESTO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">7.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CORT,?,NS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<83.020"";
+Message_UB := "">1854.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CORT,?,NS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<59.710"";
+Message_UB := "">1378.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CORT,?,NS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<83.020"";
+Message_UB := "">1854.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CORT,?,NS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<59.710"";
+Message_UB := "">1378.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AFP,?,NS_Comment_AFP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.980"";
+Message_UB := "">20.100"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_AFP,?,NS_Comment_AFP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.980"";
+Message_UB := "">20.100"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CEA,?,NS_Comment_CEA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">30.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CEA,?,NS_Comment_CEA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">30.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA125,?,NS_Comment_CA125,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.400"";
+Message_UB := "">105.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA125,?,NS_Comment_CA125,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.400"";
+Message_UB := "">105.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA15-3,?,NS_Comment_CA15-3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">97.200"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA15-3,?,NS_Comment_CA15-3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.350"";
+Message_UB := "">97.200"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA19-9,?,NS_Comment_CA19-9,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.840"";
+Message_UB := "">111.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CA19-9,?,NS_Comment_CA19-9,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.840"";
+Message_UB := "">111.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PSA,?,NS_Comment_PSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.007"";
+Message_UB := "">12.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_PSA,?,NS_Comment_PSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.007"";
+Message_UB := "">12.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_cPSA,?,NS_Comment_cPSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.021"";
+Message_UB := "">10.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_cPSA,?,NS_Comment_cPSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.021"";
+Message_UB := "">10.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_iPTH,?,NS_Comment_iPTH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.022"";
+Message_UB := "">27.030"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_iPTH,?,NS_Comment_iPTH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.022"";
+Message_UB := "">27.030"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CTNI,?,NS_Comment_CTNI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.004"";
+Message_UB := "">0.180"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CTNI,?,NS_Comment_CTNI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.004"";
+Message_UB := "">0.180"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_MYO,?,NS_Comment_MYO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.100"";
+Message_UB := "">330.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_MYO,?,NS_Comment_MYO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.100"";
+Message_UB := "">330.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CK-MB,?,NS_Comment_CK-MB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.216"";
+Message_UB := "">15.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_CK-MB,?,NS_Comment_CK-MB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.216"";
+Message_UB := "">15.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BNP,?,NS_Comment_BNP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<15.000"";
+Message_UB := "">86.700"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BNP,?,NS_Comment_BNP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.406"";
+Message_UB := "">86.700"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BNP2,?,NS_Comment_BNP2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.400"";
+Message_UB := "">300.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_BNP2,?,NS_Comment_BNP2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.400"";
+Message_UB := "">300.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_T3,?,NS_Comment_T3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.644"";
+Message_UB := "">8.370"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_T3,?,NS_Comment_T3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.644"";
+Message_UB := "">8.370"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_T4,?,NS_Comment_T4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<40.670"";
+Message_UB := "">421.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_T4,?,NS_Comment_T4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<40.670"";
+Message_UB := "">421.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FT3,?,NS_Comment_FT3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.450"";
+Message_UB := "">19.500"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FT3,?,NS_Comment_FT3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<2.450"";
+Message_UB := "">19.500"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FT4,?,NS_Comment_FT4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<8.050"";
+Message_UB := "">68.100"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FT4,?,NS_Comment_FT4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<8.050"";
+Message_UB := "">68.100"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TSH,?,NS_Comment_TSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.385"";
+Message_UB := "">14.340"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_TSH,?,NS_Comment_TSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.385"";
+Message_UB := "">14.340"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_aTPO,?,NS_Comment_aTPO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<33.600"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_aTPO,?,NS_Comment_aTPO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<33.600"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_aTG,?,NS_Comment_aTG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<18.000"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_aTG,?,NS_Comment_aTG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<18.000"";
+Message_UB := "">180.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_Ferr,?,NS_Comment_Ferr,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<33.600"";
+Message_UB := "">2124.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_Ferr,?,NS_Comment_Ferr,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<15.400"";
+Message_UB := "">1920.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FOL,?,NS_Comment_FOL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<5.348"";
+Message_UB := "">36.570"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_FOL,?,NS_Comment_FOL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<5.348"";
+Message_UB := "">36.570"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_VB12,?,NS_Comment_VB12,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<109.200"";
+Message_UB := "">2016.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_VB12,?,NS_Comment_VB12,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<109.200"";
+Message_UB := "">2016.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_VitD,?,NS_Comment_VitD,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<21.000"";
+Message_UB := "">300.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_VitD,?,NS_Comment_VitD,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<21.000"";
+Message_UB := "">300.000"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_IRI,?,NS_Comment_IRI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.820"";
+Message_UB := "">112.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_IRI,?,NS_Comment_IRI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<1.820"";
+Message_UB := "">112.800"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_Cps,?,NS_Comment_Cps,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.567"";
+Message_UB := "">11.550"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+NS_Comment_Cps,?,NS_Comment_Cps,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<0.567"";
+Message_UB := "">11.550"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?

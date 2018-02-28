@@ -1,0 +1,16 @@
+Table.Name,Description,DataType,Definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_SiteFunction
+%% Exported on: 02/15/17 at 11:48:36
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Add_Thcg,Logical,"If .GetSampleLogLastLASEvent(FindLASChannelByName(""aptio""), SampleLogType[""LAS Processing Notification""], LASEventType[""Decapped""]) <> ?  and  .GetSampleLogLastLASEvent(FindLASChannelByName(""aptio""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]) <> ?Then
+     .GetRequest(""wait_thcg"").Omit(""wait_thcg"");
+     .ProcessRequest(""ThCG"");
+     .ProcessRequest(""park"");
+endif;
+RETURN True ;"

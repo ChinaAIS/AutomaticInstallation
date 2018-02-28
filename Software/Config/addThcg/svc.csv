@@ -1,0 +1,11 @@
+Name,InternalLanguage,Type,AutoStart,SeqNo,Description,SpecificOptions,LoginUser.LoginName,Host,Port,ProcessId,ApplicationRootFolder,LogVerbosity,LogToDatabase,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,RestartFailures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_Service
+%% Exported on: 02/15/17 at 11:52:16
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+General_Task_Scheduler,URL,Task scheduler,yes,?,General Task Scheduler,?,batch,?,3902,1936,?,High,no,1,Day,21,Day,10,yes,0

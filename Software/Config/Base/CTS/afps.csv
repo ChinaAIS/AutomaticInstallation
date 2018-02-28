@@ -1,0 +1,11 @@
+Function.Table.Name,Function.Mnemonic,ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_ActualFunctionParameterSet
+%% Exported on: 02/14/17 at 11:37:08
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+gp_Site,OnlineBackup,Online_Bckp_set

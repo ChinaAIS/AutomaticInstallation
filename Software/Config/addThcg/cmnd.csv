@@ -1,0 +1,11 @@
+Table.Name,Description,SkipQuerySetup,SkipFunctionSetup,UsePrivateBuffers,Query.Mnemonic,QueryParameterSet.ShortDescription,SortFunction.Description,Function.Mnemonic,FunctionParameterSet.ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_Command
+%% Exported on: 02/15/17 at 13:25:34
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,B4.Del_ThCG,no,no,no,Default,FindThcg,Add_Thcg,Type,?

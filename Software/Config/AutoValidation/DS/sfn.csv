@@ -1,0 +1,18 @@
+Table.Name,Description,DataType,Definition
+Sample,Eligible_TG_DS,Logical,"String strTestName;
+String strLISPreviousResult,strCurrentResult,strTestName;
+Fractional fLISPreviousResult,fCurrentResult,RESULT_VALUE_LIMIT;
+RESULT_VALUE_LIMIT :=10.00;
+strTestName :=""TG"";
+strPreviousResult := .GetRequest(strTestName).GetPreviousLocalResult(0).ParsedValue;
+strCurrentResult := .GetRequest(strTestName).GetResult(0).Value;
+If ? = strPreviousResult or ? = strCurrentResult Then
+    return False;
+Else
+    fPreviousResult := StringToFractional(strPreviousResult);
+    fCurrentResult:= StringToFractional(strCurrentResult);
+If (fPreviousResult < RESULT_VALUE_LIMIT) Then
+        Return True;
+    Endif;
+Endif;
+Return False;"

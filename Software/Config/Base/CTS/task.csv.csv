@@ -1,0 +1,2 @@
+Command.Table.Name,Command.Description,Name,StartDate,StartDayTime,EndDate,EndDayTime,Type,Interval,LatestRun,NextRun,Running,ExecutingService.Name,ExecutingSvcHost,ExecutingSvcProcessId,OnHoliday,OnMonday,OnTuesday,OnWednesday,OnThursday,OnFriday,OnSaturday,OnSunday,DayTypeInMonth,DayType,Day,Month,$ImportLog
+QCPopulation,ResetQCSeverity,ResetQCSeverity,2016/11/3,5:30:00,?,?,Daily,1,2017/1/14 05:30:00,2017/2/14 05:30:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January,Command not available

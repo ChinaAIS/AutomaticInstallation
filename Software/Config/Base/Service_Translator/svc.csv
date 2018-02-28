@@ -1,0 +1,22 @@
+Name,InternalLanguage,Type,AutoStart,SeqNo,Description,SpecificOptions,LoginUser.LoginName,Host,Port,ProcessId,ApplicationRootFolder,LogVerbosity,LogToDatabase,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,RestartFailures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_Service
+%% Exported on: 04/17/17 at 11:08:21
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Advia2400_Service_1_2,URL,Translator server,yes,?,Advia2400_Service_1_2,?,batch,?,3170,2216,?,High,no,1,Day,21,Day,10,yes,0
+Audit_Log_Purge_Task_Scheduler,URL,Task scheduler,yes,?,Audit_Log_Purge_Task_Scheduler,?,batch,?,3907,3960,?,High,no,1,Day,21,Day,10,yes,0
+CentaurXP_Service_1_2,URL,Translator server,yes,?,CentaurXP_Service_1_2,?,batch,?,3230,3932,?,High,no,1,Day,21,Day,10,yes,0
+ChemXPT_Service_1_2,URL,Translator server,yes,?,ChemXPT_Service_1_2,?,batch,?,3610,?,?,High,no,1,Day,21,Day,10,yes,0
+DB_Maintenance_Task_Scheduler,URL,Task scheduler,yes,?,DB_Maintenance_Task_Scheduler,?,batch,?,3906,2860,?,High,no,1,Day,21,Day,10,yes,0
+General_Task_Scheduler,URL,Task scheduler,yes,?,General Task Scheduler,?,batch,?,3902,3840,?,High,no,1,Day,21,Day,10,yes,0
+LAS_Download_Scheduler,URL,Task scheduler,yes,?,LAS_Download_Scheduler,?,batch,?,3905,3768,?,High,no,1,Day,21,Day,10,yes,0
+LIS_Service,URL,Translator server,yes,?,LIS Service,?,batch,?,3440,1496,?,High,no,1,Day,21,Day,10,yes,0
+LIS_Upload_Service,URL,Task scheduler,yes,?,LIS Upload Service,?,batch,?,3600,2184,?,High,no,1,Day,21,Day,10,yes,0
+OnlineBackup_Scheduler,URL,Task scheduler,yes,?,OnlineBackup_Scheduler,?,batch,?,3908,?,?,High,no,1,Day,21,Day,10,yes,0
+ServerAuto,XML,Translator server,yes,?,?,?,batch,?,3666,3548,?,High,no,2,Day,2,Day,?,yes,0
+XML_ControlService,XML,Translator server,yes,?,Dashboard Controller,?,batch,?,3510,3332,?,High,no,1,Day,21,Day,10,yes,0

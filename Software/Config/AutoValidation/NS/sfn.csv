@@ -1,0 +1,1297 @@
+Table.Name,Description,DataType,Definition
+Sample,Eligible_TC_NS,Logical,"String strTestName;
+strTestName :=""TC"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TC_NS,Logical,"String strTestName;
+strTestName :=""TC"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TG_NS,Logical,"String strTestName;
+strTestName :=""TG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TG_NS,Logical,"String strTestName;
+strTestName :=""TG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_HDL-C_NS,Logical,"String strTestName;
+strTestName :=""HDL-C"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_HDL-C_NS,Logical,"String strTestName;
+strTestName :=""HDL-C"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LDL-C_NS,Logical,"String strTestName;
+strTestName :=""LDL-C"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LDL-C_NS,Logical,"String strTestName;
+strTestName :=""LDL-C"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_APOA_NS,Logical,"String strTestName;
+strTestName :=""APOA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_APOA_NS,Logical,"String strTestName;
+strTestName :=""APOA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_APOB_NS,Logical,"String strTestName;
+strTestName :=""APOB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_APOB_NS,Logical,"String strTestName;
+strTestName :=""APOB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TP_NS,Logical,"String strTestName;
+strTestName :=""TP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TP_NS,Logical,"String strTestName;
+strTestName :=""TP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ALB_NS,Logical,"String strTestName;
+strTestName :=""ALB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ALB_NS,Logical,"String strTestName;
+strTestName :=""ALB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_GLB_NS,Logical,"String strTestName;
+strTestName :=""LAS_GLB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_GLB_NS,Logical,"String strTestName;
+strTestName :=""LAS_GLB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_A/G_NS,Logical,"String strTestName;
+strTestName :=""LAS_A/G"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_A/G_NS,Logical,"String strTestName;
+strTestName :=""LAS_A/G"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PA_NS,Logical,"String strTestName;
+strTestName :=""PA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PA_NS,Logical,"String strTestName;
+strTestName :=""PA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TBIL_NS,Logical,"String strTestName;
+strTestName :=""TBIL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TBIL_NS,Logical,"String strTestName;
+strTestName :=""TBIL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_DBIL_NS,Logical,"String strTestName;
+strTestName :=""DBIL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_DBIL_NS,Logical,"String strTestName;
+strTestName :=""DBIL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_IBIL_NS,Logical,"String strTestName;
+strTestName :=""LAS_IBIL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_IBIL_NS,Logical,"String strTestName;
+strTestName :=""LAS_IBIL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ALT_NS,Logical,"String strTestName;
+strTestName :=""ALT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ALT_NS,Logical,"String strTestName;
+strTestName :=""ALT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AST_NS,Logical,"String strTestName;
+strTestName :=""AST"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AST_NS,Logical,"String strTestName;
+strTestName :=""AST"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_L/S_NS,Logical,"String strTestName;
+strTestName :=""LAS_L/S"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_L/S_NS,Logical,"String strTestName;
+strTestName :=""LAS_L/S"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_GGT_NS,Logical,"String strTestName;
+strTestName :=""GGT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_GGT_NS,Logical,"String strTestName;
+strTestName :=""GGT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ALP_NS,Logical,"String strTestName;
+strTestName :=""ALP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ALP_NS,Logical,"String strTestName;
+strTestName :=""ALP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ALP_NS,Logical,"String strTestName;
+strTestName :=""ALP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_AFU_NS,Logical,"String strTestName;
+strTestName :=""LAS_AFU"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_AFU_NS,Logical,"String strTestName;
+strTestName :=""LAS_AFU"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TBA_NS,Logical,"String strTestName;
+strTestName :=""TBA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TBA_NS,Logical,"String strTestName;
+strTestName :=""TBA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_GLU_NS,Logical,"String strTestName;
+strTestName :=""GLU"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_GLU_NS,Logical,"String strTestName;
+strTestName :=""GLU"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BUN_NS,Logical,"String strTestName;
+strTestName :=""BUN"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BUN_NS,Logical,"String strTestName;
+strTestName :=""BUN"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BUN_NS,Logical,"String strTestName;
+strTestName :=""BUN"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BUN_NS,Logical,"String strTestName;
+strTestName :=""BUN"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CREA_NS,Logical,"String strTestName;
+strTestName :=""CREA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CREA_NS,Logical,"String strTestName;
+strTestName :=""CREA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CREA_NS,Logical,"String strTestName;
+strTestName :=""CREA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CREA_NS,Logical,"String strTestName;
+strTestName :=""CREA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_UA_NS,Logical,"String strTestName;
+strTestName :=""UA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_UA_NS,Logical,"String strTestName;
+strTestName :=""UA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA_NS,Logical,"String strTestName;
+strTestName :=""CA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA_NS,Logical,"String strTestName;
+strTestName :=""CA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_MG_NS,Logical,"String strTestName;
+strTestName :=""MG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_MG_NS,Logical,"String strTestName;
+strTestName :=""MG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_P_NS,Logical,"String strTestName;
+strTestName :=""P"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_P_NS,Logical,"String strTestName;
+strTestName :=""P"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_NA_NS,Logical,"String strTestName;
+strTestName :=""NA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_NA_NS,Logical,"String strTestName;
+strTestName :=""NA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_K_NS,Logical,"String strTestName;
+strTestName :=""K"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_K_NS,Logical,"String strTestName;
+strTestName :=""K"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CL_NS,Logical,"String strTestName;
+strTestName :=""CL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CL_NS,Logical,"String strTestName;
+strTestName :=""CL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_CO2_NS,Logical,"String strTestName;
+strTestName :=""LAS_CO2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_CO2_NS,Logical,"String strTestName;
+strTestName :=""LAS_CO2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_Fe_NS,Logical,"String strTestName;
+strTestName :=""Fe"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_Fe_NS,Logical,"String strTestName;
+strTestName :=""Fe"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AMY_S_NS,Logical,"String strTestName;
+strTestName :=""AMY_S"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AMY_S_NS,Logical,"String strTestName;
+strTestName :=""AMY_S"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_0hGLU_NS,Logical,"String strTestName;
+strTestName :=""LAS_0hGLU"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_0hGLU_NS,Logical,"String strTestName;
+strTestName :=""LAS_0hGLU"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_%HbAlc_NS,Logical,"String strTestName;
+strTestName :=""LAS_%HbAlc"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_%HbAlc_NS,Logical,"String strTestName;
+strTestName :=""LAS_%HbAlc"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_SFA_NS,Logical,"String strTestName;
+strTestName :=""SFA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_SFA_NS,Logical,"String strTestName;
+strTestName :=""SFA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_Random_NS,Logical,"String strTestName;
+strTestName :=""LAS_Random"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_Random_NS,Logical,"String strTestName;
+strTestName :=""LAS_Random"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CYSC_NS,Logical,"String strTestName;
+strTestName :=""CYSC"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CYSC_NS,Logical,"String strTestName;
+strTestName :=""CYSC"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CK_NS,Logical,"String strTestName;
+strTestName :=""CK"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CK_NS,Logical,"String strTestName;
+strTestName :=""CK"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AMON_NS,Logical,"String strTestName;
+strTestName :=""AMON"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AMON_NS,Logical,"String strTestName;
+strTestName :=""AMON"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_B-2MG_NS,Logical,"String strTestName;
+strTestName :=""B-2MG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_B-2MG_NS,Logical,"String strTestName;
+strTestName :=""B-2MG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ADA_NS,Logical,"String strTestName;
+strTestName :=""ADA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ADA_NS,Logical,"String strTestName;
+strTestName :=""ADA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LDH_NS,Logical,"String strTestName;
+strTestName :=""LDH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LDH_NS,Logical,"String strTestName;
+strTestName :=""LDH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_TSGF_NS,Logical,"String strTestName;
+strTestName :=""LAS_TSGF"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_TSGF_NS,Logical,"String strTestName;
+strTestName :=""LAS_TSGF"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LPa_NS,Logical,"String strTestName;
+strTestName :=""LPa"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LPa_NS,Logical,"String strTestName;
+strTestName :=""LPa"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LA_NS,Logical,"String strTestName;
+strTestName :=""LA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LA_NS,Logical,"String strTestName;
+strTestName :=""LA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LIP_NS,Logical,"String strTestName;
+strTestName :=""LIP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LIP_NS,Logical,"String strTestName;
+strTestName :=""LIP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PCHE_NS,Logical,"String strTestName;
+strTestName :=""PCHE"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PCHE_NS,Logical,"String strTestName;
+strTestName :=""PCHE"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_HCY_NS,Logical,"String strTestName;
+strTestName :=""HCY"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_HCY_NS,Logical,"String strTestName;
+strTestName :=""HCY"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_TRF_NS,Logical,"String strTestName;
+strTestName :=""LAS_TRF"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_TRF_NS,Logical,"String strTestName;
+strTestName :=""LAS_TRF"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_G6PD_NS,Logical,"String strTestName;
+strTestName :=""LAS_G6PD"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_G6PD_NS,Logical,"String strTestName;
+strTestName :=""LAS_G6PD"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_G6PD1_NS,Logical,"String strTestName;
+strTestName :=""LAS_G6PD1"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_G6PD1_NS,Logical,"String strTestName;
+strTestName :=""LAS_G6PD1"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_G6PD2_NS,Logical,"String strTestName;
+strTestName :=""LAS_G6PD2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_G6PD2_NS,Logical,"String strTestName;
+strTestName :=""LAS_G6PD2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_eGFRm_NS,Logical,"String strTestName;
+strTestName :=""LAS_eGFRm"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_eGFRf_NS,Logical,"String strTestName;
+strTestName :=""LAS_eGFRf"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_AGEm_NS,Logical,"String strTestName;
+strTestName :=""LAS_AGEm"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_AGEm_NS,Logical,"String strTestName;
+strTestName :=""LAS_AGEm"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_AGEf_NS,Logical,"String strTestName;
+strTestName :=""LAS_AGEf"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_AGEf_NS,Logical,"String strTestName;
+strTestName :=""LAS_AGEf"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ThCG_NS,Logical,"String strTestName;
+strTestName :=""ThCG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ThCG_NS,Logical,"String strTestName;
+strTestName :=""ThCG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ThCG_NS,Logical,"String strTestName;
+strTestName :=""ThCG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ThCG_NS,Logical,"String strTestName;
+strTestName :=""ThCG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ThCG_NS,Logical,"String strTestName;
+strTestName :=""ThCG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ThCG_NS,Logical,"String strTestName;
+strTestName :=""ThCG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_ThCG_NS,Logical,"String strTestName;
+strTestName :=""ThCG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PROG_NS,Logical,"String strTestName;
+strTestName :=""PROG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PRL_NS,Logical,"String strTestName;
+strTestName :=""PRL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PRL_NS,Logical,"String strTestName;
+strTestName :=""PRL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PRL_NS,Logical,"String strTestName;
+strTestName :=""PRL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PRL_NS,Logical,"String strTestName;
+strTestName :=""PRL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LH_NS,Logical,"String strTestName;
+strTestName :=""LH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LH_NS,Logical,"String strTestName;
+strTestName :=""LH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LH_NS,Logical,"String strTestName;
+strTestName :=""LH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LH_NS,Logical,"String strTestName;
+strTestName :=""LH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LH_NS,Logical,"String strTestName;
+strTestName :=""LH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LH_NS,Logical,"String strTestName;
+strTestName :=""LH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LH_NS,Logical,"String strTestName;
+strTestName :=""LH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FSH_NS,Logical,"String strTestName;
+strTestName :=""FSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FSH_NS,Logical,"String strTestName;
+strTestName :=""FSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FSH_NS,Logical,"String strTestName;
+strTestName :=""FSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FSH_NS,Logical,"String strTestName;
+strTestName :=""FSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FSH_NS,Logical,"String strTestName;
+strTestName :=""FSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FSH_NS,Logical,"String strTestName;
+strTestName :=""FSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_E2_NS,Logical,"String strTestName;
+strTestName :=""E2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_E2_NS,Logical,"String strTestName;
+strTestName :=""E2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_E2_NS,Logical,"String strTestName;
+strTestName :=""E2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_E2_NS,Logical,"String strTestName;
+strTestName :=""E2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_E2_NS,Logical,"String strTestName;
+strTestName :=""E2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TESTO_NS,Logical,"String strTestName;
+strTestName :=""TESTO"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TESTO_NS,Logical,"String strTestName;
+strTestName :=""TESTO"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CORT_NS,Logical,"String strTestName;
+strTestName :=""CORT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CORT_NS,Logical,"String strTestName;
+strTestName :=""CORT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CORT_NS,Logical,"String strTestName;
+strTestName :=""CORT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CORT_NS,Logical,"String strTestName;
+strTestName :=""CORT"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AFP_NS,Logical,"String strTestName;
+strTestName :=""AFP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_AFP_NS,Logical,"String strTestName;
+strTestName :=""AFP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CEA_NS,Logical,"String strTestName;
+strTestName :=""CEA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CEA_NS,Logical,"String strTestName;
+strTestName :=""CEA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA125_NS,Logical,"String strTestName;
+strTestName :=""CA125"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA125_NS,Logical,"String strTestName;
+strTestName :=""CA125"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA15-3_NS,Logical,"String strTestName;
+strTestName :=""CA15-3"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA15-3_NS,Logical,"String strTestName;
+strTestName :=""CA15-3"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA19-9_NS,Logical,"String strTestName;
+strTestName :=""CA19-9"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CA19-9_NS,Logical,"String strTestName;
+strTestName :=""CA19-9"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PSA_NS,Logical,"String strTestName;
+strTestName :=""PSA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_PSA_NS,Logical,"String strTestName;
+strTestName :=""PSA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_cPSA_NS,Logical,"String strTestName;
+strTestName :=""cPSA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_cPSA_NS,Logical,"String strTestName;
+strTestName :=""cPSA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_iPTH_NS,Logical,"String strTestName;
+strTestName :=""iPTH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_iPTH_NS,Logical,"String strTestName;
+strTestName :=""iPTH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_CsA_NS,Logical,"String strTestName;
+strTestName :=""LAS_CsA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_LAS_CsA_NS,Logical,"String strTestName;
+strTestName :=""LAS_CsA"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CTNI_NS,Logical,"String strTestName;
+strTestName :=""CTNI"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CTNI_NS,Logical,"String strTestName;
+strTestName :=""CTNI"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_MYO_NS,Logical,"String strTestName;
+strTestName :=""MYO"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_MYO_NS,Logical,"String strTestName;
+strTestName :=""MYO"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CK-MB_NS,Logical,"String strTestName;
+strTestName :=""CK-MB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_CK-MB_NS,Logical,"String strTestName;
+strTestName :=""CK-MB"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BNP_NS,Logical,"String strTestName;
+strTestName :=""BNP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BNP_NS,Logical,"String strTestName;
+strTestName :=""BNP"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BNP2_NS,Logical,"String strTestName;
+strTestName :=""BNP2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_BNP2_NS,Logical,"String strTestName;
+strTestName :=""BNP2"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_T3_NS,Logical,"String strTestName;
+strTestName :=""T3"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_T3_NS,Logical,"String strTestName;
+strTestName :=""T3"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_T4_NS,Logical,"String strTestName;
+strTestName :=""T4"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_T4_NS,Logical,"String strTestName;
+strTestName :=""T4"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FT3_NS,Logical,"String strTestName;
+strTestName :=""FT3"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FT3_NS,Logical,"String strTestName;
+strTestName :=""FT3"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FT4_NS,Logical,"String strTestName;
+strTestName :=""FT4"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FT4_NS,Logical,"String strTestName;
+strTestName :=""FT4"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TSH_NS,Logical,"String strTestName;
+strTestName :=""TSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_TSH_NS,Logical,"String strTestName;
+strTestName :=""TSH"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_aTPO_NS,Logical,"String strTestName;
+strTestName :=""aTPO"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_aTPO_NS,Logical,"String strTestName;
+strTestName :=""aTPO"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_aTG_NS,Logical,"String strTestName;
+strTestName :=""aTG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_aTG_NS,Logical,"String strTestName;
+strTestName :=""aTG"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_Ferr_NS,Logical,"String strTestName;
+strTestName :=""Ferr"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_Ferr_NS,Logical,"String strTestName;
+strTestName :=""Ferr"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FOL_NS,Logical,"String strTestName;
+strTestName :=""FOL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_FOL_NS,Logical,"String strTestName;
+strTestName :=""FOL"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_VB12_NS,Logical,"String strTestName;
+strTestName :=""VB12"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_VB12_NS,Logical,"String strTestName;
+strTestName :=""VB12"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_VitD_NS,Logical,"String strTestName;
+strTestName :=""VitD"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_VitD_NS,Logical,"String strTestName;
+strTestName :=""VitD"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_IRI_NS,Logical,"String strTestName;
+strTestName :=""IRI"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_IRI_NS,Logical,"String strTestName;
+strTestName :=""IRI"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_Cps_NS,Logical,"String strTestName;
+strTestName :=""Cps"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"
+Sample,Eligible_Cps_NS,Logical,"String strTestName;
+strTestName :=""Cps"";
+If .GetRequest(strTestName).GetLISPreviousResult(0).ResultValue <> ? And (Matches(.GetRequest(strTestName).Result.Value,""^[0-9.]+$"", No) Or Matches(.GetRequest(strTestName).Result.Value, ""[^0]"", No))  Then
+   Return False;
+Endif;
+Return True;"

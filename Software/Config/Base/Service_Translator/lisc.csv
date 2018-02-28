@@ -1,0 +1,11 @@
+Name,InboundTranslator.Name,OutboundTranslator.Name,FTPHost,FTPPort,FTPTimeOut,CodingSystem.Name,ImagePrefix,ImageFolder,UploadEuropeanNumbers,UploadGraphs,UploadImages,UploadInstrumentFlags,UploadPatientComments,UplRsltParseComments,UplRsltInstComments,UplRsltUserComments,UplRsltRangeComments,UplQCRsltParseCommnts,UplQCRsltInstComments,UplQCRsltUserComments,DynamicQCInstruments,UploadReagentInfo,UploadSampleComments,UploadValidationUser,ExpandTextOnUpload,UploadAspectResults,FullSampleDownload,CheckUnitsLISPrevRslt,OnEndOrderMessage.Description,BarcodeTranslation.Description,AlternateLISUploads.Description
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: LISChannel
+%% Exported on: 04/17/17 at 11:07:31
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Site default LISChannel,LIS_In_Translator,LIS_Out_Translator,?,21,300,?,?,?,no,no,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,yes,yes,yes,yes,no,yes,ADD_Park,?,?

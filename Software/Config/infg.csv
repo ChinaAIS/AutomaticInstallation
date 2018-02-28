@@ -1,0 +1,342 @@
+Instrument.Name,Code,Expansion,PatientSeverity,ControlSeverity,LISUpload,Report
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: InstrumentFlag
+%% Exported on: 11/07/17 at 14:26:30
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Advia2400_1,*,*,1,1,yes,yes
+Advia2400_1,/,/,1,1,yes,yes
+Advia2400_1,B,B,1,1,yes,yes
+Advia2400_1,C,C,1,1,yes,yes
+Advia2400_1,D,D,1,1,yes,yes
+Advia2400_1,d,d,1,1,yes,yes
+Advia2400_1,E,E,1,1,yes,yes
+Advia2400_1,H,H,1,1,yes,yes
+Advia2400_1,h,h,1,1,yes,yes
+Advia2400_1,I,I,1,1,yes,yes
+Advia2400_1,L,L,1,1,yes,yes
+Advia2400_1,l,l,1,1,yes,yes
+Advia2400_1,N,N,1,1,yes,yes
+Advia2400_1,n,n,1,1,yes,yes
+Advia2400_1,P,P,1,1,yes,yes
+Advia2400_1,r,r,1,1,yes,yes
+Advia2400_1,R,R,1,1,yes,yes
+Advia2400_1,s,s,1,1,yes,yes
+Advia2400_1,S,S,1,1,yes,yes
+Advia2400_1,t,t,1,1,yes,yes
+Advia2400_1,T,T,1,1,yes,yes
+Advia2400_1,u,u,1,1,yes,yes
+Advia2400_1,U,U,1,1,yes,yes
+CentaurXP_1,< Conc Range,< Conc Range,1,1,yes,yes
+CentaurXP_1,< Dilution Pt,< Dilution Pt,1,1,yes,yes
+CentaurXP_1,< Index Range,< Index Range,1,1,yes,yes
+CentaurXP_1,< Linearity,< Linearity,1,1,yes,yes
+CentaurXP_1,<,Under Range,1,1,yes,yes
+CentaurXP_1,> Conc Range,> Conc Range,1,1,yes,yes
+CentaurXP_1,> Dilution Pt,> Dilution Pt,1,1,yes,yes
+CentaurXP_1,> Index Range,> Index Range,1,1,yes,yes
+CentaurXP_1,> Linearity,> Linearity,1,1,yes,yes
+CentaurXP_1,>,Over Range,1,1,yes,yes
+CentaurXP_1,Above Check,Above Check,1,1,yes,yes
+CentaurXP_1,Autorepeat,Autorepeat,1,1,yes,yes
+CentaurXP_1,Below Check,Below Check,1,1,yes,yes
+CentaurXP_1,Cal Accepted,Cal Accepted,1,1,yes,yes
+CentaurXP_1,Cal Assigned,Cal Assigned,1,1,yes,yes
+CentaurXP_1,Cal Invalid,Cal Invalid,1,1,yes,yes
+CentaurXP_1,Clot detected,Clot detected,1,1,yes,yes
+CentaurXP_1,Conf N/A,Conf N/A,1,1,yes,yes
+CentaurXP_1,Ctrl Br Restricted,Restricted Control Bracketed,1,1,yes,yes
+CentaurXP_1,Ctrl Bracketed,Control Bracketed,1,1,yes,yes
+CentaurXP_1,Diluted,Diluted,1,1,yes,yes
+CentaurXP_1,Edited,Edited,1,1,yes,yes
+CentaurXP_1,Entered,Entered,1,1,yes,yes
+CentaurXP_1,Excluded,Excluded,1,1,yes,yes
+CentaurXP_1,High CV,High CV,1,1,yes,yes
+CentaurXP_1,H,High,1,1,yes,yes
+CentaurXP_1,Insufficient,Insufficient,1,1,yes,yes
+CentaurXP_1,Integrity Error,Integrity Error,1,1,yes,yes
+CentaurXP_1,Investigational,Investigational,1,1,yes,yes
+CentaurXP_1,L,Low,1,1,yes,yes
+CentaurXP_1,Manual Dilution,Manual Dilution,1,1,yes,yes
+CentaurXP_1,Material Expired,Material Expired,1,1,yes,yes
+CentaurXP_1,No Cal Lot Match,No Cal Lot Match,1,1,yes,yes
+CentaurXP_1,No Calculation,No Calculation,1,1,yes,yes
+CentaurXP_1,No Dil Allowed,No Dil Allowed,1,1,yes,yes
+CentaurXP_1,No Lot Match,No Lot Match,1,1,yes,yes
+CentaurXP_1,No Reagent,No Reagent,1,1,yes,yes
+CentaurXP_1,Operator Entered,Operator Entered,1,1,yes,yes
+CentaurXP_1,Out,Out,1,1,yes,yes
+CentaurXP_1,Overdiluted,Overdiluted,1,1,yes,yes
+CentaurXP_1,Redilute,Redilute,1,1,yes,yes
+CentaurXP_1,Repeated,Repeated,1,1,yes,yes
+CentaurXP_1,Restricted,Restricted,1,1,yes,yes
+CentaurXP_1,Signal Error,Signal Error,1,1,yes,yes
+CentaurXP_1,Waived,Waived,1,1,yes,yes
+Immulite2000XPi_1,L,Below Normal,1,1,yes,yes
+Immulite2000XPi_1,H,Above Normal,1,1,yes,yes
+Immulite2000XPi_1,>,Above readable limit,1,1,yes,yes
+Immulite2000XPi_1,<,Below readable limit,1,1,yes,yes
+Immulite2000XPi_1,N,Normal,1,1,yes,yes
+Advia2400_2,*,*,1,1,yes,yes
+Advia2400_2,/,/,1,1,yes,yes
+Advia2400_2,B,B,1,1,yes,yes
+Advia2400_2,C,C,1,1,yes,yes
+Advia2400_2,D,D,1,1,yes,yes
+Advia2400_2,E,E,1,1,yes,yes
+Advia2400_2,H,H,1,1,yes,yes
+Advia2400_2,I,I,1,1,yes,yes
+Advia2400_2,L,L,1,1,yes,yes
+Advia2400_2,N,N,1,1,yes,yes
+Advia2400_2,P,P,1,1,yes,yes
+Advia2400_2,R,R,1,1,yes,yes
+Advia2400_2,S,S,1,1,yes,yes
+Advia2400_2,T,T,1,1,yes,yes
+Advia2400_2,U,U,1,1,yes,yes
+Advia2400_2,d,d,1,1,yes,yes
+Advia2400_2,h,h,1,1,yes,yes
+Advia2400_2,l,l,1,1,yes,yes
+Advia2400_2,n,n,1,1,yes,yes
+Advia2400_2,r,r,1,1,yes,yes
+Advia2400_2,s,s,1,1,yes,yes
+Advia2400_2,t,t,1,1,yes,yes
+Advia2400_2,u,u,1,1,yes,yes
+Advia2400_3,*,*,5,5,yes,yes
+Advia2400_3,/,/,1,1,yes,yes
+Advia2400_3,B,B,1,1,yes,yes
+Advia2400_3,C,C,1,1,yes,yes
+Advia2400_3,D,D,1,1,yes,yes
+Advia2400_3,E,E,1,1,yes,yes
+Advia2400_3,H,H,1,1,yes,yes
+Advia2400_3,I,I,1,1,yes,yes
+Advia2400_3,L,L,1,1,yes,yes
+Advia2400_3,N,N,1,1,yes,yes
+Advia2400_3,P,P,1,1,yes,yes
+Advia2400_3,R,R,1,1,yes,yes
+Advia2400_3,S,S,1,1,yes,yes
+Advia2400_3,T,T,1,1,yes,yes
+Advia2400_3,U,U,1,1,yes,yes
+Advia2400_3,d,d,5,5,yes,yes
+Advia2400_3,h,h,1,1,yes,yes
+Advia2400_3,l,l,1,1,yes,yes
+Advia2400_3,n,n,1,1,yes,yes
+Advia2400_3,r,r,1,1,yes,yes
+Advia2400_3,s,s,1,1,yes,yes
+Advia2400_3,t,t,1,1,yes,yes
+Advia2400_3,u,u,5,5,yes,yes
+Advia2400_4,*,*,5,5,yes,yes
+Advia2400_4,/,/,1,1,yes,yes
+Advia2400_4,B,B,1,1,yes,yes
+Advia2400_4,C,C,1,1,yes,yes
+Advia2400_4,D,D,1,1,yes,yes
+Advia2400_4,E,E,1,1,yes,yes
+Advia2400_4,H,H,1,1,yes,yes
+Advia2400_4,I,I,1,1,yes,yes
+Advia2400_4,L,L,1,1,yes,yes
+Advia2400_4,N,N,1,1,yes,yes
+Advia2400_4,P,P,1,1,yes,yes
+Advia2400_4,R,R,1,1,yes,yes
+Advia2400_4,S,S,1,1,yes,yes
+Advia2400_4,T,T,1,1,yes,yes
+Advia2400_4,U,U,1,1,yes,yes
+Advia2400_4,d,d,5,5,yes,yes
+Advia2400_4,h,h,1,1,yes,yes
+Advia2400_4,l,l,1,1,yes,yes
+Advia2400_4,n,n,1,1,yes,yes
+Advia2400_4,r,r,1,1,yes,yes
+Advia2400_4,s,s,1,1,yes,yes
+Advia2400_4,t,t,1,1,yes,yes
+Advia2400_4,u,u,5,5,yes,yes
+Advia2400_5,*,*,5,5,yes,yes
+Advia2400_5,/,/,1,1,yes,yes
+Advia2400_5,B,B,1,1,yes,yes
+Advia2400_5,C,C,1,1,yes,yes
+Advia2400_5,D,D,1,1,yes,yes
+Advia2400_5,E,E,1,1,yes,yes
+Advia2400_5,H,H,1,1,yes,yes
+Advia2400_5,I,I,1,1,yes,yes
+Advia2400_5,L,L,1,1,yes,yes
+Advia2400_5,N,N,1,1,yes,yes
+Advia2400_5,P,P,1,1,yes,yes
+Advia2400_5,R,R,1,1,yes,yes
+Advia2400_5,S,S,1,1,yes,yes
+Advia2400_5,T,T,1,1,yes,yes
+Advia2400_5,U,U,1,1,yes,yes
+Advia2400_5,d,d,5,5,yes,yes
+Advia2400_5,h,h,1,1,yes,yes
+Advia2400_5,l,l,1,1,yes,yes
+Advia2400_5,n,n,1,1,yes,yes
+Advia2400_5,r,r,1,1,yes,yes
+Advia2400_5,s,s,1,1,yes,yes
+Advia2400_5,t,t,1,1,yes,yes
+Advia2400_5,u,u,5,5,yes,yes
+Advia2400_6,*,*,5,5,yes,yes
+Advia2400_6,/,/,1,1,yes,yes
+Advia2400_6,B,B,1,1,yes,yes
+Advia2400_6,C,C,1,1,yes,yes
+Advia2400_6,D,D,1,1,yes,yes
+Advia2400_6,E,E,1,1,yes,yes
+Advia2400_6,H,H,1,1,yes,yes
+Advia2400_6,I,I,1,1,yes,yes
+Advia2400_6,L,L,1,1,yes,yes
+Advia2400_6,N,N,1,1,yes,yes
+Advia2400_6,P,P,1,1,yes,yes
+Advia2400_6,R,R,1,1,yes,yes
+Advia2400_6,S,S,1,1,yes,yes
+Advia2400_6,T,T,1,1,yes,yes
+Advia2400_6,U,U,1,1,yes,yes
+Advia2400_6,d,d,5,5,yes,yes
+Advia2400_6,h,h,1,1,yes,yes
+Advia2400_6,l,l,1,1,yes,yes
+Advia2400_6,n,n,1,1,yes,yes
+Advia2400_6,r,r,1,1,yes,yes
+Advia2400_6,s,s,1,1,yes,yes
+Advia2400_6,t,t,1,1,yes,yes
+Advia2400_6,u,u,5,5,yes,yes
+CentaurXP_2,<,Under Range,1,1,yes,yes
+CentaurXP_2,< Conc Range,< Conc Range,1,1,yes,yes
+CentaurXP_2,< Dilution Pt,< Dilution Pt,1,1,yes,yes
+CentaurXP_2,< Index Range,< Index Range,1,1,yes,yes
+CentaurXP_2,< Linearity,< Linearity,1,1,yes,yes
+CentaurXP_2,>,Over Range,1,1,yes,yes
+CentaurXP_2,> Conc Range,> Conc Range,1,1,yes,yes
+CentaurXP_2,> Dilution Pt,> Dilution Pt,1,1,yes,yes
+CentaurXP_2,> Index Range,> Index Range,1,1,yes,yes
+CentaurXP_2,> Linearity,> Linearity,1,1,yes,yes
+CentaurXP_2,Above Check,Above Check,1,1,yes,yes
+CentaurXP_2,Autorepeat,Autorepeat,1,1,yes,yes
+CentaurXP_2,Below Check,Below Check,1,1,yes,yes
+CentaurXP_2,Cal Accepted,Cal Accepted,1,1,yes,yes
+CentaurXP_2,Cal Assigned,Cal Assigned,1,1,yes,yes
+CentaurXP_2,Cal Invalid,Cal Invalid,1,1,yes,yes
+CentaurXP_2,Clot detected,Clot detected,1,1,yes,yes
+CentaurXP_2,Conf N/A,Conf N/A,1,1,yes,yes
+CentaurXP_2,Ctrl Br Restricted,Restricted Control Bracketed,1,1,yes,yes
+CentaurXP_2,Ctrl Bracketed,Control Bracketed,1,1,yes,yes
+CentaurXP_2,Diluted,Diluted,1,1,yes,yes
+CentaurXP_2,Edited,Edited,1,1,yes,yes
+CentaurXP_2,Entered,Entered,1,1,yes,yes
+CentaurXP_2,Excluded,Excluded,1,1,yes,yes
+CentaurXP_2,H,High,1,1,yes,yes
+CentaurXP_2,High CV,High CV,1,1,yes,yes
+CentaurXP_2,Insufficient,Insufficient,1,1,yes,yes
+CentaurXP_2,Integrity Error,Integrity Error,1,1,yes,yes
+CentaurXP_2,Investigational,Investigational,1,1,yes,yes
+CentaurXP_2,L,Low,1,1,yes,yes
+CentaurXP_2,Manual Dilution,Manual Dilution,1,1,yes,yes
+CentaurXP_2,Material Expired,Material Expired,1,1,yes,yes
+CentaurXP_2,No Cal Lot Match,No Cal Lot Match,1,1,yes,yes
+CentaurXP_2,No Calculation,No Calculation,1,1,yes,yes
+CentaurXP_2,No Dil Allowed,No Dil Allowed,1,1,yes,yes
+CentaurXP_2,No Lot Match,No Lot Match,1,1,yes,yes
+CentaurXP_2,No Reagent,No Reagent,1,1,yes,yes
+CentaurXP_2,Operator Entered,Operator Entered,1,1,yes,yes
+CentaurXP_2,Out,Out,1,1,yes,yes
+CentaurXP_2,Overdiluted,Overdiluted,1,1,yes,yes
+CentaurXP_2,Redilute,Redilute,1,1,yes,yes
+CentaurXP_2,Repeated,Repeated,1,1,yes,yes
+CentaurXP_2,Restricted,Restricted,1,1,yes,yes
+CentaurXP_2,Signal Error,Signal Error,1,1,yes,yes
+CentaurXP_2,Waived,Waived,1,1,yes,yes
+CentaurXP_3,<,Under Range,1,1,yes,yes
+CentaurXP_3,< Conc Range,< Conc Range,1,1,yes,yes
+CentaurXP_3,< Dilution Pt,< Dilution Pt,1,1,yes,yes
+CentaurXP_3,< Index Range,< Index Range,1,1,yes,yes
+CentaurXP_3,< Linearity,< Linearity,1,1,yes,yes
+CentaurXP_3,>,Over Range,1,1,yes,yes
+CentaurXP_3,> Conc Range,> Conc Range,1,1,yes,yes
+CentaurXP_3,> Dilution Pt,> Dilution Pt,1,1,yes,yes
+CentaurXP_3,> Index Range,> Index Range,1,1,yes,yes
+CentaurXP_3,> Linearity,> Linearity,1,1,yes,yes
+CentaurXP_3,Above Check,Above Check,1,1,yes,yes
+CentaurXP_3,Autorepeat,Autorepeat,1,1,yes,yes
+CentaurXP_3,Below Check,Below Check,1,1,yes,yes
+CentaurXP_3,Cal Accepted,Cal Accepted,1,1,yes,yes
+CentaurXP_3,Cal Assigned,Cal Assigned,1,1,yes,yes
+CentaurXP_3,Cal Invalid,Cal Invalid,1,1,yes,yes
+CentaurXP_3,Clot detected,Clot detected,1,1,yes,yes
+CentaurXP_3,Conf N/A,Conf N/A,1,1,yes,yes
+CentaurXP_3,Ctrl Br Restricted,Restricted Control Bracketed,1,1,yes,yes
+CentaurXP_3,Ctrl Bracketed,Control Bracketed,1,1,yes,yes
+CentaurXP_3,Diluted,Diluted,1,1,yes,yes
+CentaurXP_3,Edited,Edited,1,1,yes,yes
+CentaurXP_3,Entered,Entered,1,1,yes,yes
+CentaurXP_3,Excluded,Excluded,1,1,yes,yes
+CentaurXP_3,H,High,1,1,yes,yes
+CentaurXP_3,High CV,High CV,1,1,yes,yes
+CentaurXP_3,Insufficient,Insufficient,1,1,yes,yes
+CentaurXP_3,Integrity Error,Integrity Error,1,1,yes,yes
+CentaurXP_3,Investigational,Investigational,1,1,yes,yes
+CentaurXP_3,L,Low,1,1,yes,yes
+CentaurXP_3,Manual Dilution,Manual Dilution,1,1,yes,yes
+CentaurXP_3,Material Expired,Material Expired,1,1,yes,yes
+CentaurXP_3,No Cal Lot Match,No Cal Lot Match,1,1,yes,yes
+CentaurXP_3,No Calculation,No Calculation,1,1,yes,yes
+CentaurXP_3,No Dil Allowed,No Dil Allowed,1,1,yes,yes
+CentaurXP_3,No Lot Match,No Lot Match,1,1,yes,yes
+CentaurXP_3,No Reagent,No Reagent,1,1,yes,yes
+CentaurXP_3,Operator Entered,Operator Entered,1,1,yes,yes
+CentaurXP_3,Out,Out,1,1,yes,yes
+CentaurXP_3,Overdiluted,Overdiluted,1,1,yes,yes
+CentaurXP_3,Redilute,Redilute,1,1,yes,yes
+CentaurXP_3,Repeated,Repeated,1,1,yes,yes
+CentaurXP_3,Restricted,Restricted,1,1,yes,yes
+CentaurXP_3,Signal Error,Signal Error,1,1,yes,yes
+CentaurXP_3,Waived,Waived,1,1,yes,yes
+Advia2400_3,A,A,1,1,yes,yes
+Advia2400_3,b,b,1,1,yes,yes
+Advia2400_3,F,F,1,1,yes,yes
+Advia2400_3,G,G,1,1,yes,yes
+Advia2400_3,K,K,5,5,yes,yes
+Advia2400_3,k,k,1,1,yes,yes
+Advia2400_3,j,j,1,1,yes,yes
+Advia2400_3,M,M,1,1,yes,yes
+Advia2400_3,Q,Q,1,1,yes,yes
+Advia2400_1,A,A,1,1,yes,yes
+Advia2400_1,b,b,1,1,yes,yes
+Advia2400_1,F,F,1,1,yes,yes
+Advia2400_1,G,G,1,1,yes,yes
+Advia2400_1,K,K,1,1,yes,yes
+Advia2400_1,k,k,1,1,yes,yes
+Advia2400_1,j,j,1,1,yes,yes
+Advia2400_1,M,M,1,1,yes,yes
+Advia2400_1,Q,Q,1,1,yes,yes
+Advia2400_2,A,A,1,1,yes,yes
+Advia2400_2,b,b,1,1,yes,yes
+Advia2400_2,F,F,1,1,yes,yes
+Advia2400_2,G,G,1,1,yes,yes
+Advia2400_2,K,K,1,1,yes,yes
+Advia2400_2,k,k,1,1,yes,yes
+Advia2400_2,j,j,1,1,yes,yes
+Advia2400_2,M,M,1,1,yes,yes
+Advia2400_2,Q,Q,1,1,yes,yes
+Advia2400_4,A,A,1,1,yes,yes
+Advia2400_4,b,b,1,1,yes,yes
+Advia2400_4,F,F,1,1,yes,yes
+Advia2400_4,G,G,1,1,yes,yes
+Advia2400_4,K,K,5,5,yes,yes
+Advia2400_4,k,k,1,1,yes,yes
+Advia2400_4,j,j,1,1,yes,yes
+Advia2400_4,M,M,1,1,yes,yes
+Advia2400_4,Q,Q,1,1,yes,yes
+Advia2400_5,A,A,1,1,yes,yes
+Advia2400_5,b,b,1,1,yes,yes
+Advia2400_5,F,F,1,1,yes,yes
+Advia2400_5,G,G,1,1,yes,yes
+Advia2400_5,K,K,5,5,yes,yes
+Advia2400_5,k,k,1,1,yes,yes
+Advia2400_5,j,j,1,1,yes,yes
+Advia2400_5,M,M,1,1,yes,yes
+Advia2400_5,Q,Q,1,1,yes,yes
+Advia2400_6,A,A,1,1,yes,yes
+Advia2400_6,b,b,1,1,yes,yes
+Advia2400_6,F,F,1,1,yes,yes
+Advia2400_6,G,G,1,1,yes,yes
+Advia2400_6,k,k,1,1,yes,yes
+Advia2400_6,K,K,5,5,yes,yes
+Advia2400_6,j,j,1,1,yes,yes
+Advia2400_6,M,M,1,1,yes,yes
+Advia2400_6,Q,Q,1,1,yes,yes
