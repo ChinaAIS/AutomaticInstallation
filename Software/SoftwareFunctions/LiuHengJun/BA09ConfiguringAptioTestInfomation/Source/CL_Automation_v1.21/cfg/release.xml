@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+Release structure
+Do not modify any of these elements unless you know what you are doing!
+-->
+<releases>
+    <release id="clv15_03_win2k3">
+		<shortcuts>
+			<shortcut id="step_0_auditWin2k3" target="bin\cash.exe" args="auditWin2k3.csh" descr="Audit the Win2k3 OS for Win2k8 upgrade"/>
+		</shortcuts>
+	</release>
+	<release id="clv15_03_win2k8">
+		<shortcuts>
+			<shortcut id="step_1_initWin2k8_A" target="bin\cash.exe" args="disableUAC.csh" descr="Disable the UAC"/>
+			<shortcut id="step_2_setSiteSpecificData" target="C:\Windows\System32\notepad.exe" args="..\library\scripts\include\siteDataCLv15Win2k8.inc" descr="Configure the site specific data"/>
+			<shortcut id="step_3_initWin2k8_B" target="bin\cash.exe"  args="initWin2k8.csh" descr="Initialize Win2k8 for product configuration"/>
+			<shortcut id="step_4_confWin2k8" target="bin\cash.exe"  args="confWin2k8Common.csh" descr="Configure the common settings for Win2k8"/>
+			<shortcut id="step_5_installSRS" target="bin\cash.exe"  args="installSRS.csh" descr="Install the SRS application components"/>
+			<shortcut id="step_6_installProgress" target="bin\cash.exe"  args="installProgress_v11_1.csh" descr="Invoke the Progress 11.1 installer"/>
+			<shortcut id="step_7_installCentralinkBase" target="bin\cash.exe"  args="installCentralink_v15Base.csh" descr="Install Centralink v15 base release"/>
+			<shortcut id="step_8_installCentralinkV15.0.3" target="bin\cash.exe"  args="installCentralink_v15_0_3.csh" descr="Install Centralink v15.0.3"/>
+			<shortcut id="step_9_postCentralinkInstall" target="bin\cash.exe"  args="postWin2k8CentralinkInstall.csh" descr="Post Centralink installation settings"/>
+			<shortcut id="optional_confNTPServer" target="bin\cash.exe"  args="confTimeSync.csh" descr="Configure Centralink Server for NTP server"/>
+			<shortcut id="optional_enableBasicRDS" target="bin\cash.exe"  args="enableRDSBasic.csh" descr="Enable basic RDS support"/>
+			<shortcut id="optional_createTimeChanger" target="bin\cash.exe"  args="createTimeChangerUser.csh" descr="Create the timechanger user"/>
+			<shortcut id="optional_installHematology" target="bin\cash.exe"  args="installHematology.csh" descr="Configure the system for Hematatology"/>
+			<shortcut id="optional_installCentralinkOpGuide" target="bin\cash.exe"  args="installCentralinkOpGuide.csh" descr="Install the Centralink Op Guide"/>
+			<shortcut id="optional_installMcAfee" target="bin\cash.exe"  args="installMcAfee.csh" descr="Install the McAfee antivirus software"/>
+		</shortcuts>
+	</release>
+	<release id="clv16_01">
+		<shortcuts>
+			<shortcut id="step_1_initWin2k8_A" target="bin\cash.exe" args="disableUAC.csh" descr="Disable the UAC"/>
+			<shortcut id="step_2_setSRSSpecificData" target="C:\Windows\System32\notepad.exe" args="..\library\scripts\include\siteDataCLv16.inc" descr="Configure the SRS specific data"/>
+			<shortcut id="step_3_initWin2k8_B" target="bin\cash.exe"  args="initWin2k8.csh" descr="Initialize Win2k8 for product configuration"/>
+			<shortcut id="step_4_installSRS" target="bin\cash.exe"  args="installSRS.csh" descr="Install the SRS application components"/>
+			<shortcut id="step_5_setLabSpecificData" target="C:\Windows\System32\notepad.exe" args="..\library\scripts\include\siteDataCLv16.inc" descr="Configure the SRS specific data"/>
+			<shortcut id="step_6_confWin2k8" target="bin\cash.exe"  args="confWin2k8Common.csh" descr="Configure the common settings for Win2k8"/>
+			<shortcut id="step_7_installProgress" target="bin\cash.exe"  args="installProgress_v11.csh" descr="Invoke the Progress 11.3 and SP3 installers"/>
+			<shortcut id="step_8_installCentralinkBase" target="bin\cash.exe"  args="installCentralink_v16Base.csh" descr="Install Centralink v16 base release"/>
+			<shortcut id="step_9_postCentralinkInstall" target="bin\cash.exe"  args="postCentralinkV16Install.csh" descr="Post Centralink installation settings"/>
+			<shortcut id="optional_confNTPServer" target="bin\cash.exe"  args="confTimeSync.csh" descr="Configure Centralink Server for NTP server"/>
+			<shortcut id="optional_installHematology" target="bin\cash.exe"  args="installHematology.csh" descr="Configure the system for Hematology"/>
+			<shortcut id="optional_installDmsHematology" target="bin\cash.exe"  args="installDmsHematology.csh" descr="Configure the system for DMS Hematology"/>
+			<shortcut id="optional_installMcAfee" target="bin\cash.exe"  args="installMcAfee.csh" descr="Install the McAfee antivirus software"/>
+			<shortcut id="optional_genAptioConfig" target="bin\cash.exe"  args="genAptioConfig.csh" descr="Generate Aptio configuration files from CentraLink configuration"/>
+			<shortcut id="optional_genDmsConfig" target="bin\cash.exe"  args="genDmsConfig.csh" descr="Generate DMS configuration files from CentraLink configuration"/>
+		</shortcuts>
+	</release>
+</releases>
+        

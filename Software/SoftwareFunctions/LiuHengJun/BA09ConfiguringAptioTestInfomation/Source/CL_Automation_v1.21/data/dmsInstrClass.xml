@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<translationMaps>
+	<translationMap id="ClInstrumentNameToDmsClass" format="_VALUE_KEY_" descr="The user defined translation map between the CentraLink instrument names and the DMS instrument classes">
+		<!-- The following table defines the DMS instrument class label to the CentraLink instrument names.          
+			 Each DMS instrument class is defined in a seperate xml element below.                                   
+			 Assign each instrument name to the appropriate DMS instrument class element using a CSV list.			
+		     For Example:                                                                                            
+			 There are two instruments named "Advia2120_1" and "Advia2120_2" in the CentraLink Instruments table.
+			 Those instruments need to be defined in the appropriate DMS instrument class entry as defined below.
+					<ADV2120> Advia2120_1, Advia2120_2 </ADV2120>						
+			 NOTE:  Each entry will have anchor whitespace trimmed, whitespace within the values will be preserved.	
+			 NOTE:  The existing entries can be left in place; there are here for an example and will cause no harm. 
+			 NOTE:  The INPECO element defines the CentraLink LasChannel Name. -->
+		<ACL300>		
+		</ACL300>
+		
+		<ACLTOP>
+		</ACLTOP>
+		
+		<ADV1800>
+			Advia1650_1, Advia1800_1
+		</ADV1800>
+		
+		<ADV2120>
+			Advia2120_1, Advia2120_2
+		</ADV2120>
+		
+		<ADV2120LAS>
+		</ADV2120LAS>
+		
+		<ADVXPT>
+			Chemistry_XPT_1, Chemistry_XPT_2, CentaurXPT_1, CentaurXPT_2
+		</ADVXPT>
+		
+		<AIA2000>
+		</AIA2000>
+		
+		<ALIFAX>
+		</ALIFAX>
+		
+		<AU2700>
+		</AU2700>
+		
+		<AU5800>
+		</AU5800>
+		
+		<AU680>
+		</AU680>
+		
+		<AXSYM>
+		</AXSYM>
+		
+		<BCSLT>
+		</BCSLT>
+		
+		<BIOMAJESTY>
+		</BIOMAJESTY>
+		
+		<Bioplex>
+		</Bioplex>
+		
+		<BM6050>
+		</BM6050>
+		
+		<C16000>
+		</C16000>
+		
+		<CA7000>
+		</CA7000>
+		
+		<CAP>
+		</CAP>
+		
+		<CDSapphire>
+		</CDSapphire>
+		
+		<CENTAURCP>
+			AdviaCentaurCP_1, AdviaCentaurCP_2
+		</CENTAURCP>
+		
+		<CENTAURXP>
+			CentaurXP_1, CentaurXP_2
+		</CENTAURXP>
+		
+		<CI4100>
+		</CI4100>
+		
+		<CLINITEKATLAS >
+		</CLINITEKATLAS>
+		
+		<COBASC8000>
+		</COBASC8000>
+		
+		<ColonIS>
+		</ColonIS>
+		
+		<CS5100>
+			CS-5100_1, CS-5100_2
+		</CS5100>
+		
+		<DimensionEXL>
+			DimRXL_1
+		</DimensionEXL>
+		
+		<DIRECTOR>
+		</DIRECTOR>
+		
+		<DXH>
+		</DXH>
+		
+		<DxI800>
+		</DxI800>
+		
+		<G8>
+		</G8>
+		
+		<H800>
+		</H800>
+		
+		<HA8180V>
+		</HA8180V>
+		
+		<HELENAV8>
+		</HELENAV8>
+		
+		<IMMULITE2000>
+			Immulite 2000_1, Immulite 2000_2, Immulite 2500_1
+		</IMMULITE2000>
+		
+		<INPECO>
+			Automation1, Automation2, Automation3
+		</INPECO>
+		
+		<Integra800>
+		</Integra800>
+		
+		<IRP>
+		</IRP>
+		
+		<ISTAT>
+		</ISTAT>
+		
+		<JOPLUS>
+		</JOPLUS>
+		
+		<LAQC>
+		</LAQC>
+		
+		<LIAISON>
+		</LIAISON>
+		
+		<LIAISONXL>
+		</LIAISONXL>
+		
+		<MAGLUMI>
+		</MAGLUMI>
+		
+		<Phadia1000>
+		</Phadia1000>
+		
+		<Phadia250>
+		</Phadia250>
+		
+		<PhadiaPL1>
+		</PhadiaPL1>
+		
+		<StaRRsed>
+		</StaRRsed>
+		
+		<StaRRsedTL>
+		</StaRRsedTL>
+		
+		<UF1000I>
+		</UF1000I>
+		
+		<VARIANT2T>
+		</VARIANT2T>
+		
+		<VESMATICASTM>
+		</VESMATICASTM>
+		
+		<VESMATICEVX>
+		</VESMATICEVX>
+		
+		<VIDAS>
+		</VIDAS>
+		
+		<VISTA>
+			Vista1500_1, Vista1500_2
+		</VISTA>
+		
+		<VITROSx600>
+		</VITROSx600>
+		
+		<WASP>
+		</WASP>
+	</translationMap>
+</translationMaps>

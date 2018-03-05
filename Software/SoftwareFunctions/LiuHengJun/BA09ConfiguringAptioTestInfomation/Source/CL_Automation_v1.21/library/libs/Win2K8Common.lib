@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K8Common">
+    <function id="GetOSReleaseInfo">
+        <type>DOS_CMD</type>
+        <path>systeminfo | findstr /B /C:"OS Name" /C:"OS Version"</path>
+        <exitCode>0</exitCode>
+        <output>
+            <searchPattern id="osName">OS\sName:\s+([\w\s\(\),]+)\r</searchPattern>
+            <searchPattern id="osVersion">OS\sVersion:\s+([\w\s\.]+)\r</searchPattern>
+        </output>
+    </function>
+	<function id="GetDirListCSV">
+	    <type>VB_SCRIPT</type>
+        <path>csvDirListToStdOut.vbs</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="dirPath" type="string"/>
+            <param id="fileDataPath" type="string"/>
+        </params>
+		<output>
+            <searchPattern id="dirList">([^\r\n]+)</searchPattern>
+        </output>
+    </function>
+	<function id="WriteScheduledTasksDataToFile">
+        <type>DOS_CMD</type>
+        <path>schtasks /query /v /fo list > %filePath%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="filePath" type="string"/>
+        </params>
+    </function>
+	<!--function id="SetScheduledTasksDataFromFile">
+        <type>POWERSHELL_V2</type>
+        <path>TODO - this may become PERL?</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="fileName" type="string"/>
+        </params>
+    </function -->
+	<function id="CopyScheduledTasksRunFiles">
+        <type>EXECUTABLE</type>
+        <path>cpSchTasks.exe</path>
+        <exitCode>1</exitCode>
+        <params>
+			<param id="schTasksSrcFile" type="string"/>
+			<param id="destinationPath" type="string"/>
+        </params>
+    </function>
+	<function id="CreateScheduledTask">
+        <type>DOS_CMD</type>
+        <path>SchTasks /create /tn "%taskName%" /tr "\"%taskPath%\""  /sc %schedule% /st %startTime% /ru "%user%" /rp %password% /rl HIGHEST</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="taskName" type="string"/>
+			<param id="taskPath" type="string"/>
+			<param id="schedule" type="string"/>
+			<param id="startTime" type="string"/>
+			<param id="user" type="string"/>
+			<param id="password" type="string"/>
+        </params>
+    </function>
+	<function id="CreateOnLoginScheduledTask">
+        <type>DOS_CMD</type>
+        <path>SchTasks /create /tn "%taskName%" /tr "\"%taskPath%\"" /sc ONLOGON /ru "%user%" /rp %password% /rl HIGHEST</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="taskName" type="string"/>
+			<param id="taskPath" type="string"/>
+			<param id="user" type="string"/>
+			<param id="password" type="string"/>
+        </params>
+    </function>
+	<function id="CreateOnStartupScheduledTask">
+        <type>DOS_CMD</type>
+        <path>SchTasks /create /tn "%taskName%" /tr "\"%taskPath%\"" /sc ONSTART /ru "%user%" /rp %password% /rl HIGHEST</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="taskName" type="string"/>
+			<param id="taskPath" type="string"/>
+			<param id="user" type="string"/>
+			<param id="password" type="string"/>
+        </params>
+    </function>
+	<function id="CreateOneTimeScheduledTask">
+        <type>DOS_CMD</type>
+        <path>SchTasks /create /tn "%taskName%" /tr "\"%taskPath%\"" /sc ONCE /st %startTime% /sd %startDate% /ru "%user%" /rp %password% /rl HIGHEST</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="taskName" type="string"/>
+			<param id="taskPath" type="string"/>
+			<param id="startTime" type="string"/>
+			<param id="startDate" type="string"/>
+			<param id="user" type="string"/>
+			<param id="password" type="string"/>
+        </params>
+    </function>
+	<function id="ModifyScheduledTaskUserAndPass">
+        <type>DOS_CMD</type>
+        <path>SchTasks /change /tn "%taskName%" /ru %user% /rp %password%</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="taskName" type="string"/>
+			<param id="user" type="string"/>
+			<param id="password" type="string"/>
+        </params>
+    </function>
+	<function id="ModifyScheduledTaskRunLevel">
+        <type>DOS_CMD</type>
+        <path>SchTasks /change /tn "%taskName%" /ru %user% /rp %password% /rl %runLevel%</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="taskName" type="string"/>
+			<param id="user" type="string"/>
+			<param id="password" type="string"/>
+			<param id="runLevel" type="string"/>
+        </params>
+    </function>
+	<function id="RunScheduledTask">
+        <type>DOS_CMD</type>
+        <path>SchTasks /run /tn "%taskName%"</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="taskName" type="string"/>
+        </params>
+    </function>
+</lib>

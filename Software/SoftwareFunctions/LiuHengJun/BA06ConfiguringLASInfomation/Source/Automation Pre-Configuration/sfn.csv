@@ -1,0 +1,64 @@
+Table.Name,Description,DataType,Definition
+SampleLog,U08,Logical,"Integer i,n;    
+String Requests;    
+Request RQ;    
+i := 1;      
+Requests := .sample.Attribute(""Testlist"");   
+n:= NumEntries(Requests, ?); 
+ 
+IF .Sample.GetRequest(""U08_3"") <> ? THEN RETURN TRUE; ENDIF; /* If the sample has already received three U08 flags then exit */
+
+IF .Sample.GetRequest(""U08_1"") = ? THEN
+      .sample.processrequest(""U08_1"");
+           .sample.getrequest(""U08_1"").omit(?); /* Reflex and omit the first U08 indicator test */
+            ELSE 
+            IF .Sample.GetRequest(""U08_2"") = ? THEN
+               .sample.processrequest(""U08_2"");
+                    .sample.getrequest(""U08_2"").omit(?);  /* Reflex and omit the second U08 indicator test */
+                     ELSE 
+                     IF .Sample.GetRequest(""U08_3"") = ? THEN
+                        .sample.processrequest(""U08_3"");
+                             .sample.getrequest(""U08_3"").omit(?); /* Reflex and omit the second U08 indicator test */
+                     ENDIF;
+            ENDIF;
+ENDIF;
+
+While i<=n DO
+RQ := .sample.getrequest(Entry(i,Requests,?));
+ IF ((RQ.instrument = .instrument) 
+      AND (RQ.status = RequestStatus[""Scheduled""])) THEN  
+      RQ.Unschedule();
+      RQ.DeleteRouteOnLAS(?,NO);/*Suppress the update to the LAS */ 
+      IF .instrument.GetFirstInstTranslator().driver = ""dimv"" AND .Sample.GetRequest(""HOLD_SKIP_3"").status <> RequestStatus[""Omitted""] THEN
+        IF .Sample.GetRequest(""HOLD_SKIP_1"") = ? THEN
+      .sample.processrequest(""HOLD_Skip_1,_HOLD_Skip_1"");
+           ELSE
+           IF .Sample.GetRequest(""HOLD_SKIP_1"").status = RequestStatus[""Scheduled""] THEN
+         .Sample.GetRequest(""HOLD_SKIP_1"").Unschedule();
+              .Sample.GetRequest(""_HOLD_SKIP_1"").Unschedule(); 
+               ELSE
+               IF .Sample.GetRequest(""HOLD_SKIP_1"").status = RequestStatus[""Omitted""] AND .Sample.GetRequest(""HOLD_SKIP_2"") = ? THEN
+             .sample.processrequest(""HOLD_Skip_2,_HOLD_Skip_2"");
+             ELSE
+             IF .Sample.GetRequest(""HOLD_SKIP_2"").status = RequestStatus[""Scheduled""] THEN
+                .Sample.GetRequest(""HOLD_SKIP_2"").Unschedule();
+                     .Sample.GetRequest(""_HOLD_SKIP_2"").Unschedule();
+                ELSE
+                IF .Sample.GetRequest(""HOLD_SKIP_2"").status = RequestStatus[""Omitted""] AND .Sample.GetRequest(""HOLD_SKIP_3"") = ? THEN
+                   .sample.processrequest(""HOLD_Skip_3,_HOLD_Skip_3"");
+                   ELSE
+                   IF .Sample.GetRequest(""HOLD_SKIP_3"").status = RequestStatus[""Scheduled""] THEN
+                  .Sample.GetRequest(""HOLD_SKIP_3"").Unschedule();
+                            .Sample.GetRequest(""_HOLD_SKIP_3"").Unschedule();         
+                   ENDIF;           
+                ENDIF;            
+             ENDIF;
+                ENDIF;
+             ENDIF; 
+          ENDIF;
+       ENDIF;
+ ENDIF;
+ i := i + 1; 
+DONE;     
+RETURN True;
+"

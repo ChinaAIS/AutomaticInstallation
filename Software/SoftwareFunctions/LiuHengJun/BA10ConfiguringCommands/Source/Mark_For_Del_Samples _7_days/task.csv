@@ -1,0 +1,11 @@
+Command.Table.Name,Command.Description,Name,StartDate,StartDayTime,EndDate,EndDayTime,Type,Interval,LatestRun,NextRun,Running,ExecutingService.Name,ExecutingSvcHost,ExecutingSvcProcessId,OnHoliday,OnMonday,OnTuesday,OnWednesday,OnThursday,OnFriday,OnSaturday,OnSunday,DayTypeInMonth,DayType,Day,Month
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_Task
+%% Exported on: 02/28/18 at 23:40:49
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Mark_For_Del_Samples > 7 days,MarkForDel,2018/1/8,1:00:00,?,?,Weekly,1,2018/1/19 01:00:00,2018/1/20 01:00:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January

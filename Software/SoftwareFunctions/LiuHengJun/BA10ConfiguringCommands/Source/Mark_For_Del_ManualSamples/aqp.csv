@@ -1,0 +1,44 @@
+Value,Set.Query.Table.Name,Set.Query.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualQueryParameter
+%% Exported on: 02/28/18 at 23:31:45
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+?,Sample,Default,MarkForDelManualSamples,MinimalCollectionTime
+?,Sample,Default,MarkForDelManualSamples,MaximalCollectionTime
+?,Sample,Default,MarkForDelManualSamples,Physician
+?,Sample,Default,MarkForDelManualSamples,Patient
+?,Sample,Default,MarkForDelManualSamples,PatientLocation
+?,Sample,Default,MarkForDelManualSamples,Instrument
+?,Sample,Default,MarkForDelManualSamples,Species
+?,Sample,Default,MarkForDelManualSamples,MinimalAspirationTime
+?,Sample,Default,MarkForDelManualSamples,MaximalAspirationTime
+?,Sample,Default,MarkForDelManualSamples,Identifier
+?,Sample,Default,MarkForDelManualSamples,MinimalPriority
+?,Sample,Default,MarkForDelManualSamples,Type
+?,Sample,Default,MarkForDelManualSamples,InstrumentGroup
+?,Sample,Default,MarkForDelManualSamples,MaxSampleCount
+1,Sample,Default,MarkForDelManualSamples,SortCriterion
+1,Sample,Default,MarkForDelManualSamples,SlideRequest
+?,Sample,Default,MarkForDelManualSamples,MinimalStatusMinutes
+?,Sample,Default,MarkForDelManualSamples,MinimalStatus
+?,Sample,Default,MarkForDelManualSamples,MaximalStatus
+no,Sample,Default,MarkForDelManualSamples,NotReported
+?,Sample,Default,MarkForDelManualSamples,TestGroup
+no,Sample,Default,MarkForDelManualSamples,AtLeastOneRequestInStatus
+Filter_FindManualsamples,Sample,Default,MarkForDelManualSamples,Filter
+?,Sample,Default,MarkForDelManualSamples,Test
+4320,Sample,Default,MarkForDelManualSamples,MaximalStatusMinutes
+?,Sample,Default,MarkForDelManualSamples,LASStatusNeedsUpload
+?,Sample,Default,MarkForDelManualSamples,LISChannel
+no,Sample,Default,MarkForDelManualSamples,SearchTargetted
+?,Sample,Default,MarkForDelManualSamples,LASFlagRejectResults
+no,Sample,Default,MarkForDelManualSamples,CheckLASUpdateRequired
+?,Sample,Default,MarkForDelManualSamples,LASChannel
+?,Sample,Default,MarkForDelManualSamples,PatientLastName
+?,Sample,Default,MarkForDelManualSamples,PhysicianLastName
+?,Sample,Default,MarkForDelManualSamples,RelatedSampleRequests

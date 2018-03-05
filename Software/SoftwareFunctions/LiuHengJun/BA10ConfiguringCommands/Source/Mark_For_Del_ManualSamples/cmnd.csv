@@ -1,0 +1,11 @@
+Table.Name,Description,SkipQuerySetup,SkipFunctionSetup,UsePrivateBuffers,Query.Mnemonic,QueryParameterSet.ShortDescription,SortFunction.Description,Function.Mnemonic,FunctionParameterSet.ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_Command
+%% Exported on: 02/28/18 at 23:30:08
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Mark_For_Del_ManualSamples,no,no,no,Default,MarkForDelManualSamples,?,MarkForDelete,?

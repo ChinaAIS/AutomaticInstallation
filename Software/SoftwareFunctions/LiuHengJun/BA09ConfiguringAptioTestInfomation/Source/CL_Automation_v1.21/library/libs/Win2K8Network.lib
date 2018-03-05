@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K8Network">
+	<function id="GetHostName">
+        <type>DOS_CMD</type>
+        <path>hostname</path>
+        <exitCode>0</exitCode>
+        <output>
+            <searchPattern id="hostName">([\S]+)</searchPattern>
+        </output>
+    </function>
+	<function id="GetDomainName">
+        <type>DOS_CMD</type>
+        <path>systeminfo | findstr /B /C:"Domain"</path>
+        <exitCode>0</exitCode>
+        <output>
+            <searchPattern id="domainName">Domain:\s+(\S+)</searchPattern>
+        </output>
+    </function>
+	<function id="FirewallAllowProgram">
+        <type>DOS_CMD</type>
+        <path>netsh advfirewall firewall add rule name="%name%" dir=%direction% description="%descr%" action=allow program="%exePath%"</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="name" type="string"/>
+			<param id="direction" type="string"/>
+			<param id="descr" type="string"/>
+            <param id="exePath" type="string"/>
+        </params>
+    </function>
+	<function id="FirewallAllowPorts">
+        <type>DOS_CMD</type>
+        <path>netsh advfirewall firewall add rule name="%name%" dir=%direction% action=allow protocol="%protocol%" description="%descr%" localport=%csvPortList%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="name" type="string"/>
+			<param id="direction" type="string"/>
+			<param id="descr" type="string"/>
+			<param id="protocol" type="string"/>
+            <param id="csvPortList" type="string"/>
+        </params>
+    </function>
+	<function id="FirewallAllowRemoteIPAddresses">
+        <type>DOS_CMD</type>
+        <path>netsh advfirewall firewall add rule name="%name%" dir=%direction% action=allow protocol="%protocol%" description="%descr%" remoteip=%csvIpAddrList%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="name" type="string"/>
+			<param id="direction" type="string"/>
+			<param id="descr" type="string"/>
+			<param id="protocol" type="string"/>
+            <param id="csvIpAddrList" type="string"/>
+        </params>
+    </function>
+	<function id="FirewallModifyPorts">
+        <type>DOS_CMD</type>
+        <path>netsh advfirewall firewall set rule name="%name%" new localport=%csvPortList%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="name" type="string"/>
+			<param id="csvPortList" type="string"/>
+        </params>
+    </function>
+	<function id="FirewallModifyRemoteIPAddresses">
+        <type>DOS_CMD</type>
+        <path>netsh advfirewall firewall set rule name="%name%" new remoteip=%csvIpAddrList%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="name" type="string"/>
+            <param id="csvIpAddrList" type="string"/>
+        </params>
+	</function>
+	<function id="FirewallEnableRule">
+        <type>DOS_CMD</type>
+        <path>netsh advfirewall firewall set rule name="%name%" new enable=yes</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="name" type="string"/>
+        </params>
+    </function>
+    <function id="FirewallDisableRule">
+        <type>DOS_CMD</type>
+        <path>netsh advfirewall firewall set rule name="%name%" new enable=no</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="name" type="string"/>
+        </params>
+    </function>
+	<function id="WriteMappedDriveDataToFile">
+        <type>DOS_CMD</type>
+        <path>net use > %filePath%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="filePath" type="string"/>
+        </params>
+    </function>
+	<function id="GetMappedDriveDataFromFile">
+        <type>VB_SCRIPT</type>
+        <path>mappedDrivesToStdOut.vbs</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="srcFilePath" type="string"/>
+        </params>
+    </function>
+	<!-- NOT IMPLEMENTED FOR THIS RELEASE
+	<function id="WritePrinterDataToFile">
+        <type>TODO</type>
+        <path>TODO - get-WmiObject -class Win32_printer | ft name, systemName, shareName > %filePath%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="filePath" type="string"/>
+        </params>
+    </function>
+	<function id="SetPrinterDataFromFile">
+        <type>TODO</type>
+        <path>TODO</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="fileName" type="string"/>
+        </params>
+    </function -->
+	<function id="WriteNICConfToFile">
+        <type>DOS_CMD</type>
+        <path>ipconfig /all > %filePath%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="filePath" type="string"/>
+        </params>
+    </function>
+	<function id="SetNICConfToSiteData">
+        <type>EXECUTABLE</type>
+        <path>cfgNetIf.exe</path>
+        <exitCode>1</exitCode>
+        <params>
+			<param id="srcPath" type="string"/>
+			<param id="siteDataPath" type="string"/>
+        </params>
+    </function>
+	<function id="DisableNICInterface">
+        <type>DOS_CMD</type>
+        <path>netsh interface set interface name="%ifName%" admin=disabled</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="ifName" type="string"/>
+        </params>
+    </function>
+	<function id="EnableNICInterface">
+        <type>DOS_CMD</type>
+        <path>netsh interface set interface name="%ifName%" admin=enabled</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="ifName" type="string"/>
+        </params>
+    </function>
+	<function id="SetNICInterfaceStatic">
+        <type>DOS_CMD</type>
+        <path>netsh interface ip set address "%ifName%" static %ipAddr% %subnetMask% %gateway% %metric%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="ifName" type="string"/>
+			<param id="ipAddr" type="string"/>
+			<param id="subnetMask" type="string"/>
+			<param id="gateway" type="string"/>
+			<param id="metric" type="string" defaultValue="1"/>
+        </params>
+    </function>
+	<function id="SetNICInterfaceDHCP">
+        <type>DOS_CMD</type>
+        <path>netsh interface ip set address "%ifName%" dhcp</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="ifName" type="string"/>
+        </params>
+    </function>
+	<function id="SetNICConfFromSiteData">
+        <type>EXECUTABLE</type>
+        <path>cfgNetIf.exe</path>
+        <exitCode>1</exitCode>
+        <params>
+			<param id="siteDataPath" type="string"/>
+        </params>
+    </function>
+	<function id="SetNICBindingOrder">
+        <type>VB_SCRIPT</type>
+        <path>setNicBindingOrder.vbs</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="csvBindList" type="string"/>
+        </params>
+    </function>
+	<function id="SetNTPServerReliable">
+        <type>DOS_CMD</type>
+        <path>w32tm /config /reliable:%value%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="value" type="string"/>
+        </params>
+    </function>
+	<function id="MapNetworkDrive">
+        <type>DOS_CMD</type>
+        <path>net use %devName% "%path%" /user:%userName% %userPass% %doSaveCred% /persistent:%doPersist%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="devName" type="string"/>
+			<param id="path" type="string"/>
+			<param id="userName" type="string"/>
+			<param id="userPass" type="string"/>
+			<param id="doSaveCred" type="string" defaultValue="NULL"/>
+			<param id="doPersist" type="string" defaultValue="yes"/>
+        </params>
+    </function>
+	<function id="DisconnectNetworkDrive">
+        <type>DOS_CMD</type>
+        <path>net use %devName% /delete</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="devName" type="string"/>
+        </params>
+    </function>
+</lib>

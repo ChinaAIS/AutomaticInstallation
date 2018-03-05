@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<menu id="os">
+	<submenu id="system">
+		<routine id="releaseInfo">
+			<executionQueue>
+				<subRoutine id="GetOSReleaseInfo"/>
+				<output id="name">osName</output>
+				<output id="version">osVersion</output>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="networkId">
+			<executionQueue>
+				<subRoutine id="GetHostName"/>
+				<output id="host">hostName</output>
+				<subRoutine id="GetDomainName"/>
+				<output id="domain">domainName</output>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="saveNICConfDataToFile">
+			<params>
+				<param id="outputPath" type="string"/>
+				<param id="siteDataPath" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="WriteNICConfToFile">outputPath</subRoutine>
+				<subRoutine id="SetNICConfToSiteData">outputPath siteDataPath</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="saveMappedDriveDataToFile">
+			<params>
+				<param id="filePath" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="WriteMappedDriveDataToFile">filePath</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="displayMappedDriveDataFromFile">
+			<params>
+				<param id="srcFilePath" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="GetMappedDriveDataFromFile">srcFilePath</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="saveScheduledTasksDataToFile">
+			<params>
+				<param id="filePath" type="string"/>
+				<param id="dstPath" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="WriteScheduledTasksDataToFile">filePath</subRoutine>
+				<subRoutine id="CopyScheduledTasksRunFiles">filePath dstPath</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<!-- NOT IMPLEMENTED FOR THIS RELEASE
+		<routine id="savePrinterDataToFile">
+			<params>
+				<param id="filePath" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="WritePrinterDataToFile">filePath</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine -->
+	</submenu>
+	<submenu id="controlPanel">
+		<submenu id="win2k3">
+			<routine id="startPrintersApplet">
+					<executionQueue>
+						<subRoutine id="CPWin2k3StartPrintersApplet"></subRoutine>
+					</executionQueue>
+					<help>
+						<summary>TODO</summary>
+						<doc>TODO</doc>
+					</help>
+			</routine>
+		</submenu>
+		<routine id="startControlPanel">
+			<executionQueue>
+				<subRoutine id="CPStartControlPanel"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startSystemApplet">
+			<executionQueue>
+				<subRoutine id="CPStartSystemApplet"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startNetConnectionsApplet">
+			<executionQueue>
+				<subRoutine id="CPStartNetworkConnectionsApplet"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startPrintersAndFaxesApplet">
+			<executionQueue>
+				<subRoutine id="CPStartPrintersAndFaxesApplet"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startDiskManagementApplet">
+			<executionQueue>
+				<subRoutine id="CPStartDiskManagementApplet"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startScreenResolutionApplet">
+			<executionQueue>
+				<subRoutine id="CPStartScreenResolutionApplet"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startDateTimeApplet">
+			<executionQueue>
+				<subRoutine id="CPStartDateTimeApplet"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startUACSettingsApplet">
+			<executionQueue>
+				<subRoutine id="CPStartUACSettingsApplet"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startGroupPolicyEdit">
+			<executionQueue>
+				<subRoutine id="CPStartGPEdit"></subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+	</submenu>
+	<submenu id="install">
+		<routine id="installMsiPackage">
+			<params>
+				<param id="package" type="string"/>
+				<param id="mode" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="InstallMSI">package mode</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Install an MSI based installation</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="uninstallMsiPackage">
+			<params>
+				<param id="package" type="string"/>
+				<param id="mode" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="UnInstallMSI">package mode</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Uninstall an MSI based installation</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="installWindowsUpdate">
+			<params>
+				<param id="path" type="string"/>
+				<param id="mode" type="string"/>
+				<param id="doRestart" type="string"/>
+			</params>
+		    <executionQueue>
+                <subRoutine id="InstallWindowsUpdate">path mode doRestart</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installExe">
+			<params>
+				<param id="absPath" type="string"/>
+			</params>
+		    <executionQueue>
+                <subRoutine id="InstallEXE">absPath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="administrative">
+		<submenu id="archive">
+			<submenu id="win2k3">
+				<routine id="startAcronisRescueMediaBuilder">
+					<executionQueue>
+						<subRoutine id="StartAcronisTrueImageBootableRescueMediaBuilder"/>
+					</executionQueue>
+					<help>
+						<summary>TODO</summary>
+						<doc>TODO</doc>
+					</help>
+				</routine>
+				<routine id="startAcronisTrueImageOEM">
+					<executionQueue>
+						<subRoutine id="StartAcronisTrueImageServerOEM"/>
+					</executionQueue>
+					<help>
+						<summary>TODO</summary>
+						<doc>TODO</doc>
+					</help>
+				</routine>
+			</submenu>
+		</submenu>
+		<submenu id="roles">
+			<routine id="installFTPServer">
+				<params>
+					<param id="siteName" type="string"/>
+					<param id="ftpUser" type="string"/>
+					<param id="dataFilePath" type="string"/>
+					<param id="_roles" type="string" defaultValue="Web-Server Web-FTP-Server"/>
+					<param id="_deleteSite" type="string" defaultValue="Default Web Site"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="InstallRole">_roles</subRoutine>
+					<subRoutine id="FtpDeleteSite">_deleteSite</subRoutine>
+					<subRoutine id="FtpCreateSiteFromFile">dataFilePath</subRoutine>
+					<subRoutine id="FtpAddUserToSite">siteName ftpUser</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="installRDSServer">
+				<params>
+					<param id="_roles" type="string" defaultValue="RDS-RD-Server"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="InstallRole">_roles</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="installRDSServerAndLicense">
+				<params>
+					<param id="_roles" type="string" defaultValue="RDS-RD-Server RDS-Licensing"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="InstallRole">_roles</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<submenu id="services">
+				<routine id="installRDSLicenseServer">
+				<params>
+					<param id="_services" type="string" defaultValue="RDS-Licensing"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="InstallRole">_services</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			</submenu>
+		</submenu>
+		<submenu id="network">
+			<submenu id="firewall">
+				<routine id="setAllowedRDSClientsIpAddresses">
+					<params>
+						<param id="csvIpAddrList" type="string"/>
+						<param id="_name" type="string"/>
+					</params>
+					<executionQueue>
+						<subRoutine id="FirewallModifyRemoteIPAddresses">_name csvIpAddrList</subRoutine>
+					</executionQueue>
+					<help>
+						<summary>TODO</summary>
+						<doc>TODO</doc>
+					</help>
+				</routine>
+				<routine id="enableFirewallRule">
+					<params>
+						<param id="name" type="string"/>
+					</params>
+					<executionQueue>
+						<subRoutine id="FirewallEnableRule">name</subRoutine>
+					</executionQueue>
+					<help>
+						<summary>TODO</summary>
+						<doc>TODO</doc>
+					</help>
+				</routine>
+				<routine id="disableFirewallRule">
+					<params>
+						<param id="name" type="string"/>
+					</params>
+					<executionQueue>
+						<subRoutine id="FirewallDisableRule">name</subRoutine>
+					</executionQueue>
+					<help>
+						<summary>TODO</summary>
+						<doc>TODO</doc>
+					</help>
+				</routine>
+			</submenu>
+			<routine id="setNicStaticCfg">
+				<params>
+					<param id="name" type="string"/>
+					<param id="address" type="string"/>
+					<param id="subnet" type="string"/>
+					<param id="gateway" type="string"/>
+					<param id="metric" type="string" defaultValue="1"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="SetNICInterfaceStatic">name address subnet gateway metric</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setNicDhcpCfg">
+				<params>
+					<param id="name" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="SetNICInterfaceDHCP">name</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setNicCfgFromSiteData">
+				<params>
+					<param id="siteDataPath" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="SetNICConfFromSiteData">siteDataPath</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setNicBindingOrder">
+				<params>
+					<param id="bindingList" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="SetNICBindingOrder">bindingList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="enableNTPServer">
+				<params>
+					<param id="_clientKey" type="string" defaultValue="HKLM\SYSTEM\CurrentControlSet\services\W32Time\TimeProviders\NtpClient"/>
+					<param id="_serverKey" type="string" defaultValue="HKLM\SYSTEM\CurrentControlSet\services\W32Time\TimeProviders\NtpServer"/>
+					<param id="_name" type="string" defaultValue="Enabled"/>
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_clientValue" type="string" defaultValue="0x00000000"/>
+					<param id="_serverValue" type="string" defaultValue="0x00000001"/>
+					<param id="_confReliable" type="string" defaultValue="YES"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_clientKey _name _type _clientValue</subRoutine>
+					<subRoutine id="ModifyRegistryKeyValue">_serverKey _name _type _serverValue</subRoutine>
+					<subRoutine id="SetNTPServerReliable">_confReliable</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>Modify a registry key name with the supplied data</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+		</submenu>
+		<routine id="disableAutoRun">
+			<params>
+				<param id="_cdRomKey" type="string" defaultValue="HKLM\SYSTEM\CurrentControlSet\services\cdrom"/>
+				<param id="_cdRomName" type="string" defaultValue="AutoRun"/>
+				<param id="_cdRomValue" type="string" defaultValue="0x00000000"/>
+				<param id="_expKey" type="string" defaultValue="HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"/>
+				<param id="_expCUKey" type="string" defaultValue="HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"/>
+				<param id="_expName" type="string" defaultValue="NoDriveTypeAutoRun"/>
+				<param id="_expValue" type="string" defaultValue="0x000000FF"/>
+				<param id="_type" type="string" defaultValue="REG_DWORD"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="ModifyRegistryKeyValue">_cdRomKey _cdRomName _type _cdRomValue</subRoutine>
+				<subRoutine id="ModifyRegistryKeyValue">_expKey _expName _type _expValue</subRoutine>
+				<subRoutine id="ModifyRegistryKeyValue">_expCUKey _expName _type _expValue</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Modify a registry key name with the supplied data</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<!-- NOT IMPLEMENTED since there is no current API to delete the keys created during the disableAutoRun.
+			 Leave here as a reference.  If this is needed a delete key API will have to be implemented.
+		<routine id="enableAutoRun">
+			<params>
+				<param id="_key" type="string" defaultValue="HKLM\SYSTEM\CurrentControlSet\services\cdrom"/>
+				<param id="_name" type="string" defaultValue="AutoRun"/>
+				<param id="_type" type="string" defaultValue="REG_DWORD"/>
+				<param id="_value" type="string" defaultValue="0x00000001"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="ModifyRegistryKeyValue">_key _name _type _value</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Modify a registry key name with the supplied data</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		-->
+		<routine id="createScheduledTask">
+			<params>
+				<param id="taskName" type="string"/>
+				<param id="taskPath" type="string"/>
+				<param id="schedule" type="string"/>
+				<param id="startTime" type="string"/>
+				<param id="user" type="string"/>
+				<param id="password" type="string" defaultValue="_EMPTY_"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="CreateScheduledTask">taskName taskPath schedule startTime user password</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="createOnLoginTask">
+			<params>
+				<param id="taskName" type="string"/>
+				<param id="taskPath" type="string"/>
+				<param id="user" type="string"/>
+				<param id="password" type="string" defaultValue="_EMPTY_"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="CreateOnLoginScheduledTask">taskName taskPath user password</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="createOnStartupTask">
+			<params>
+				<param id="taskName" type="string"/>
+				<param id="taskPath" type="string"/>
+				<param id="user" type="string"/>
+				<param id="password" type="string" defaultValue="_EMPTY_"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="CreateOnStartupScheduledTask">taskName taskPath user password</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="createOneTimeTask">
+			<params>
+				<param id="taskName" type="string"/>
+				<param id="taskPath" type="string"/>
+				<param id="startTime" type="string"/>
+				<param id="startDate" type="string"/>
+				<param id="user" type="string"/>
+				<param id="password" type="string" defaultValue="_EMPTY_"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="CreateOneTimeScheduledTask">taskName taskPath startTime startDate user password</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="runTask">
+			<params>
+				<param id="taskName" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="RunScheduledTask">taskName</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<submenu id="security">
+			<routine id="updateGroupPolicy">
+				<executionQueue>
+					<subRoutine id="GPUpdate"/>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="disablePing">
+				<params>
+					<param id="_ruleName" type="string" defaultValue="File and Printer Sharing (Echo Request - ICMPv4-In)"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallDisableRule">_ruleName </subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="enablePing">
+				<params>
+					<param id="_ruleName" type="string" defaultValue="File and Printer Sharing (Echo Request - ICMPv4-In)"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallEnableRule">_ruleName</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="disableUAC">
+				<params>
+					<param id="_key" type="string" defaultValue="HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"/>
+					<param id="_name" type="string" defaultValue="EnableLUA"/>
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_value" type="string" defaultValue="0x00000000"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_key _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="enableUAC">
+				<params>
+					<param id="_key" type="string" defaultValue="HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"/>
+					<param id="_name" type="string" defaultValue="EnableLUA"/>
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_value" type="string" defaultValue="0x00000001"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_key _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+		</submenu>
+		<routine id="reboot">
+			<executionQueue>
+				<subRoutine id="Restart"/>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startService">
+			<params>
+				<param id="serviceName" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="StartService">serviceName</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Start the system service</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="stopService">
+			<params>
+				<param id="serviceName" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="StopService">serviceName</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Stop the system service</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="startNetService">
+			<params>
+				<param id="serviceName" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="StartNetService">serviceName</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Start the system service</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="stopNetService">
+			<params>
+				<param id="serviceName" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="StopNetService">serviceName</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Stop the system service</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="setServiceStartupMode">
+			<params>
+				<param id="serviceName" type="string"/>
+				<param id="mode" type="string"/>
+        	</params>
+			<executionQueue>
+				<subRoutine id="SetServiceStartupMode">serviceName mode</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Start the system service</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="registerDll">
+			<params>
+				<param id="dllPath" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="RegisterDLL">dllPath</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="setComputerName">
+			<params>
+				<param id="name" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="SetHostName">name</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="setDomainName">
+			<params>
+				<param id="name" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="SetDomainName">name</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+	</submenu>
+	<submenu id="customize">
+		<submenu id="remoteDesktop">
+			<routine id="startRDSService">
+				<params>
+					<param id="_service" type="string" defaultValue="TermService"/>
+					<param id="_mode" type="string" defaultValue="auto"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="SetServiceStartupMode">_service _mode</subRoutine>
+					<subRoutine id="StartService">_service</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="enableRDS">
+				<params>
+					<param id="_setKey" type="string" defaultValue="&quot;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server&quot;"/>
+					<param id="_name" type="string" defaultValue="fDenyTSConnections"/>
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_value" type="string" defaultValue="0x00000000"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_setKey _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+		</submenu>
+		<submenu id="ie">
+			<routine id="disableWelcomeScreen">
+				<params>
+					<param id="_rootKey" type="string" defaultValue="HKLM"/>
+					<param id="_newKey" type="string" defaultValue="Software\Policies\Microsoft\Internet Explorer\Main"/>
+					<param id="_setKey" type="string" defaultValue="&quot;HKLM\Software\Policies\Microsoft\Internet Explorer\Main&quot;"/>
+					<param id="_name" type="string" defaultValue="DisableFirstRunCustomize"/>
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_value" type="string" defaultValue="0x00000001"/>
+					<param id="_view" type="string" defaultValue="reg64"/>
+				</params>
+				<executionQueue>
+					<!-- subRoutine id="CreateRegistryKey">_rootKey _newKey _view</subRoutine -->
+					<subRoutine id="ModifyRegistryKeyValue">_setKey _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="disableSearchBar">
+				<params>
+					<param id="_key" type="string" defaultValue="&quot;HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\InfoDelivery\Restrictions&quot;"/>
+					<param id="_name" type="string" defaultValue="NoSearchBox"/>					
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_value" type="string" defaultValue="0x00000001"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_key _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="disableFavoritesBar">
+				<params>
+					<param id="_key" type="string" defaultValue="&quot;HKCU\Software\Microsoft\Internet Explorer\LinksBar&quot;"/>
+					<param id="_name" type="string" defaultValue="Enabled"/>				
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_value" type="string" defaultValue="0x00000000"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_key _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="enableActiveContent">
+				<params>
+					<param id="_key" type="string" defaultValue="&quot;HKCU\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN&quot;"/>
+					<param id="_name" type="string" defaultValue="iexplore.exe"/>					
+					<param id="_type" type="string" defaultValue="REG_DWORD"/>
+					<param id="_value" type="string" defaultValue="0x00000000"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_key _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<!-- NOT IMPLEMENTED - Cannot find a good way to do this in the time allowed
+			<routine id="enableAllowActiveScripting">
+				<params>
+					<param id="_key" type="string" defaultValue="TODO"/>
+					<param id="_name" type="string" defaultValue="TODO"/>					
+					<param id="_type" type="string" defaultValue="TODO"/>
+					<param id="_value" type="string" defaultValue="TODO"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ModifyRegistryKeyValue">_key _name _type _value</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			-->
+		</submenu>
+	</submenu>
+    <submenu id="usersAndGroups">
+		<routine id="createUser">
+			<params>
+				<param id="userName" type="string"/>
+				<param id="password" type="string"/>
+				<param id="passwordExpiration" type="string" defaultValue="never"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="CreateLocalUser">userName password passwordExpiration</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="setUserPasswordExpiration">
+			<params>
+				<param id="userName" type="string"/>
+				<param id="doExpire" type="bool"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="SetUserPasswordExpiration">userName doExpire</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="addUserToGroup">
+			<params>
+				<param id="user" type="string"/>
+				<param id="group" type="string" defaultValue="true"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="AddLocalUserToLocalGroup">user group</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="removeUserFromGroup">
+			<params>
+				<param id="user" type="string"/>
+				<param id="group" type="string" defaultValue="true"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="RemoveLocalUserFromLocalGroup">user group</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="disableUserInteractiveLogon">
+			<params>
+				<param id="user" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="DenyUserLocalLogonRights">user</subRoutine>
+				<subRoutine id="DenyUserRDSLogonRights">user</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="enableUserLogonAsAService">
+			<params>
+				<param id="user" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="AllowUserLogonAsAServiceRights">user</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="disableUserLogonAsAService">
+			<params>
+				<param id="user" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="DenyUserLogonAsAServiceRights">user</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="removeEnableUserLogonAsAService">
+			<params>
+				<param id="user" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="RemoveAllowUserLogonAsAServiceRights">user</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+	</submenu>
+</menu>
+        

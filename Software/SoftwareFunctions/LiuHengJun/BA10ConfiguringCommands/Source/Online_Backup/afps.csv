@@ -1,0 +1,11 @@
+Function.Table.Name,Function.Mnemonic,ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualFunctionParameterSet
+%% Exported on: 02/28/18 at 23:54:49
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+gp_Site,OnlineBackup,Online_bkp_set

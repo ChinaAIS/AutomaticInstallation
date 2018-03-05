@@ -1,0 +1,44 @@
+Value,Set.Query.Table.Name,Set.Query.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualQueryParameter
+%% Exported on: 02/28/18 at 23:13:59
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+?,Sample,Default,Dispatchable Samples,MinimalCollectionTime
+?,Sample,Default,Dispatchable Samples,MaximalCollectionTime
+?,Sample,Default,Dispatchable Samples,Physician
+?,Sample,Default,Dispatchable Samples,Patient
+?,Sample,Default,Dispatchable Samples,PatientLocation
+?,Sample,Default,Dispatchable Samples,Instrument
+?,Sample,Default,Dispatchable Samples,Species
+?,Sample,Default,Dispatchable Samples,MinimalAspirationTime
+?,Sample,Default,Dispatchable Samples,MaximalAspirationTime
+?,Sample,Default,Dispatchable Samples,Identifier
+?,Sample,Default,Dispatchable Samples,MinimalPriority
+?,Sample,Default,Dispatchable Samples,Type
+?,Sample,Default,Dispatchable Samples,InstrumentGroup
+?,Sample,Default,Dispatchable Samples,MaxSampleCount
+1,Sample,Default,Dispatchable Samples,SortCriterion
+1,Sample,Default,Dispatchable Samples,SlideRequest
+?,Sample,Default,Dispatchable Samples,MinimalStatusMinutes
+?,Sample,Default,Dispatchable Samples,MinimalStatus
+?,Sample,Default,Dispatchable Samples,MaximalStatus
+no,Sample,Default,Dispatchable Samples,NotReported
+?,Sample,Default,Dispatchable Samples,TestGroup
+no,Sample,Default,Dispatchable Samples,AtLeastOneRequestInStatus
+?,Sample,Default,Dispatchable Samples,Filter
+?,Sample,Default,Dispatchable Samples,Test
+4320,Sample,Default,Dispatchable Samples,MaximalStatusMinutes
+?,Sample,Default,Dispatchable Samples,LASStatusNeedsUpload
+?,Sample,Default,Dispatchable Samples,LISChannel
+no,Sample,Default,Dispatchable Samples,SearchTargetted
+?,Sample,Default,Dispatchable Samples,LASFlagRejectResults
+yes,Sample,Default,Dispatchable Samples,CheckLASUpdateRequired
+?,Sample,Default,Dispatchable Samples,LASChannel
+?,Sample,Default,Dispatchable Samples,PatientLastName
+?,Sample,Default,Dispatchable Samples,PhysicianLastName
+?,Sample,Default,Dispatchable Samples,RelatedSampleRequests

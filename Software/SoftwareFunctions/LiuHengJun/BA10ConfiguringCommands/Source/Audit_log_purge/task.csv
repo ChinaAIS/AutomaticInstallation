@@ -1,0 +1,11 @@
+Command.Table.Name,Command.Description,Name,StartDate,StartDayTime,EndDate,EndDayTime,Type,Interval,LatestRun,NextRun,Running,ExecutingService.Name,ExecutingSvcHost,ExecutingSvcProcessId,OnHoliday,OnMonday,OnTuesday,OnWednesday,OnThursday,OnFriday,OnSaturday,OnSunday,DayTypeInMonth,DayType,Day,Month
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_Task
+%% Exported on: 02/28/18 at 22:25:56
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+lg_Type,Audit log purge,Purge Audit Log,2018/1/8,3:30:00,?,?,Monthly,1,?,2018/2/4 03:30:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January

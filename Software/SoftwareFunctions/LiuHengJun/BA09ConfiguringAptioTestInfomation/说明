@@ -1,0 +1,1 @@
+经过测试，Aptio服务器上的Config文件夹虽然是设置成网络共享模式，但是Centralink电脑没有权限访问，所以目前生成的两个项目配置文件路径为：G:\CL_Automation_v1.21\data

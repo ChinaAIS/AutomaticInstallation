@@ -1,0 +1,11 @@
+Value,Set.Query.Table.Name,Set.Query.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualQueryParameter
+%% Exported on: 03/01/18 at 00:10:04
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+yes,Sample,Default,Eligible for LAS info upload,LASStatusNeedsUpload

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<menu id="hardware">
+	<submenu id="devices">
+		<routine id="getRaidData">
+			<executionQueue>
+				<subRoutine id="QueryRaidControllerModel"/>
+				<output id="raidModel">model</output>
+				<output id="installFunc">function</output>
+				<output id="installPrompt">prompt</output>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+	</submenu>
+	<submenu id="install">
+		<routine id="installLSI3Ware">
+			<executionQueue>
+				<subRoutine id="InstallLSI3Ware"/>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="installLSIMegaRaid">
+			<executionQueue>
+				<subRoutine id="InstallLSIMegaRaid"/>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+	</submenu>
+	<submenu id="administrative">
+		<routine id="removeRaidDesktopIcons">
+			<params>
+				<param id="_file1" type="string" defaultValue="C:\Users\Public\Desktop\Mega RAID Storage Manager.lnk"/>
+				<param id="_file2" type="string" defaultValue="C:\Users\Public\Desktop\Connect to 3DM2.lnk"/>
+				<param id="_file3" type="string" defaultValue="C:\Users\Public\Desktop\tw_cli.lnk"/>
+			</params>
+            <executionQueue>
+				<subRoutine id="RemoveFile">_file1</subRoutine>
+				<subRoutine id="RemoveFile">_file2</subRoutine>
+				<subRoutine id="RemoveFile">_file3</subRoutine>
+			</executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+</menu>
+
+        

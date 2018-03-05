@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K8UsersAndGroups">
+	<function id="CreateLocalUser">
+        <type>DOS_CMD</type>
+        <path>net user %userName% %userPassword% /add /expires:%accountExpires% /y >NUL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+            <param id="userPassword" type="string"/>
+            <param id="accountExpires" type="string" defaultValue="never"/>
+        </params>
+    </function>
+    <function id="AddLocalUserToLocalGroup">
+        <type>DOS_CMD</type>
+        <path>net localgroup %groupName% %userName% /ADD >NUL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+            <param id="groupName" type="string"/>
+        </params>
+    </function>
+	<function id="RemoveLocalUserFromLocalGroup">
+        <type>DOS_CMD</type>
+        <path>net localgroup %groupName% %userName% /DELETE >NUL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+            <param id="groupName" type="string"/>
+        </params>
+    </function>
+    <function id="SetUserPasswordExpiration">
+        <type>DOS_CMD</type>
+        <path>WMIC USERACCOUNT WHERE "Name='%userName%'" SET PasswordExpires=%doExpire% >NUL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+            <param id="doExpire" type="bool"/>
+        </params>
+    </function>
+	<function id="AllowUserDirectoryFullControl">
+        <type>DOS_CMD</type>
+        <path>icacls "%pathName%" /grant %userName%:F >NUL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="pathName" type="string"/>
+            <param id="userName" type="string"/>
+        </params>
+    </function>
+	<function id="DenyUserRDSLogonRights">
+        <type>EXECUTABLE</type>
+        <path>ntrights.exe -u %userName% +r SeDenyRemoteInteractiveLogonRight</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+        </params>
+    </function>
+	<function id="DenyUserLocalLogonRights">
+        <type>EXECUTABLE</type>
+        <path>ntrights.exe -u %userName% +r SeDenyInteractiveLogonRight</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+        </params>
+    </function>
+	<function id="AllowUserLogonAsAServiceRights">
+        <type>EXECUTABLE</type>
+        <path>ntrights.exe -u %userName% +r SeServiceLogonRight</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+        </params>
+    </function>
+	<function id="DenyUserLogonAsAServiceRights">
+        <type>EXECUTABLE</type>
+        <path>ntrights.exe -u %userName% +r SeDenyServiceLogonRight</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+        </params>
+    </function>
+	<function id="RemoveAllowUserLogonAsAServiceRights">
+        <type>EXECUTABLE</type>
+        <path>ntrights.exe -u %userName% -r SeServiceLogonRight</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="userName" type="string"/>
+        </params>
+    </function>
+</lib>

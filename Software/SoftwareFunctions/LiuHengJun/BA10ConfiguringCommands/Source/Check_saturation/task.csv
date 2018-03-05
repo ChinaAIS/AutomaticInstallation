@@ -1,0 +1,11 @@
+Command.Table.Name,Command.Description,Name,StartDate,StartDayTime,EndDate,EndDayTime,Type,Interval,LatestRun,NextRun,Running,ExecutingService.Name,ExecutingSvcHost,ExecutingSvcProcessId,OnHoliday,OnMonday,OnTuesday,OnWednesday,OnThursday,OnFriday,OnSaturday,OnSunday,DayTypeInMonth,DayType,Day,Month
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_Task
+%% Exported on: 02/28/18 at 22:53:32
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+gp_Site,Check saturation,Check saturation,2017/11/9,7:00:00,?,?,Daily,1,2018/1/19 07:00:00,2018/1/20 07:00:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January

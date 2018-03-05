@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K8ServerManager">
+    <function id="InstallRole">
+        <type>DOS_CMD</type>
+        <path>ServerManagerCMD.exe -install %roles% </path>
+        <exitCode>NULL</exitCode>
+        <params>
+            <param id="roles" type="string"/>
+        </params>
+    </function>
+	<function id="FtpCreateSiteFromFile">
+        <type>DOS_CMD</type>
+        <path>C:\Windows\system32\inetsrv\appcmd ADD Site /in &lt; %filePath%</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="filePath" type="string"/>
+        </params>
+    </function>
+	<function id="FtpDeleteSite">
+        <type>DOS_CMD</type>
+        <path>C:\Windows\system32\inetsrv\appcmd DELETE Site "%siteName%"</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="siteName" type="string"/>
+        </params>
+    </function>
+	<function id="FtpAddUserToSite">
+        <type>DOS_CMD</type>
+        <path>%SystemRoot%\system32\inetsrv\appcmd set config "%siteName%" -section:system.ftpServer/security/authorization /+"[accessType='Allow',users='%userName%',permissions='Read, Write']" /commit:apphost</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="siteName" type="string"/>
+			<param id="userName" type="string"/>
+        </params>
+    </function>
+</lib>

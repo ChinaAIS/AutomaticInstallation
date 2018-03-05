@@ -1,0 +1,5 @@
+Name,Description:E,SampleType.Name,OmitOnLASUpdate,PatientDatatype,ControlDatatype,PatientUnit.Name,ControlUnit.Name,AlternateUnit.Name,UnitCoefficient,UnitTerm,SeqNo,DefaultValue,Calculation,CalcNormSevLimit,CalcDeltaNormSevLimit,CalcQCSevLimit,CalcInstSevLimit,EditWarning,ControlReportDecimals,PatientReportDecimals,AllowAutovalidation,AllowLISDownload,LISUploadMode,Trigger.Description,AllowLASDownload
+U08_1,U08_1,?,no,String,String,?,?,?,?,?,?,?,?,0,0,0,0,?,?,?,yes,yes,Allow always,?,no
+U08_2,U08_2,?,no,String,String,?,?,?,?,?,?,?,?,0,0,0,0,?,?,?,yes,yes,Allow always,?,no
+U08_3,U08_3,?,no,String,String,?,?,?,?,?,?,?,?,0,0,0,0,?,?,?,yes,yes,Allow always,?,no
+KeepAlive,KeepAlive,?,no,String,String,?,?,?,?,?,?,?,?,0,0,0,0,?,?,?,yes,yes,Allow always,?,yes

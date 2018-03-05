@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K3All">
+	<function id="StartAcronisTrueImageServerOEM">
+        <type>DOS_CMD</type>
+        <path>"C:\Documents and Settings\All Users\Start Menu\Programs\Acronis\Acronis True Image Server OEM\Acronis True Image Server OEM.lnk"</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="StartAcronisTrueImageBootableRescueMediaBuilder">
+        <type>DOS_CMD</type>
+        <path>"C:\Documents and Settings\All Users\Start Menu\Programs\Acronis\Acronis True Image Server OEM\Bootable Rescue Media Builder.lnk"</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="CPWin2k3StartPrintersApplet">
+        <type>DOS_CMD</type>
+        <path>control printers</path>
+        <exitCode>1</exitCode>
+    </function>
+	<function id="CPWin2k3StartNetConnectionsApplet">
+        <type>DOS_CMD</type>
+        <path>control netconnections</path>
+        <exitCode>1</exitCode>
+    </function>
+</lib>

@@ -1,0 +1,11 @@
+Query.Table.Name,Query.Mnemonic,ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualQueryParameterSet
+%% Exported on: 02/28/18 at 23:10:38
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Default,Dispatchable Samples

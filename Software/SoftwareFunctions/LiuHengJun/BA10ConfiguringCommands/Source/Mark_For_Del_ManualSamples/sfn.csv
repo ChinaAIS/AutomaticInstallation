@@ -1,0 +1,14 @@
+Table.Name,Description,DataType,Definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: gp_SiteFunction
+%% Exported on: 02/28/18 at 23:30:46
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Filter_FindManualsamples,Logical,"If len(.Identifier) < 8 Then
+   Return True;
+Endif;
+Return False;"

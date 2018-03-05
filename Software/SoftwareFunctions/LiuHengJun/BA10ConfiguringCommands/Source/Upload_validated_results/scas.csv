@@ -1,0 +1,11 @@
+Command.Table.Name,Command.Description,TaskScheduler.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_SchedulerAssignment
+%% Exported on: 03/01/18 at 00:16:35
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Upload validated results,LIS_Upload_Service

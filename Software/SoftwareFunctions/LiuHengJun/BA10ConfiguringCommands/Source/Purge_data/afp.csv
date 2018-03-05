@@ -1,0 +1,18 @@
+Value,Set.Function.Table.Name,Set.Function.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualFunctionParameter
+%% Exported on: 02/28/18 at 23:57:32
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+30,gp_Site,PurgeData,Keep 30 days,DaysToKeep
+yes,gp_Site,PurgeData,Keep 30 days,Samples
+yes,gp_Site,PurgeData,Keep 30 days,WorkLists
+no,gp_Site,PurgeData,Keep 30 days,BloodBags
+30,gp_Site,PurgeData,Keep 30 days,PatientDaysToKeep
+yes,gp_Site,PurgeData,Keep 30 days,Patients
+yes,gp_Site,PurgeData,Keep 30 days,InstrumentLogs
+30,gp_Site,PurgeData,Keep 30 days,InstrumentDaysToKeep

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K8ControlPanel">
+	<function id="CPStartControlPanel">
+        <type>GUI_APPLICATION</type>
+        <path>control.exe</path>
+        <exitCode>1</exitCode>
+    </function>
+    <function id="CPStartSystemApplet">
+        <type>GUI_APPLICATION</type>
+        <path>control.exe</path>
+        <exitCode>1</exitCode>
+		<params>
+            <param id="_applet" type="string" defaultValue="sysdm.cpl"/>
+        </params>
+    </function>
+	<function id="CPStartPrintersAndFaxesApplet">
+        <type>GUI_APPLICATION</type>
+        <path>control.exe</path>
+        <exitCode>1</exitCode>
+		<params>
+            <param id="_applet" type="string" defaultValue="printers"/>
+        </params>
+    </function>
+	<function id="CPStartScreenResolutionApplet">
+        <type>GUI_APPLICATION</type>
+        <path>control.exe</path>
+        <exitCode>1</exitCode>
+		<params>
+            <param id="_applet" type="string" defaultValue="desk.cpl,Settings,@Settings"/>
+        </params>
+    </function>
+	<function id="CPStartDateTimeApplet">
+        <type>GUI_APPLICATION</type>
+        <path>control.exe</path>
+        <exitCode>1</exitCode>
+		<params>
+            <param id="_applet" type="string" defaultValue="timedate.cpl"/>
+        </params>
+    </function>
+	<function id="CPStartNetworkConnectionsApplet">
+        <type>GUI_APPLICATION</type>
+        <path>control.exe</path>
+        <exitCode>1</exitCode>
+		<params>
+            <param id="_applet" type="string" defaultValue="netconnections"/>
+        </params>
+    </function>
+	<function id="CPStartUACSettingsApplet">
+        <type>GUI_APPLICATION</type>
+        <path>UserAccountControlSettings.exe</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="CPStartDiskManagementApplet">
+        <type>DOS_CMD</type>
+        <path>diskmgmt.msc</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="CPStartGPEdit">
+        <type>DOS_CMD</type>
+        <path>gpedit.msc</path>
+        <exitCode>0</exitCode>
+    </function>
+</lib>

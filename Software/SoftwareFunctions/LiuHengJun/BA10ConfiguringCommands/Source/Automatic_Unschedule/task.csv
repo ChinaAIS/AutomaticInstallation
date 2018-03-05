@@ -1,0 +1,11 @@
+Command.Table.Name,Command.Description,Name,StartDate,StartDayTime,EndDate,EndDayTime,Type,Interval,LatestRun,NextRun,Running,ExecutingService.Name,ExecutingSvcHost,ExecutingSvcProcessId,OnHoliday,OnMonday,OnTuesday,OnWednesday,OnThursday,OnFriday,OnSaturday,OnSunday,DayTypeInMonth,DayType,Day,Month
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_Task
+%% Exported on: 02/28/18 at 22:48:20
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Automatic_Unschedule,AutomaticUnschedule,2018/1/8,0:01:00,?,23:59:00,Instantly,2,2018/1/19 11:13:00,2018/1/19 11:15:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January

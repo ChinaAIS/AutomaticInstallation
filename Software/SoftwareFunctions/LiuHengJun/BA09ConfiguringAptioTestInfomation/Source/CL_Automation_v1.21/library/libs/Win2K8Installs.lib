@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2k8Installs">
+	<function id="InstallMSI">
+        <type>MSI_INSTALLER</type>
+        <path>NULL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="package" type="STRING"/>
+            <param id="mode" type="STRING" defaultValue="passive"/>
+        </params>
+    </function>
+    <function id="UnInstallMSI">
+        <type>MSI_INSTALLER</type>
+        <path>NULL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="package" type="STRING"/>
+            <param id="mode" type="STRING" defaultValue="passive"/>
+        </params>
+    </function>
+	<function id="InstallWindowsUpdate">
+        <type>WUS_INSTALLER</type>
+        <path>NULL</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="packagePath" type="STRING"/>
+            <param id="mode" type="STRING" defaultValue="interactive"/>
+			<param id="doRestart" type="BOOL" defaultValue="false"/>
+        </params>
+    </function>
+	<function id="InstallEXE">
+        <type>EXE_INSTALLER</type>
+        <path>%absPath%</path>
+        <exitCode>NULL</exitCode>
+		<params>
+			<param id="absPath" type="string"/>
+        </params>
+    </function>
+</lib>
