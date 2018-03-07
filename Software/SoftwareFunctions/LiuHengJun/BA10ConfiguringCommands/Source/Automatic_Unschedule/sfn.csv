@@ -1,0 +1,98 @@
+Table.Name,Description,DataType,Definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: gp_SiteFunction
+%% Exported on: 02/28/18 at 22:35:57
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Automatic Unschedule V4,Integer,"/*AUTOMATIC UNSCHEDULE MISPL V1.0 - FEB23 2007*/
+/*VARIABLE DECLARATION*/
+DateTime SchTime,InstTime; 
+String Tests, SchInst, Msg, LongProcessCentaurTests; 
+Integer TimeInMin1,ScheduledTime,ChemScheduledTime,CentaurScheduledTime,CentaurLongScheduledTime,ImmuScheduledTime,CS5100ScheduledTime,SchTests,i,j,n; 
+Request rq;  
+Logical Messages,Found,SortReflex,Unscheduled,SkipEHIV,SkipIDASSAY;
+
+/*CONFIGURABLE SETTINGS*/
+SortReflex:=False;
+TimeInMin1:=25;             /* amount of time since an instrument last queried or uploaded a result for the sample */
+ChemScheduledTime:= 30;     /* amount of time tests are allowed to remain Scheduled for a Chemistry Instrument */
+CentaurScheduledTime:= 40;    /* amount of time tests are allowed to remain Scheduled for a Centaur Instrument */
+LongProcessCentaurTests := ""CA125,CA153,CA199"";
+CentaurLongScheduledTime:=80; /* amount of time long-processing tests, e.g. CA125, CA153, CA199, are allowed to remain Scheduled for a Centaur Instrument*/
+ImmuScheduledTime:= 180;    /* amount of time tests are allowed to remain Scheduled for a I2K Instrument */ 
+CS5100ScheduledTime:= 30;   /* amount of time tests are allowed to remain Scheduled for a CS5100 Instrument */
+
+/* ScheduledTime:=80;  Remove this line */
+SkipIDASSAY:=TRUE;
+SkipEHIV:=TRUE;
+Messages:=FALSE;
+Unscheduled:=FALSE;
+
+/*BODY*/
+If (SkipEHIV=TRUE) AND (.GetRequest(""EHIV"")<>?) then
+        Return 0;
+Endif;
+
+If (SkipIDASSAY=TRUE) then
+    If (.GetRequest(""aHAVM"")<>?) OR (.GetRequest(""aHBcM"")<>?) OR (.GetRequest(""aHBS"")<>?) OR (.GetRequest(""HBcT"")<>?)      
+          OR (.GetRequest(""HBsAg"")<>?) OR (.GetRequest(""HCV"")<>?) then
+             Return 0;
+    Endif;
+Endif;
+
+If .ScheduledCount > 0  then
+   InstTime:=.InstrumentTime; /*Only need to evalute samples that have not been updated recently */
+   if ((Today()-DateTimeToDate(InstTime))*3600*24+(Now()-DateTimeToTime(InstTime)))>(TimeInMin1*60) then
+      Tests:=.Attribute(""TestList"");
+      n:=NumEntries(Tests,?);
+      i:=1;
+      while i<=n AND .ScheduledCount > 0 do
+        rq:=.GetRequest(Entry(i,Tests,?));
+        if rq.status = RequestStatus[""Scheduled""] then
+           SchInst:=rq.instrument.GetFirstInstTranslator().driver;
+           if SchInst = ""cent"" or SchInst = ""immu"" or SchInst = ""advc"" or SchInst = ""csi"" then
+              if SchInst = ""cent""  then
+                 ScheduledTime := CentaurScheduledTime;
+                 j := 1;
+                 Found := False;
+                 while j<=NumEntries(LongProcessCentaurTests,?) and Not Found do
+                    if rq.Test.Name = .GetRequest(Entry(j,LongProcessCentaurTests,?)).Test.Name then
+                       Found := True;
+                       ScheduledTime := CentaurLongScheduledTime;
+                    endif;
+                 j := j+1;
+                 done;
+              endif;
+              if SchInst = ""immu"" then
+                 ScheduledTime := ImmuScheduledTime;
+              endif;
+              if SchInst = ""advc"" then
+                 ScheduledTime := ChemScheduledTime;
+              endif;
+              if SchInst = ""csi"" then
+                 ScheduledTime := CS5100ScheduledTime;
+              endif;
+              SchTime:=rq.Result.ScheduleTime;
+              if ((Today()-DateTimeToDate(SchTime))*3600*24+(Now()-DateTimeToTime(SchTime)))>(ScheduledTime*60) then        
+                 rq.unschedule(); 
+                 Unscheduled:=True;  
+                 if Messages=True then
+                    Message (""Sample "" + .identifier + "", Test "" + rq.Test.Name + ""- unscheduled from instrument"" +  rq.instrument.name);
+                 endif;
+              endif;
+           endif;
+        endif;
+        i:=i+1;
+     done;
+  endif; 
+endif;
+
+if Unscheduled=True AND SortReflex=True then
+  .ProcessRequest(""SORT_OVERDUE"");
+endif;  
+
+RETURN 0;"

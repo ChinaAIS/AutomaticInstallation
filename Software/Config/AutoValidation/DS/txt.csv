@@ -1,0 +1,1981 @@
+Mnemonic,Class,Description,Table.Name,Text:E,StartDate,EndDate
+DS_Comment_TC,?,DS_Comment_TC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TC,?,DS_Comment_TC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TG,?,DS_Comment_TG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TG,?,DS_Comment_TG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_HDL-C,?,DS_Comment_HDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_HDL-C,?,DS_Comment_HDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LDL-C,?,DS_Comment_LDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LDL-C,?,DS_Comment_LDL-C,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_APOA,?,DS_Comment_APOA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_APOA,?,DS_Comment_APOA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_APOB,?,DS_Comment_APOB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_APOB,?,DS_Comment_APOB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TP,?,DS_Comment_TP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TP,?,DS_Comment_TP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ALB,?,DS_Comment_ALB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ALB,?,DS_Comment_ALB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PA,?,DS_Comment_PA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PA,?,DS_Comment_PA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TBIL,?,DS_Comment_TBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TBIL,?,DS_Comment_TBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_DBIL,?,DS_Comment_DBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_DBIL,?,DS_Comment_DBIL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ALT,?,DS_Comment_ALT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ALT,?,DS_Comment_ALT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AST,?,DS_Comment_AST,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AST,?,DS_Comment_AST,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_GGT,?,DS_Comment_GGT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_GGT,?,DS_Comment_GGT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ALP,?,DS_Comment_ALP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ALP,?,DS_Comment_ALP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ALP,?,DS_Comment_ALP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TBA,?,DS_Comment_TBA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TBA,?,DS_Comment_TBA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_GLU,?,DS_Comment_GLU,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_GLU,?,DS_Comment_GLU,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BUN,?,DS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BUN,?,DS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BUN,?,DS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BUN,?,DS_Comment_BUN,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CREA,?,DS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CREA,?,DS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CREA,?,DS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CREA,?,DS_Comment_CREA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_UA,?,DS_Comment_UA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_UA,?,DS_Comment_UA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA,?,DS_Comment_CA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA,?,DS_Comment_CA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_MG,?,DS_Comment_MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_MG,?,DS_Comment_MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_P,?,DS_Comment_P,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_P,?,DS_Comment_P,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_NA,?,DS_Comment_NA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_NA,?,DS_Comment_NA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_K,?,DS_Comment_K,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_K,?,DS_Comment_K,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CL,?,DS_Comment_CL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CL,?,DS_Comment_CL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_Fe,?,DS_Comment_Fe,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_Fe,?,DS_Comment_Fe,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AMY_S,?,DS_Comment_AMY_S,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AMY_S,?,DS_Comment_AMY_S,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_SFA,?,DS_Comment_SFA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_SFA,?,DS_Comment_SFA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CYSC,?,DS_Comment_CYSC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CYSC,?,DS_Comment_CYSC,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CK,?,DS_Comment_CK,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CK,?,DS_Comment_CK,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AMON,?,DS_Comment_AMON,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AMON,?,DS_Comment_AMON,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_B-2MG,?,DS_Comment_B-2MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_B-2MG,?,DS_Comment_B-2MG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ADA,?,DS_Comment_ADA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ADA,?,DS_Comment_ADA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LDH,?,DS_Comment_LDH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LDH,?,DS_Comment_LDH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LPa,?,DS_Comment_LPa,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LPa,?,DS_Comment_LPa,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LA,?,DS_Comment_LA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LA,?,DS_Comment_LA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LIP,?,DS_Comment_LIP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LIP,?,DS_Comment_LIP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PCHE,?,DS_Comment_PCHE,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PCHE,?,DS_Comment_PCHE,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_HCY,?,DS_Comment_HCY,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_HCY,?,DS_Comment_HCY,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ThCG,?,DS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ThCG,?,DS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ThCG,?,DS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ThCG,?,DS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ThCG,?,DS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ThCG,?,DS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_ThCG,?,DS_Comment_ThCG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PROG,?,DS_Comment_PROG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PRL,?,DS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PRL,?,DS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PRL,?,DS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PRL,?,DS_Comment_PRL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LH,?,DS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LH,?,DS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LH,?,DS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LH,?,DS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LH,?,DS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LH,?,DS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_LH,?,DS_Comment_LH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FSH,?,DS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FSH,?,DS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FSH,?,DS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FSH,?,DS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FSH,?,DS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FSH,?,DS_Comment_FSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_E2,?,DS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_E2,?,DS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_E2,?,DS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_E2,?,DS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_E2,?,DS_Comment_E2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TESTO,?,DS_Comment_TESTO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TESTO,?,DS_Comment_TESTO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CORT,?,DS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CORT,?,DS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CORT,?,DS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CORT,?,DS_Comment_CORT,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AFP,?,DS_Comment_AFP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_AFP,?,DS_Comment_AFP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CEA,?,DS_Comment_CEA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CEA,?,DS_Comment_CEA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA125,?,DS_Comment_CA125,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA125,?,DS_Comment_CA125,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA15-3,?,DS_Comment_CA15-3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA15-3,?,DS_Comment_CA15-3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA19-9,?,DS_Comment_CA19-9,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CA19-9,?,DS_Comment_CA19-9,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PSA,?,DS_Comment_PSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_PSA,?,DS_Comment_PSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_cPSA,?,DS_Comment_cPSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_cPSA,?,DS_Comment_cPSA,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_iPTH,?,DS_Comment_iPTH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_iPTH,?,DS_Comment_iPTH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CTNI,?,DS_Comment_CTNI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CTNI,?,DS_Comment_CTNI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_MYO,?,DS_Comment_MYO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_MYO,?,DS_Comment_MYO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CK-MB,?,DS_Comment_CK-MB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_CK-MB,?,DS_Comment_CK-MB,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BNP,?,DS_Comment_BNP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BNP,?,DS_Comment_BNP,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BNP2,?,DS_Comment_BNP2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_BNP2,?,DS_Comment_BNP2,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_T3,?,DS_Comment_T3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_T3,?,DS_Comment_T3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_T4,?,DS_Comment_T4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_T4,?,DS_Comment_T4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FT3,?,DS_Comment_FT3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FT3,?,DS_Comment_FT3,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FT4,?,DS_Comment_FT4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FT4,?,DS_Comment_FT4,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TSH,?,DS_Comment_TSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_TSH,?,DS_Comment_TSH,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_aTPO,?,DS_Comment_aTPO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_aTPO,?,DS_Comment_aTPO,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_aTG,?,DS_Comment_aTG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_aTG,?,DS_Comment_aTG,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_Ferr,?,DS_Comment_Ferr,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_Ferr,?,DS_Comment_Ferr,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FOL,?,DS_Comment_FOL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_FOL,?,DS_Comment_FOL,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_VB12,?,DS_Comment_VB12,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_VB12,?,DS_Comment_VB12,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_VitD,?,DS_Comment_VitD,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_VitD,?,DS_Comment_VitD,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_IRI,?,DS_Comment_IRI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_IRI,?,DS_Comment_IRI,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_Cps,?,DS_Comment_Cps,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?
+DS_Comment_Cps,?,DS_Comment_Cps,Request,"{:
+String Message_LB, Message_UB;
+Message_LB := ""<50.0%"";
+Message_UB := "">50.0%"";
+If .NormSeverity < 0 Then
+   Return Message_LB;
+Else
+   Return Message_UB;
+Endif;
+}
+",?,?

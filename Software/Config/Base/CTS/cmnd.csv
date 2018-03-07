@@ -1,0 +1,33 @@
+Table.Name,Description,SkipQuerySetup,SkipFunctionSetup,UsePrivateBuffers,Query.Mnemonic,QueryParameterSet.ShortDescription,SortFunction.Description,Function.Mnemonic,FunctionParameterSet.ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_Command
+%% Exported on: 02/14/17 at 11:14:08
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Aptio_KeepAlive,no,no,no,Default,KeepAlive,Aptio_KeepAlive,Type,?
+lg_Type,Audit log purge,no,no,no,Default,?,?,Purge,?
+Sample,Automatic_Unschedule,yes,yes,no,Default,QPS_Automatic_Unschedule_query,Automatic Unschedule_V4,GetRequest,?
+gp_Site,Check saturation,no,no,no,Default,?,?,CheckSaturation,?
+gp_Site,Check storage,no,no,no,Default,?,?,CheckStorage,Default
+gp_Site,DB_Expand,no,no,no,Default,?,?,AutoExpandDB,Expand_Limits
+Sample,Dispatch to LAS,no,no,no,Default,Dispatchable Samples,?,DispatchToLAS,Target
+Sample,LAS_Flag_u09_notInlabbed,no,no,no,Default,QPS_U09andNotInlabbed,SF_U09_NotInlabbed,Type,?
+Sample,Mark_For_Deletion,no,no,no,Default,MarkForDelQry,?,MarkForDelete,?
+Sample,Mark_For_Deletion_manual,no,no,no,Default,MarkForDelQryManualSample,?,MarkForDelete,?
+Sample,OmitPARK,no,no,no,Default,QPS_PARK,Task_Omit_PARK_Test,ViewImage,?
+Sample,OmitPendingSample,no,no,no,Default,QPS_OmitPendingSample,Task_OmitPending,Type,?
+gp_Site,Online_Backup,no,no,no,Default,?,?,OnlineBackup,Online_Bckp_set
+gp_Site,Purge data,no,no,no,Default,?,?,PurgeData,Keep 30 days
+gp_Site,QC Closeout,no,no,no,Default,?,?,QCCloseOut,?
+QCLot,QC LOT EXPIRE EMAILS x day,no,no,no,Default,?,?,ExpirationNotification,?
+QCPopulation,QC Purge,no,no,no,Default,?,?,PurgeCloseOutResults,PurgeQC
+Sample,Report validated samples,no,no,no,Default,Unreported validated samples,?,Report,HTML printing
+QCPopulation,ResetQCSeverity,no,no,no,Default,?,ResetQCSeverity,Lot,?
+Sample,Upload LAS info,no,no,no,Default,Eligible for LAS info upload,?,UploadLASInfo,Upload Cold Storage
+QCLot,Upload results,no,no,no,Default,?,?,UploadResults,FPS_UploadResult
+Sample,Upload validated results,no,no,no,Default,Validated Samples By Priority,?,UploadResults,FPS_UploadResults
+Sample,Waiting Command,no,no,no,Default,QPS_Find_Waiting,FPS_Waiting,Type,?

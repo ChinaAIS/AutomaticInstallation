@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<menu id="utils">
+    <submenu id="fileSystem">
+		<submenu id="fileManipulation">
+			<routine id="getTokensInFile">
+				<params>
+					<param id="path" type="string"/>
+					<param id="regexPattern" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="GetTokensInFile">path regexPattern</subRoutine>
+					<output id="csvTokenList">tokens</output>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="replaceTokensInFile">
+				<params>
+					<param id="path" type="string"/>
+					<param id="regexPattern" type="string"/>
+					<param id="newToken" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path regexPattern newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+		</submenu>
+		<routine id="pathExists">
+			<params>
+				<param id="path" type="string"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="PathExists">path</subRoutine>
+				<output id="pathExists">bExists</output>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="listDirectories">
+			<params>
+				<param id="path" type="string"/>
+				<param id="ignoreList" type="string" defaultValue = "NULL"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="GetDirectories">path ignoreList</subRoutine>
+				<output id="entries">dirList</output>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="listFiles">
+			<params>
+				<param id="path" type="string"/>
+				<param id="ignoreList" type="string" defaultValue = "NULL"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="GetFiles">path ignoreList</subRoutine>
+				<output id="entries">fileList</output>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="createDir">
+            <params>
+                <param id="path" type="string"/>
+				<param id="rootPath" type="string" defaultValue="NULL"/>
+				<param id="doHide" type="bool" defaultValue="false"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="CreateDirectory">path rootPath doHide</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Create a directory on the file system</summary>
+                <doc>More verbose explanation of command with argument detail and examples</doc>
+            </help>
+        </routine>
+		<routine id="createSecureDir">
+            <params>
+                <param id="path" type="string"/>
+				<param id="whiteList" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="CreateSecureDirectory">path whiteList</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Create a directory on the file system</summary>
+                <doc>More verbose explanation of command with argument detail and examples</doc>
+            </help>
+        </routine>
+		<routine id="removeDir">
+            <params>
+                <param id="path" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="RemoveDirectory">path</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Remove a directory from the file system</summary>
+                <doc>More verbose explanation of command with argument detail and examples</doc>
+            </help>
+        </routine>
+		<routine id="createFile">
+            <params>
+                <param id="path" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="CreateFile">path</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Create a file on the file system</summary>
+                <doc>More verbose explanation of command with argument detail and examples</doc>
+            </help>
+        </routine>
+		<routine id="removeFile">
+            <params>
+                <param id="path" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="RemoveFile">path</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Remove a file from the file system</summary>
+                <doc>More verbose explanation of command with argument detail and examples</doc>
+            </help>
+        </routine>
+		<routine id="copyFile">
+            <params>
+                <param id="srcPath" type="string"/>
+				<param id="dstPath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="CopyFile">srcPath dstPath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Copy a file from source directory to the destination directory</summary>
+                <doc>More verbose explanation of command with argument detail and examples</doc>
+            </help>
+        </routine>
+		<routine id="tryCopyFile">
+            <params>
+                <param id="srcPath" type="string"/>
+				<param id="dstPath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="TryCopyFile">srcPath dstPath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Attempt to copy a file from source directory to the destination directory</summary>
+                <doc>Function succeeds regardless of whether the file was copied or not.  Use pathExists for confirmation</doc>
+            </help>
+        </routine>
+		<routine id="appendToFile">
+            <params>
+                <param id="path" type="string"/>
+				<param id="data" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="AppendToFile">path data</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>Add data to the end of a file</summary>
+                <doc>More verbose explanation of command with argument detail and examples</doc>
+            </help>
+        </routine>
+		<routine id="setUserDirFullControl">
+            <params>
+                <param id="userName" type="string"/>
+				<param id="path" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="AllowUserDirectoryFullControl">path userName</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="createZipArchive">
+            <params>
+                <param id="archivePath" type="string"/>
+				<param id="csvItemList" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="CreateZipArchive">archivePath csvItemList</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="extractZipArchive">
+            <params>
+                <param id="srcArchivePath" type="string"/>
+				<param id="dstPath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ExtractZipArchive">srcArchivePath dstPath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="createShortcut">
+            <params>
+				<param id="linkPath" type="string"/>
+				<param id="targetPath" type="string"/>
+				<param id="arguments" type="string" defaultValue="_EMPTY_"/>
+				<param id="workingDir" type="string" defaultValue="_EMPTY_"/>
+				<param id="description" type="string" defaultValue="_EMPTY_"/>
+				<!-- CURRENTLY NOT SUPPORTED param id="hotKey" type="string" defaultValue="_EMPTY_"/ -->
+			</params>
+            <executionQueue>
+                <subRoutine id="CreateShortcut">linkPath targetPath arguments workingDir description </subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="siteData">
+		<submenu id="srs">
+			<routine id="setLcmIpAddress">
+				<params>
+					<param id="value" type="string"/>
+					<param id="path" type="string"/>
+					<param id="_regexPattern" type="string" defaultValue="\$lcmIpAddress\s*=\s*([^\r\n]+)"/>
+					<param id="_newToken" type="string" defaultValue="$lcmIpAddress = $value$"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setDeviceModel">
+				<params>
+					<param id="value" type="string"/>
+					<param id="path" type="string"/>
+					<param id="_regexPattern" type="string" defaultValue="\$deviceModel\s*=\s*([^\r\n]+)"/>
+					<param id="_newToken" type="string" defaultValue="$deviceModel = $value$"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setDeviceType">
+				<params>
+					<param id="value" type="string"/>
+					<param id="path" type="string"/>
+					<param id="_regexPattern" type="string" defaultValue="\$deviceType\s*=\s*([^\r\n]+)"/>
+					<param id="_newToken" type="string" defaultValue="$deviceType = $value$"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setMaterialNumber">
+				<params>
+					<param id="value" type="string"/>
+					<param id="path" type="string"/>
+					<param id="_regexPattern" type="string" defaultValue="\$materialNumber\s*=\s*([^\r\n]+)"/>
+					<param id="_newToken" type="string" defaultValue="$materialNumber = $value$"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setSerialNumber">
+				<params>
+					<param id="value" type="string"/>
+					<param id="path" type="string"/>
+					<param id="_regexPattern" type="string" defaultValue="\$serialNumber\s*=\s*([^\r\n]+)"/>
+					<param id="_newToken" type="string" defaultValue="$serialNumber = $value$"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="setSoftwareVersion">
+				<params>
+					<param id="value" type="string"/>
+					<param id="path" type="string"/>
+					<param id="_regexPattern" type="string" defaultValue="\$softwareVersion\s*=\s*([^\r\n]+)"/>
+					<param id="_newToken" type="string" defaultValue="$softwareVersion = $value$"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+		</submenu>
+		<routine id="setHostName">
+            <params>
+                <param id="name" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="\$hostName\s*=\s*([^\r\n]+)"/>
+                <param id="_newToken" type="string" defaultValue="$hostName = $name$"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="setDomainName">
+            <params>
+                <param id="name" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="\$domainName\s*=\s*([^\r\n]+)"/>
+                <param id="_newToken" type="string" defaultValue="$domainName = $name$"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="setHematologyDirList">
+            <params>
+                <param id="dirPath" type="string"/>
+                <param id="dirDataFilePath" type="string"/>
+				<param id="siteDataPath" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="\$cytogramDirList\s*=\s*([^\r\n]+)"/>
+                <param id="_newToken" type="string" defaultValue="$cytogramDirList = $parsedDirList$"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="GetDirListCSV">dirPath dirDataFilePath</subRoutine>
+				<output id="parsedDirList">dirList</output>
+				<subRoutine id="ReplaceTokensInFile">siteDataPath _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="management">
+		<routine id="setReleaseData">
+            <params>
+				<param id="releaseId" type="string"/>
+				<param id="releaseFilePath" type="string"/>
+				<param id="_rootPath" type="string" defaultValue="$__ROOT_PATH__"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InitReleaseData">releaseId releaseFilePath _rootPath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+</menu>
+        

@@ -1,0 +1,4 @@
+Table.Name,Privilege.Name,AccessType
+LASFlag,Advanced,Create
+LASFlag,Advanced,Update
+LASFlag,Advanced,Delete

@@ -1,0 +1,3 @@
+Table.Name,Description,SkipQuerySetup,SkipFunctionSetup,UsePrivateBuffers,Query.Mnemonic,QueryParameterSet.ShortDescription,SortFunction.Description,Function.Mnemonic,FunctionParameterSet.ShortDescription,$ImportLog
+QCPopulation,ResetQCSeverity,no,no,no,Default,?,ResetQCSeverity,Lot,?,SortFunction not available
+Sample,Upload LAS info,no,no,no,Default,Eligible for LAS info upload,?,UploadLASInfo,Upload Cold Storage,FunctionParameterSet not available

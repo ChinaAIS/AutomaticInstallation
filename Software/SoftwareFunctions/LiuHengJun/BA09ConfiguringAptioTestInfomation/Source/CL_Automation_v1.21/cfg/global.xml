@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<!--
+Global variables
+Do not modify any of these elements unless you know what you are doing!
+-->
+<global>
+    <version>
+		<release>1.21</release>
+        <interpreter>1.10</interpreter>
+        <library>1.22</library>
+    </version>
+    <paths>
+        <!-- The base directory is wherever the 'cfg' directory resides.
+             The following paths must be present in the base directory. -->
+		<!-- path id="bin">bin</path -->
+		<path id="ROOT_PATH">CL_Automation</path>
+		<path id="LOG_PATH">logs</path>
+		<path id="DATA_PATH">data</path>
+		<path id="LIBRARY_PATH">library</path>
+		<path id="LIB_PATH">library\libs</path>
+		<path id="LIB_UTILS_PATH">library\libs\utils</path>
+        <path id="MENU_PATH">library\menus</path>
+        <path id="SCRIPT_PATH">library\scripts</path>
+		<path id="INCLUDE_PATH">library\scripts\include</path>
+    </paths>
+    <logger>
+        <fileNamePrepend>cash</fileNamePrepend>
+        <fileNameTimeStamp>yyyy_MM_dd_HHmmss</fileNameTimeStamp>
+        <queueFlushDelay>1000</queueFlushDelay>
+        <components>
+            <component id="Logger">DEBUG INFO WARN EXCPN ERROR FATAL</component>
+            <component id="Main">DEBUG INFO WARN EXCPN ERROR FATAL</component>
+            <component id="CLI">DEBUG INFO WARN EXCPN ERROR FATAL</component>
+            <component id="Script">DEBUG INFO WARN EXCPN ERROR FATAL</component>
+            <component id="Lib">DEBUG INFO WARN EXCPN ERROR FATAL</component>
+            <component id="Interpreter">DEBUG INFO WARN EXCPN ERROR FATAL</component>
+        </components>
+    </logger>
+    <cli>
+        <streamSource>console</streamSource>
+        <promptAnchor>&gt;&gt; </promptAnchor>
+        <subPromptAnchor> : </subPromptAnchor>
+        <maxHistory>10</maxHistory>
+        <welcomeBanner>
+            *********************************
+            *********************************
+                          Cash              
+                 Common Automation SHell     
+                     Release     v$1    
+                     Interpreter v$2    
+                     Library     v$3    
+            *********************************
+            *********************************
+        </welcomeBanner>
+    </cli>
+    <script>
+        <teeFileTimeStamp>yyyy_MM_dd_HHmmss</teeFileTimeStamp>
+        <doCliEcho>false</doCliEcho>
+    </script>
+    <interpreter>
+        <queueProcessDelay>10</queueProcessDelay>
+    </interpreter>
+	<lib>
+		<waitForFile>60</waitForFile>
+		<perlExePath>C:\Progress\OpenEdge\perl\bin\perl.exe</perlExePath>
+	</lib>
+</global>

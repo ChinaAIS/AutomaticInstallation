@@ -1,0 +1,11 @@
+Name,InternalLanguage,Type,AutoStart,SeqNo,Description,SpecificOptions,LoginUser.LoginName,Port,ApplicationRootFolder,LogVerbosity,LogToDatabase,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,RestartFailures,ServiceGroup.Mnemonic
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: gp_Service
+%% Exported on: 03/01/18 at 00:14:22
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+LIS_Upload_Service,URL,Task scheduler,yes,?,LIS Upload Service,?,batch,3600,?,High,no,1,Day,21,Day,10,yes,0,DefaultServiceGroup

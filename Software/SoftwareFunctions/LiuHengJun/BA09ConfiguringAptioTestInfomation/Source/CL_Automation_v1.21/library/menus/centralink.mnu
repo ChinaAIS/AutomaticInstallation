@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<menu id="centralink">
+	<submenu id="progress">
+		<routine id="saveProgressConfigToFile">
+			<params>
+				<param id="filePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="WriteProgressConfigToFile">filePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="watchdog">
+		<routine id="copyConfigFilesToDir">
+            <params>
+                <param id="srcPath" type="string"/>
+				<param id="dstPath" type="string"/>
+				<param id="_dbPath" type="string" defaultValue="$srcPath$Watchdog.dashboard.properties"/>
+				<param id="_dl4jPath" type="string" defaultValue="$srcPath$Watchdog.daemon.log4j.properties"/>
+				<param id="_dbl4jPath" type="string" defaultValue="$srcPath$Watchdog.dashboard.log4j.properties"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="TryCopyFile">_dbPath dstPath</subRoutine>
+				<subRoutine id="TryCopyFile">_dl4jPath dstPath</subRoutine>
+				<subRoutine id="TryCopyFile">_dbl4jPath dstPath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="setReceiverPort">
+            <params>
+                <param id="portValue" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="ReceiverPort=\d+"/>
+                <param id="_newToken"  type="string" defaultValue="ReceiverPort=$portValue$"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="scheduledTasks">
+		<!-- NOT SUPPORTED FOR THIS RELEASE
+		<routine id="setStartAppSystemOnLogin">
+            <params>
+				<param id="taskPath" type="string"/>
+				<param id="taskName" type="string"/>
+				<param id="_serverName" type="string" defaultValue="$hostName"/>
+				<param id="_user" type="string" defaultValue="$schTasksUserName"/>
+				<param id="_password" type="string" defaultValue="$schTasksPassword"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="CreateOnLoginTask">taskName taskPath _serverName _user _password</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine -->
+		<routine id="createDBBackUpTask">
+            <params>
+				<param id="taskName" type="string"/>
+				<param id="srcPath" type="string"/>
+				<param id="dstPath" type="string"/>
+                <param id="schedule" type="string"/>
+				<param id="startTime" type="string"/>
+				<param id="user" type="string"/>
+				<param id="password" type="string"/>
+				<param id="_taskPath" type="string" defaultValue="$dbServerBackupTaskDstPath"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="CopyFile">srcPath dstPath</subRoutine>
+                <subRoutine id="CreateScheduledTask">taskName _taskPath schedule startTime user password</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="createCopyDBBackupToRemoveableHDDTask">
+            <params>
+				<param id="taskName" type="string"/>
+				<param id="srcPath" type="string"/>
+				<param id="dstPath" type="string"/>
+                <param id="schedule" type="string"/>
+				<param id="startTime" type="string"/>
+				<param id="user" type="string"/>
+				<param id="password" type="string"/>
+				<param id="_taskPath" type="string" defaultValue="$copyDbToHDDTaskDstPath"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="CopyFile">srcPath dstPath</subRoutine>
+				<subRoutine id="CreateScheduledTask">taskName _taskPath schedule startTime user password</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="createDeleteCytogramTask">
+            <params>
+				<param id="taskName" type="string"/>
+				<param id="srcPath" type="string"/>
+				<param id="dstPath" type="string"/>
+                <param id="schedule" type="string"/>
+				<param id="startTime" type="string"/>
+				<param id="user" type="string"/>
+				<param id="password" type="string"/>
+				<param id="_taskPath" type="string" defaultValue="$delCytogramSchTaskDstPath"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="CopyFile">srcPath dstPath</subRoutine>
+				<subRoutine id="CreateScheduledTask">taskName _taskPath schedule startTime user password</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="modifyAppsTrimTasks">
+            <params>
+				<param id="user" type="string"/>
+				<param id="password" type="string"/>
+				<param id="_taskNameNoon" type="string" defaultValue="$clSchTskAppTrimNoonName"/>
+				<param id="_taskNameNight" type="string" defaultValue="$clSchTskAppTrimNightName"/>
+				<param id="_runLevel" type="string" defaultValue="HIGHEST"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="ModifyScheduledTaskUserAndPass">_taskNameNoon user password</subRoutine>
+				<subRoutine id="ModifyScheduledTaskUserAndPass">_taskNameNight user password</subRoutine>
+				<subRoutine id="ModifyScheduledTaskRunLevel">_taskNameNoon user password _runLevel</subRoutine>
+				<subRoutine id="ModifyScheduledTaskRunLevel">_taskNameNight user password _runLevel</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="install">
+		<routine id="installProgress11.1">
+            <params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installProgress11.3">
+            <params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installProgress11.3_SP3">
+            <params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installCentralink15.0.1.6">
+            <params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installCentralink15.0.3">
+            <params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installCentralink16">
+			<params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installOpGuideReader">
+			<params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="installCerberus1.0">
+			<params>
+				<param id="absolutePath" type="string"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="InstallEXE">absolutePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="administrative">
+		<routine id="serverVersion">
+            <executionQueue>
+                <subRoutine id="GetCentralinkVersion"/>
+				<output id="majorVersion">majorVersion</output>
+				<output id="minorVersion">minorVersion</output>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="startUI">
+            <executionQueue>
+                <subRoutine id="StartCentralinkUI"/>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="startApplicationSystem">
+            <executionQueue>
+                <subRoutine id="StartCentralinkApplicationSystem"/>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="stopApplicationSystem">
+            <executionQueue>
+                <subRoutine id="StopCentralinkApplicationSystem"/>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="startServices">
+            <executionQueue>
+                <subRoutine id="StartCentralinkServices"/>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="stopServices">
+            <executionQueue>
+                <subRoutine id="StopCentralinkServices"/>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="startProgressExplorer">
+            <executionQueue>
+                <subRoutine id="StartProgressExplorer"/>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="removeDesktopIcons">
+			<!-- TODO - Limitation now is subRoutine elements split the params on whitespace
+				 Think about adding logic to handle passing params in quotes to pass an entire string -->
+			<params>
+				<param id="_file1" type="string" defaultValue="C:\Users\Public\Desktop\Start application system.lnk"/>
+				<param id="_file2" type="string" defaultValue="C:\Users\Public\Desktop\Start services.lnk"/>
+				<param id="_file3" type="string" defaultValue="C:\Users\Public\Desktop\Stop application system.lnk"/>
+				<param id="_file4" type="string" defaultValue="C:\Users\Public\Desktop\Stop services.lnk"/>
+				<param id="_file5" type="string" defaultValue="C:\Users\Public\Desktop\Centralink get server identifier.lnk"/>
+				<param id="_file6" type="string" defaultValue="C:\Users\Public\Desktop\Dual LogViewer.lnk"/>
+				<param id="_file7" type="string" defaultValue="C:\Users\Public\Desktop\Multi LogViewer.lnk"/>
+			</params>
+            <executionQueue>
+				<subRoutine id="RemoveFile">_file1</subRoutine>
+				<subRoutine id="RemoveFile">_file2</subRoutine>
+				<subRoutine id="RemoveFile">_file3</subRoutine>
+				<subRoutine id="RemoveFile">_file4</subRoutine>
+				<subRoutine id="RemoveFile">_file5</subRoutine>
+				<!-- Leave the following out for now
+				<subRoutine id="RemoveFile">_file6</subRoutine>
+				<subRoutine id="RemoveFile">_file7</subRoutine>
+				-->
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+	</submenu>
+	<submenu id="network">
+		<submenu id="firewall">
+			<routine id="createLisRule">
+				<params>
+					<param id="csvPortList" type="string"/>
+					<param id="_name" type="string" defaultValue="SIEMENS LIS Drivers"/>
+					<param id="_direction" type="string" defaultValue="in"/>
+					<param id="_protocol" type="string" defaultValue="TCP"/>
+					<param id="_descr" type="string" defaultValue="Ports allowed for LIS connections"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallAllowPorts">_name _direction _descr _protocol csvPortList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="createUploadToLisRule">
+				<params>
+					<param id="csvPortList" type="string"/>
+					<param id="_name" type="string" defaultValue="SIEMENS LIS Upload for FTP"/>
+					<param id="_direction" type="string" defaultValue="in"/>
+					<param id="_protocol" type="string" defaultValue="TCP"/>
+					<param id="_descr" type="string" defaultValue="Ports allowed for LIS FTP upload"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallAllowPorts">_name _direction _descr _protocol csvPortList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="createLasRule">
+				<params>
+					<param id="csvPortList" type="string"/>
+					<param id="_name" type="string" defaultValue="SIEMENS LAS Drivers"/>
+					<param id="_direction" type="string" defaultValue="in"/>
+					<param id="_protocol" type="string" defaultValue="TCP"/>
+					<param id="_descr" type="string" defaultValue="Ports allowed for LAS connections"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallAllowPorts">_name _direction _descr _protocol csvPortList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="createInstrumentsRule">
+				<params>
+					<param id="csvPortList" type="string"/>
+					<param id="_name" type="string" defaultValue="SIEMENS INSTRUMENTS"/>
+					<param id="_direction" type="string" defaultValue="in"/>
+					<param id="_protocol" type="string" defaultValue="TCP"/>
+					<param id="_descr" type="string" defaultValue="Ports allowed for Instrument connections"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallAllowPorts">_name _direction _descr _protocol csvPortList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<!-- routine id="setFTPHematologyIpAddresses">
+				<params>
+					<param id="csvIpAddrList" type="string"/>
+					<param id="_name" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallModifyRemoteIPAddresses">_name csvIpAddrList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine -->
+			<!-- routine id="setLmxLisIpAddresses">
+				<params>
+					<param id="csvIpAddrList" type="string"/>
+					<param id="_name" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallModifyRemoteIPAddresses">_name csvIpAddrList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine -->
+			<routine id="setFTPClientIpAddresses">
+				<params>
+					<param id="csvIpAddrList" type="string"/>
+					<param id="_name" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallModifyRemoteIPAddresses">_name csvIpAddrList</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="modifyWatchdogRule">
+				<params>
+					<param id="csvPortList" type="string"/>
+					<param id="_name" type="string" defaultValue="$watchdogRuleName"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="FirewallModifyPorts">_name csvPortList</subRoutine>
+				</executionQueue>
+			</routine>
+		</submenu>
+	</submenu>
+	<submenu id="config">
+		<submenu id="aptio">
+			<routine id="generateAptioV1ConfigFiles">
+				<params>
+					<param id="userDirectory" type="string" defaultValue=""/>
+					<param id="cfgFilePath" type="string" defaultValue=""/>
+					<param id="_cfg1" type="string" defaultValue="aptioV1Cfg"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="CLGenConfig">_cfg1 cfgFilePath userDirectory</subRoutine>
+				</executionQueue>
+			</routine>
+		</submenu>
+		<submenu id="dms">
+			<routine id="generateDmsV1ConfigFiles">
+				<params>
+					<param id="userDirectory" type="string" defaultValue=""/>
+					<param id="cfgFilePath" type="string" defaultValue=""/>
+					<param id="_cfg1" type="string" defaultValue="dmsV1Cfg"/>
+					<param id="_cfg2" type="string" defaultValue="dmsV1Exc"/>
+					<param id="_cfg3" type="string" defaultValue="dmsV1NonInstrTests"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="CLGenConfig">_cfg1 cfgFilePath userDirectory</subRoutine>
+					<subRoutine id="CLGenConfig">_cfg2 cfgFilePath userDirectory</subRoutine>
+					<subRoutine id="CLGenConfig">_cfg3 cfgFilePath userDirectory</subRoutine>
+				</executionQueue>
+			</routine>
+		</submenu>
+	</submenu>
+	<submenu id="docs">
+		<routine id="copyOpGuide">
+			<params>
+				<param id="srcFile" type="string"/>
+				<param id="dstDirectory" type="string" defaultValue="$clDocPath"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="CopyFile">srcFile dstDirectory</subRoutine>
+			</executionQueue>
+		</routine>
+	</submenu>
+</menu>
+        

@@ -1,0 +1,17 @@
+<config>
+    <environment>
+      <function action="False" name="Update_Time" />
+      <function action="False" name="Check_IE8" />
+      <function action="False" name="NotePad" />
+      <function action="False" name="PDF" />
+      <function action="False" name="DataBase_Backup" />
+    </environment>
+    <base>
+      <function action="False" name="Service_Translator" />
+      <function action="False" name="CTS" />
+      <function action="False" name="ThCG" />
+    </base>
+    <advanced>
+      <function action="False" name="#AutoValidation" />
+    </advanced>
+</config>

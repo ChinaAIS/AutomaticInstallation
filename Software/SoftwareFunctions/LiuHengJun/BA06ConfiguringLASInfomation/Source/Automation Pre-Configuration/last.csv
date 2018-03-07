@@ -1,0 +1,6 @@
+LASChannel.Name,CommunicationType,Translator.Name
+Automation1,Order download,Auto_Transmit
+Automation1,Sample status query,Auto_Transmit
+Automation1,Sample status update,Auto_Receive
+Automation1,Test update to LAS,Auto_Transmit
+Automation1,Test update from LAS,Auto_Receive

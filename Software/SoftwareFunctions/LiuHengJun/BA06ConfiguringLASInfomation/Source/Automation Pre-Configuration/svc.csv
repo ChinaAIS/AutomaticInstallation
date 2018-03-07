@@ -1,0 +1,2 @@
+Name,InternalLanguage,Type,AutoStart,SeqNo,Description,SpecificOptions,LoginUser.LoginName,Port,ApplicationRootFolder,LogVerbosity,LogToDatabase,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,ServiceGroup.Mnemonic
+ServerAuto,XML,Translator server,no,?,?,?,batch,3666,?,High,no,1,Day,21,Day,10,yes,DefaultServiceGroup

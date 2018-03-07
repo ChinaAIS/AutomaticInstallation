@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Centralinkv15">
+	<function id="WriteProgressConfigToFile">
+        <type>DOS_CMD</type>
+        <path>C:\Progress\OpenEdge\bin\showcfgd.exe > %filePath%</path>
+        <exitCode>0</exitCode>
+        <params>
+			<param id="filePath" type="string"/>
+        </params>
+    </function>
+	<function id="StartCentralinkUI">
+        <type>DOS_CMD</type>
+        <path>"C:\Documents and Settings\All Users\Start Menu\Programs\CentraLink\Centralink.lnk"</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="StartDBBackup">
+        <type>DOS_CMD</type>
+        <path>TODO: - MUST CD to D:\Centralink for this to work D:\CentraLink\bin\prowin32.exe -basekey ini -ininame D:\CentraLink\bin\progress.ini -q -p gp_prun -param "-a ap_main" -T D:\CentraLink\tmp</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="StartCentralinkApplicationSystem">
+        <type>DOS_CMD</type>
+        <path>D:\CentraLink\bin\StartApplicationSystem.bat</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="StopCentralinkApplicationSystem">
+        <type>DOS_CMD</type>
+        <path>D:\CentraLink\bin\StopApplicationSystem.bat</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="StartCentralinkServices">
+        <type>DOS_CMD</type>
+        <path>D:\CentraLink\bin\StartServices.bat</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="StopCentralinkServices">
+        <type>DOS_CMD</type>
+        <path>D:\CentraLink\bin\StopServices.bat</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="StartProgressExplorer">
+        <type>DOS_CMD</type>
+        <path>C:\Progress\oemgmt\fathom.url</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="GetCentralinkVersion">
+        <type>DOS_CMD</type>
+		<path>reg query "HKLM\software\MIPS\ADVIA Centralink Server" /s</path>
+        <exitCode>0</exitCode>
+		<output>
+			<searchPattern id="majorVersion">\s+CurrentVersion\s+REG_SZ\s+(\d+)</searchPattern>
+			<searchPattern id="minorVersion">\s+MinorAndCorrectiveVersion\s+REG_SZ\s+(\d+)</searchPattern>
+		</output>
+    </function>
+	<function id="CLGenConfig">
+        <type>EXECUTABLE</type>
+        <path>genCfg.exe</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="cfgId" type="string"/>
+			<param id="cfgDirectory" type="string"/>
+			<param id="userDirectory" type="string"/>
+        </params>
+    </function>
+</lib>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<menu id="system">
+    <submenu id="software">
+		<routine id="setCentraLinkSerialNumber">
+			<params>
+				<param id="serialNumber" type="string"/>
+				<param id="_setKey" type="string" defaultValue="&quot;HKLM\SOFTWARE\Siemens\CentraLink&quot;"/>
+				<param id="_name" type="string" defaultValue="SerialNumber"/>
+				<param id="_type" type="string" defaultValue="REG_SZ"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="ModifyRegistry64KeyValue">_setKey _name _type serialNumber</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>TODO</summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+	</submenu>
+</menu>
+        

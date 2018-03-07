@@ -1,0 +1,44 @@
+Value,Set.Query.Table.Name,Set.Query.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualQueryParameter
+%% Exported on: 02/28/18 at 22:35:29
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+?,Sample,Default,QPS_Automatic_Unschedule_Query,MinimalCollectionTime
+?,Sample,Default,QPS_Automatic_Unschedule_Query,MaximalCollectionTime
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Physician
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Patient
+?,Sample,Default,QPS_Automatic_Unschedule_Query,PatientLocation
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Instrument
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Species
+?,Sample,Default,QPS_Automatic_Unschedule_Query,MinimalAspirationTime
+?,Sample,Default,QPS_Automatic_Unschedule_Query,MaximalAspirationTime
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Identifier
+?,Sample,Default,QPS_Automatic_Unschedule_Query,MinimalPriority
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Type
+?,Sample,Default,QPS_Automatic_Unschedule_Query,InstrumentGroup
+?,Sample,Default,QPS_Automatic_Unschedule_Query,MaxSampleCount
+1,Sample,Default,QPS_Automatic_Unschedule_Query,SortCriterion
+1,Sample,Default,QPS_Automatic_Unschedule_Query,SlideRequest
+?,Sample,Default,QPS_Automatic_Unschedule_Query,MinimalStatusMinutes
+3,Sample,Default,QPS_Automatic_Unschedule_Query,MinimalStatus
+3,Sample,Default,QPS_Automatic_Unschedule_Query,MaximalStatus
+no,Sample,Default,QPS_Automatic_Unschedule_Query,NotReported
+?,Sample,Default,QPS_Automatic_Unschedule_Query,TestGroup
+yes,Sample,Default,QPS_Automatic_Unschedule_Query,AtLeastOneRequestInStatus
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Filter
+?,Sample,Default,QPS_Automatic_Unschedule_Query,Test
+720,Sample,Default,QPS_Automatic_Unschedule_Query,MaximalStatusMinutes
+?,Sample,Default,QPS_Automatic_Unschedule_Query,LASStatusNeedsUpload
+?,Sample,Default,QPS_Automatic_Unschedule_Query,LISChannel
+no,Sample,Default,QPS_Automatic_Unschedule_Query,SearchTargetted
+?,Sample,Default,QPS_Automatic_Unschedule_Query,LASFlagRejectResults
+no,Sample,Default,QPS_Automatic_Unschedule_Query,CheckLASUpdateRequired
+?,Sample,Default,QPS_Automatic_Unschedule_Query,LASChannel
+?,Sample,Default,QPS_Automatic_Unschedule_Query,PatientLastName
+?,Sample,Default,QPS_Automatic_Unschedule_Query,PhysicianLastName
+?,Sample,Default,QPS_Automatic_Unschedule_Query,RelatedSampleRequests

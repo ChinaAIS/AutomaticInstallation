@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K8Admin">
+	<function id="SetHostName">
+        <type>DOS_CMD</type>
+        <path>wmic computersystem where name="%COMPUTERNAME%" call rename name="%name%" >NUL</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="name" type="string"/>
+        </params>
+    </function>
+	<function id="SetDomainName">
+        <type>DOS_CMD</type>
+        <path>TODO</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="name" type="string"/>
+        </params>
+    </function>
+	<function id="QueryRegistryKeyRecursive">
+        <type>DOS_CMD</type>
+        <path>reg query %regKey%</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="regKey" type="string"/>
+        </params>
+		<output>
+			<searchPattern id="value">(.+)</searchPattern>
+		</output>
+    </function>
+	<function id="CreateRegistryKey">
+        <type>DOT_NET</type>
+        <path>CreateRegistryKey</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="rootKey" type="string"/>
+            <param id="newKey" type="string"/>
+			<param id="regView" type="string"/>
+        </params>
+    </function>
+	<function id="ModifyRegistryKeyValue">
+        <type>DOS_CMD</type>
+        <path>reg add %regKey% /v %name% /t %nameType% /d %nameData% /f >NUL</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="regKey" type="string"/>
+            <param id="name" type="string"/>
+			<param id="nameType" type="string"/>
+            <param id="nameData" type="string"/>
+        </params>
+    </function>
+	<function id="ModifyRegistry64KeyValue">
+        <type>DOS_CMD</type>
+        <path>reg add %regKey% /v %name% /t %nameType% /d %nameData% /f /reg:64 >NUL</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="regKey" type="string"/>
+            <param id="name" type="string"/>
+			<param id="nameType" type="string"/>
+            <param id="nameData" type="string"/>
+        </params>
+    </function>
+	<function id="StartService">
+        <type>DOS_CMD</type>
+        <path>sc start %serviceName%</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="serviceName" type="string"/>
+        </params>
+    </function>
+    <function id="StopService">
+        <type>DOS_CMD</type>
+        <path>sc stop %serviceName%</path>
+        <exitCode>NULL</exitCode>
+        <params>
+            <param id="serviceName" type="string"/>
+        </params>
+    </function>
+	<function id="StartNetService">
+        <type>DOS_CMD</type>
+        <path>net start %serviceName%</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="serviceName" type="string"/>
+        </params>
+    </function>
+    <function id="StopNetService">
+        <type>DOS_CMD</type>
+        <path>net stop %serviceName%</path>
+        <exitCode>NULL</exitCode>
+        <params>
+            <param id="serviceName" type="string"/>
+        </params>
+    </function>
+	<function id="SetServiceStartupMode">
+        <type>DOS_CMD</type>
+        <path>sc config %serviceName% start= %mode%</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="serviceName" type="string"/>
+			<param id="mode" type="string"/>
+        </params>
+    </function>
+	<function id="RegisterDLL">
+        <type>DOS_CMD</type>
+        <path>regsvr32 /s %path%</path>
+        <exitCode>0</exitCode>
+        <params>
+            <param id="path" type="string"/>
+        </params>
+    </function>
+	<function id="Restart">
+        <type>DOS_CMD</type>
+        <path>shutdown -r -t 2</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="GPUpdate">
+        <type>DOS_CMD</type>
+        <path>gpupdate >NUL</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="AssociateFileExt">
+        <type>DOS_CMD</type>
+        <path>assoc %extension% = %type% >NUL</path>
+        <exitCode>0</exitCode>
+		<params>
+            <param id="extension" type="string"/>
+            <param id="type" type="string"/>
+        </params>
+    </function>
+</lib>

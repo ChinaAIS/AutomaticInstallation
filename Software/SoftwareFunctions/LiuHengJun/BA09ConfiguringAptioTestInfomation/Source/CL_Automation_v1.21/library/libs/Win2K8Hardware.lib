@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="Win2K8Hardware">
+	<function id="QueryRaidControllerModel">
+        <type>BATCH_SCRIPT</type>
+        <path>queryRaidModel.bat</path>
+        <exitCode>0</exitCode>
+        <output>
+            <searchPattern id="model">([^,]+),</searchPattern>
+			<searchPattern id="function">,([^,]+),</searchPattern>
+			<searchPattern id="prompt">,[^,]+,([^\n\r\f]+)</searchPattern>
+        </output>
+    </function>
+	
+	<!-- 
+		The following functions are returned from the function above.
+		A current limitation of this is the install paths are hardcoded.
+		This is OK for these since the RAID controller is only supported
+		on CentraLink HCS and the CD-ROM drive letter is always the same 
+	-->
+	<function id="InstallLSI3Ware">
+        <type>EXE_INSTALLER</type>
+        <path>H:\setupWindows_x64.exe</path>
+        <exitCode>0</exitCode>
+    </function>
+	<function id="InstallLSIMegaRaid">
+        <type>EXE_INSTALLER</type>
+        <path>H:\setup.exe</path>
+        <exitCode>0</exitCode>
+    </function>
+	<!-- End RAID specific install functions -->
+</lib>

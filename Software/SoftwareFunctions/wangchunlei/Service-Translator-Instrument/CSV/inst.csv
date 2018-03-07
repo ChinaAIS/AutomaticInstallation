@@ -1,0 +1,16 @@
+Name,Type,ParentInstrument.Name,Translator.Name,CodingSystem.Name,DefaultSampleType.Name,DefaultContainerType.Name,CommentStorage,UnknownFlagComment,RequestScheduling,DownloadByWorkList,OnAllQueryMatchTarget,OnAllQueryMaxSamples,MaxPrevResults,FullSampleUpload,DefaultLISChannel.Name,LASChannel.Name,LASConnectionActive,CountedTest.Name,CountCycle,CountLimit,PatDemographicsDownld,CheckUnits,RqstGroupsIncludeImgs,BarcodeTranslation.Description,OnEndResultMessage.Description
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: Instrument
+%% Exported on: 04/17/17 at 11:09:57
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Advia2400_1,Normal,?,Advia2400_1_Translator,?,?,?,Code only,?,Once,no,yes,?,0,no,?,Aptio,yes,?,?,?,Always,yes,no,?,?
+Advia2400_2,Normal,?,Advia2400_2_Translator,?,?,?,Code only,?,Once,no,yes,?,0,no,?,Aptio,yes,?,?,?,Always,yes,no,?,?
+ADVIAChemXPT_1,Normal,?,ChemXPT_1_Translator,ADVIACHEMXPT,?,?,Code or Text,?,Once,no,no,?,0,no,?,Aptio,yes,?,?,?,Always,no,no,?,?
+ADVIAChemXPT_2,Normal,?,ChemXPT_2_Translator,ADVIACHEMXPT,?,?,Code or Text,?,Once,no,no,?,0,no,?,Automation1,yes,?,?,?,Always,no,no,?,?
+CentaurXP_1,Normal,?,CentaurXP_1_Translator,?,?,?,Text or Code,?,Once,no,no,?,0,no,?,Automation1,yes,?,?,?,Always,no,no,?,?
+CentaurXP_2,Normal,?,CentaurXP_2_Translator,?,?,?,Text or Code,?,Once,no,no,?,0,no,?,Automation1,no,?,?,?,Always,no,no,?,?

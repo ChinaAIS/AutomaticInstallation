@@ -1,0 +1,11 @@
+Name,InternalLanguage,Type,AutoStart,SeqNo,Description,SpecificOptions,LoginUser.LoginName,Port,ApplicationRootFolder,LogVerbosity,LogToDatabase,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,RestartFailures,ServiceGroup.Mnemonic
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%,,,,,,,,,,,,,,,,,,,
+%%,,,,,,,,,,,,,,,,,,,
+%% Application: CENTRALINK,,,,,,,,,,,,,,,,,,,
+%% Version: 16.0.2,,,,,,,,,,,,,,,,,,,
+%% Table: gp_Service,,,,,,,,,,,,,,,,,,,
+%% Exported on: 02/28/18 at 23:25:49,,,,,,,,,,,,,,,,,,,
+%% Exported by: SiemensService,,,,,,,,,,,,,,,,,,,
+%%,,,,,,,,,,,,,,,,,,,
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%,,,,,,,,,,,,,,,,,,,
+LAS_Download_Scheduler,URL,Task scheduler,yes,?,?,?,batch,3900,?,High,no,1,Day,21,Day,10,yes,0,DefaultServiceGroup

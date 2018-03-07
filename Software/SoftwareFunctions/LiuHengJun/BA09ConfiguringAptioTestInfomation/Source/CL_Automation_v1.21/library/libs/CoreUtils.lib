@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lib id="CoreUtils">
+	<function id="PathExists">
+        <type>DOT_NET</type>
+        <path>PathExists</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+        </params>
+		<output>
+            <searchPattern id="bExists">(.+)</searchPattern>
+        </output>
+    </function>
+    <function id="CreateDirectory">
+        <type>DOT_NET</type>
+        <path>CreateDirectory</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="pathList" type="STRING"/>
+			<param id="rootDir" type="STRING" defaultValue="NULL"/>
+			<param id="doHide" type="BOOL" defaultValue="false"/>
+        </params>
+    </function>
+	<function id="CreateSecureDirectory">
+        <type>DOT_NET</type>
+        <path>CreateSecureDirectory</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="dirPath" type="STRING"/>
+			<param id="whiteList" type="STRING"/>
+        </params>
+    </function>
+    <function id="RemoveDirectory">
+        <type>DOT_NET</type>
+        <path>RemoveDirectory</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="pathList" type="STRING"/>
+        </params>
+    </function>
+	<function id="GetDirectories">
+        <type>DOT_NET</type>
+        <path>GetDirectories</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+			<param id="ignoreList" type="STRING" defaultValue="NULL"/>
+        </params>
+		<output>
+            <searchPattern id="dirList">(.+)</searchPattern>
+        </output>
+    </function>
+	<function id="GetFiles">
+        <type>DOT_NET</type>
+        <path>GetFiles</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+			<param id="ignoreList" type="STRING" defaultValue="NULL"/>
+        </params>
+		<output>
+            <searchPattern id="fileList">(.+)</searchPattern>
+        </output>
+    </function>
+	<function id="CreateFile">
+        <type>DOT_NET</type>
+        <path>CreateFile</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+        </params>
+    </function>
+	<function id="RemoveFile">
+        <type>DOT_NET</type>
+        <path>RemoveFile</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+        </params>
+    </function>
+	<function id="CopyFile">
+        <type>DOT_NET</type>
+        <path>CopyFile</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="srcPath" type="STRING"/>
+			<param id="dstPath" type="STRING"/>
+        </params>
+    </function>
+	<function id="TryCopyFile">
+        <type>DOT_NET</type>
+        <path>TryCopyFile</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="srcPath" type="STRING"/>
+			<param id="dstPath" type="STRING"/>
+        </params>
+    </function>
+	<function id="AppendToFile">
+        <type>DOT_NET</type>
+        <path>AppendToFile</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+			<param id="data" type="STRING"/>
+        </params>
+    </function>
+	<function id="GetTokensInFile">
+        <type>DOT_NET</type>
+        <path>GetTokensInFile</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+			<param id="token" type="STRING"/>
+        </params>
+		<output>
+            <searchPattern id="tokens">([^\r\n]+)</searchPattern>
+        </output>
+    </function>
+	<function id="ReplaceTokensInFile">
+        <type>DOT_NET</type>
+        <path>ReplaceTokensInFile</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="path" type="STRING"/>
+			<param id="oldToken" type="STRING"/>
+			<param id="newToken" type="STRING"/>
+        </params>
+    </function>
+	<function id="CreateZipArchive">
+        <type>DOT_NET</type>
+        <path>CreateZipArchive</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="dstArchivePath" type="STRING"/>
+			<param id="csvItemList" type="STRING"/>
+        </params>
+    </function>
+	<function id="ExtractZipArchive">
+        <type>DOT_NET</type>
+        <path>ExtractZipArchive</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="srcArchivePath" type="STRING"/>
+			<param id="dstPath" type="STRING"/>
+        </params>
+    </function>
+	<function id="CreateShortcut">
+        <type>DOT_NET</type>
+        <path>CreateShortcut</path>
+        <exitCode>1</exitCode>
+        <params>
+            <param id="linkPath" type="STRING"/>
+			<param id="targetPath" type="STRING"/>
+			<param id="arguments" type="STRING"/>
+			<param id="workingDir" type="STRING"/>
+			<param id="description" type="STRING"/>
+			<!-- CURRENTLY NOT SUPPORTED param id="hotKey" type="STRING"/ -->
+        </params>
+    </function>
+	<function id="InitReleaseData">
+        <type>DOT_NET</type>
+        <path>InitReleaseData</path>
+        <exitCode>1</exitCode>
+        <params>
+			<param id="releaseId" type="STRING"/>
+            <param id="filePath" type="STRING"/>
+			<param id="rootPath" type="STRING"/>
+        </params>
+    </function>
+</lib>

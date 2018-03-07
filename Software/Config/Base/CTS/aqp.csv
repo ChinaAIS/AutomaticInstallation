@@ -1,0 +1,41 @@
+Value,Set.Query.Table.Name,Set.Query.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_ActualQueryParameter
+%% Exported on: 02/14/17 at 11:25:58
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+?,Sample,Default,QPS_Find_Waiting,MinimalCollectionTime
+?,Sample,Default,QPS_Find_Waiting,MaximalCollectionTime
+?,Sample,Default,QPS_Find_Waiting,Physician
+?,Sample,Default,QPS_Find_Waiting,Patient
+?,Sample,Default,QPS_Find_Waiting,PatientLocation
+?,Sample,Default,QPS_Find_Waiting,Instrument
+?,Sample,Default,QPS_Find_Waiting,Species
+?,Sample,Default,QPS_Find_Waiting,MinimalAspirationTime
+?,Sample,Default,QPS_Find_Waiting,MaximalAspirationTime
+?,Sample,Default,QPS_Find_Waiting,Identifier
+?,Sample,Default,QPS_Find_Waiting,MinimalPriority
+?,Sample,Default,QPS_Find_Waiting,Type
+?,Sample,Default,QPS_Find_Waiting,InstrumentGroup
+?,Sample,Default,QPS_Find_Waiting,MaxSampleCount
+2,Sample,Default,QPS_Find_Waiting,SortCriterion
+1,Sample,Default,QPS_Find_Waiting,SlideRequest
+?,Sample,Default,QPS_Find_Waiting,MinimalStatusMinutes
+1,Sample,Default,QPS_Find_Waiting,MinimalStatus
+1,Sample,Default,QPS_Find_Waiting,MaximalStatus
+no,Sample,Default,QPS_Find_Waiting,NotReported
+?,Sample,Default,QPS_Find_Waiting,TestGroup
+no,Sample,Default,QPS_Find_Waiting,AtLeastOneRequestInStatus
+Filter_Find_waiting,Sample,Default,QPS_Find_Waiting,Filter
+Waiting,Sample,Default,QPS_Find_Waiting,Test
+720,Sample,Default,QPS_Find_Waiting,MaximalStatusMinutes
+?,Sample,Default,QPS_Find_Waiting,LASStatusNeedsUpload
+?,Sample,Default,QPS_Find_Waiting,LISChannel
+no,Sample,Default,QPS_Find_Waiting,SearchTargetted
+?,Sample,Default,QPS_Find_Waiting,LASFlagRejectResults
+no,Sample,Default,QPS_Find_Waiting,CheckLASUpdateRequired
+?,Sample,Default,QPS_Find_Waiting,LASChannel

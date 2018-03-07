@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<configs>
+    <config id="aptioV1Cfg" descr="The standard configuration when connecting CentraLink to Aptio">
+        <translationMaps>
+			<translationMap id="driverToType" dataFileName="_NULL_" format="_KEY_VALUE_" allowUndefined="true" undefinedFileName="UnTranslated_CL_Drivers.txt" descr="Defines the CentraLink driver to the Aptio instrument type">
+				<advc>A24</advc>
+				<cent>CEN</cent>
+				<s79c>A21</s79c>
+				<dim>EXL</dim>
+				<dimv>VIS</dimv>
+				<immu>I2K</immu>
+				<vcel>I2K</vcel>
+				<uiw>ACH</uiw>
+				<csi>CS5</csi>
+				<aclt>ATL</aclt>
+				<lia>LIA</lia>
+				<amar>ISR</amar>
+				<aia6>G8</aia6>
+				<udm>250</udm>
+				<jopl>JP</jopl>
+			</translationMap>
+		</translationMaps>
+		<sourceData allowNoParsedData="false">
+			<srcFiles>
+				<srcFile id="inst.csv" descr="Instrument table"/>
+				<srcFile id="test.csv" descr="Test table"/>
+				<srcFile id="trl.csv" descr="Translator table"/>
+				<srcFile id="mtd.csv" descr="Method table"/>
+				<srcFile id="intr.csv" descr="InstrumentTranslator table"/>
+			</srcFiles>
+			<sqlStatement>
+				SELECT DISTINCT 
+					TransTable.Driver, 
+					TestTable.Name, 
+					TestTable.[Description:E]
+				FROM 		
+					[test.csv]TestTable,
+					[mtd.csv]MethodTable, 
+					[inst.csv]InstTable,
+					[trl.csv]TransTable,
+					[intr.csv]InstTransTable
+				WHERE TestTable.Name = MethodTable.[Test#Name]
+				AND TestTable.[AllowLASDownload] &lt;&gt; 'no'
+				AND InstTable.[LASChannel#Name] &lt;&gt; '?'
+				AND InstTable.Name = MethodTable.[Instrument#Name]
+				AND InstTable.Name = InstTransTable.[Instrument#Name]
+				AND InstTransTable.[Translator#Name] = TransTable.Name
+				AND MethodTable.[Instrument#Name] IS NOT NULL
+				AND TestTable.[Description:E] IS NOT NULL
+				AND InstTable.Type IS NOT NULL
+				AND TransTable.InternalLanguage IS NOT NULL
+				ORDER BY TransTable.Driver
+			</sqlStatement>
+			<filters outputFileName="Aptio_Duplicate_Tests.txt" outputColumnIndex="1">
+				<basicDuplicates id="dupMethods" preserveInitialEntry="false" exportFilteredEntry="true" descr="Defines a basic duplicate comparison based on a defined column value">
+					<columnCompare id="testNameField" index="1"/>
+				</basicDuplicates>
+			</filters>
+		</sourceData>
+		<destData>
+			<cfgFile id="AnalyzerTestCodes" fileName="Analyzer-Test-Codes.ini" fieldSeperator="_TAB_" descr="Define the metadata for the aptio analyzer test code config file">
+                <fields>
+                    <field id="ANALYZER TYPE" srcDataColumnIdx="0" translationId="driverToType" defaultValue="_NULL_"/>
+                    <field id="ANALYZER TEST CODE" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_"/>
+                    <field id="ASTM TEST CODE" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_"/>
+					<field id="TEST NAME" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_"/>
+                    <field id="ORDER DESPITE ZERO INVENTORY" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="NO"/>
+                    <field id="COMBI TESTS" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+                </fields>
+            </cfgFile>
+            <cfgFile id="TestInformation" fileName="Test-Information.ini" fieldSeperator="_TAB_" descr="Define the metadata for the aptio test information config file">
+                <fields>
+                    <field id="ASTM TEST CODE" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_"/>
+                    <field id="TEST CODE" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_"/>
+                    <field id="TEST DESCRIPTION" srcDataColumnIdx="2" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="testDescription" operator="_EQUALS_" value="?" result="@1"/>	
+						</exceptions>
+					</field>
+                    <field id="NODE TYPE" srcDataColumnIdx="0" translationId="driverToType" defaultValue="_NULL_"/>
+                    <field id="DISPOSING TIME (HRS)" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+                </fields>
+            </cfgFile>
+        </destData>
+    </config>
+	<config id="dmsV1Cfg" descr="The standard configuration when connecting CentraLink to DMS">
+		<translationMaps>
+			<translationMap id="ClInstrumentNameToDmsClass" allowUndefined="true" undefinedFileName="UnTranslated_CL_Drivers.txt" dataFileName="dmsInstrClass.xml"/>
+		</translationMaps>
+		<sourceData allowNoParsedData="false">
+			<srcFiles>
+				<srcFile id="inst.csv" descr="Instrument table"/>
+				<srcFile id="mtd.csv" descr="Method table"/>
+				<srcFile id="test.csv" descr="Test table"/>
+				<srcFile id="tstc.csv" descr="TestCode table"/>
+				<srcFile id="sptc.csv" descr="SampleTypeCode table"/>
+			</srcFiles>
+			<sqlStatement>
+				SELECT DISTINCT 
+					TestTable.Name,
+					TestTable.[Description:E],
+					TestTable.[SampleType#Name],
+					MethodTable.[Instrument#Name],
+					MethodTable.[PatientResultSelector#Name],
+					MethodTable.[ControlResultSelector#Name],
+					SampleTypeCodeTable.Value,
+					InstTable.[CodingSystem#Name],
+					InstTable.Type,
+					InstTable.[ParentInstrument#Name]
+				FROM 
+					[test.csv]TestTable, 
+					[mtd.csv]MethodTable, 
+					[inst.csv]InstTable,
+					[sptc.csv]SampleTypeCodeTable
+				WHERE TestTable.Name = MethodTable.[Test#Name]
+				AND MethodTable.[Instrument#Name] = InstTable.Name
+				AND InstTable.[CodingSystem#Name] = SampleTypeCodeTable.[CodingSystem#Name]
+				AND TestTable.[SampleType#Name] = SampleTypeCodeTable.[SampleType#Name]
+				ORDER BY TestTable.Name
+				UNION ALL
+				SELECT DISTINCT 
+					TestTable.Name,
+					TestTable.[Description:E],
+					TestTable.[SampleType#Name],
+					MethodTable.[Instrument#Name],
+					MethodTable.[PatientResultSelector#Name],
+					MethodTable.[ControlResultSelector#Name],
+					TestTable.[SampleType#Name],
+					InstTable.[CodingSystem#Name],
+					InstTable.Type,
+					InstTable.[ParentInstrument#Name]
+				FROM 
+					[test.csv]TestTable, 
+					[mtd.csv]MethodTable, 
+					[inst.csv]InstTable,
+					[sptc.csv]SampleTypeCodeTable
+				WHERE TestTable.Name = MethodTable.[Test#Name] 
+				AND MethodTable.[Instrument#Name] = InstTable.Name
+				AND (TestTable.[SampleType#Name] = '?'
+					OR InstTable.[CodingSystem#Name] &lt;&gt; SampleTypeCodeTable.[CodingSystem#Name]
+					AND TestTable.[SampleType#Name] &lt;&gt; SampleTypeCodeTable.[SampleType#Name])
+				ORDER BY TestTable.Name
+			</sqlStatement>
+			<filters outputFileName="DMS_Duplicate_Tests.txt" outputColumnIndex="1">
+				<translatedCompOps id="differentDMSInstrClass" translationId="ClInstrumentNameToDmsClass" preserveInitialEntry="false" exportFilteredEntry="true" descr="Remove all methods that exist on two different instrument classes.  Export the duplicates">
+					<columnCompare id="testNameField" index="0" doTranslate="false" binaryOperator="_EQUALS_"/>
+					<columnCompare id="instrNameField" index="3" doTranslate="true" binaryOperator="_NOT_EQUALS_">
+						<ignoreList descr="CSV list of labels to NOT apply the filter"> INPECO </ignoreList>
+					</columnCompare>
+				</translatedCompOps>
+				<translatedCompOps id="sameDMSInstrClass" translationId="ClInstrumentNameToDmsClass" preserveInitialEntry="true" exportFilteredEntry="false" descr="Now remove the methods that exist on the same instrument class.  Do not export the duplicates.">
+					<columnCompare id="testNameField" index="0" doTranslate="false" binaryOperator="_EQUALS_"/>
+					<columnCompare id="instrNameField" index="3" doTranslate="true" binaryOperator="_EQUALS_">
+						<ignoreList descr="CSV list of labels to NOT apply the filter"> INPECO </ignoreList>
+					</columnCompare>
+				</translatedCompOps>
+			</filters>
+		</sourceData>
+		<destData>
+			<cfgFile id="ClDMSImportData" fileName="loadtest.csv" fieldSeperator="_SEMICOLON_" descr="Define the metadata for the DMS test information config file">
+                <fields>
+                    <field id="TYPE_TEST" srcDataColumnIdx="0" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="Description" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="Units1" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="Units2" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="Instrument" srcDataColumnIdx="3" translationId="ClInstrumentNameToDmsClass" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="skipLASTests" operator="_EQUALS_" value="INPECO" result="_SKIP_ENTRY_"/>
+						</exceptions>
+					</field>
+					<field id="InstrCode" srcDataColumnIdx="0" translationId="_NULL_" defaultValue="_EMPTY_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="Decimals" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="Flexlab-Code" srcDataColumnIdx="0" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="LIS_Code" srcDataColumnIdx="0" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="id1" srcDataColumnIdx="4" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="patientResultSelector" operator="_EQUALS_" value="?" result="F"/>	
+						</exceptions>
+					</field>
+					<field id="id2" srcDataColumnIdx="5" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="controlResultSelector" operator="_EQUALS_" value="?" result="F"/>	
+						</exceptions>
+					</field>
+					<field id="Instr-MatCode" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="LIS-MatCode" srcDataColumnIdx="2" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="sampleTypeInitial" operator="_SUBSTRING_" value="0,1" result="_NULL_"/>	
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="Disposal time u.m." srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="Disposal time" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="Department" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="all"/>
+					<field id="ResultType" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="A"/>
+					<field id="LISordersname" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="flgqc" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="DMS-Material code" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="DMS-material descript" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="colorcap" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="cotdestrecieve" srcDataColumnIdx="0" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="flgtosend" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="1"/>
+					<field id="flgtoreceive" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="1"/>
+					<field id="numrerun" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="flground" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="codmethod" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="desmethod" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="numduplicates" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+                </fields>
+            </cfgFile>
+        </destData>    
+    </config>
+	<config id="dmsV1Exc" descr="The exception configuration for CentraLink to DMS">
+		<translationMaps>
+			<translationMap id="ClInstrumentNameToDmsClass" allowUndefined="true" undefinedFileName="UnTranslated_CL_Driver_Excs.txt" dataFileName="dmsInstrClass.xml"/>
+		</translationMaps>
+		<sourceData allowNoParsedData="false">
+			<srcFiles>
+				<srcFile id="lasf.csv" descr="LasFlag table"/>
+				<srcFile id="infg.csv" descr="InstrumentFlag table"/>
+			</srcFiles>
+			<sqlStatement>
+				SELECT DISTINCT
+					LasFlagTable.[LASChannel#Name],
+					LasFlagTable.Code,
+					LasFlagTable.[Expansion:E]
+				FROM 
+					[lasf.csv]LasFlagTable
+				WHERE LasFlagTable.[LASChannel#Name] IS NOT NULL
+				AND LasFlagTable.Code IS NOT NULL
+				AND LasFlagTable.[Expansion:E] IS NOT NULL
+				UNION ALL
+				SELECT DISTINCT
+					InstrFlagTable.[Instrument#Name],
+					InstrFlagTable.Code,
+					InstrFlagTable.Expansion
+				FROM 
+					[infg.csv]InstrFlagTable,
+					[inst.csv]InstTable
+				WHERE InstrFlagTable.[Instrument#Name] = InstTable.Name
+				AND InstrFlagTable.Code IS NOT NULL
+				AND InstrFlagTable.Expansion IS NOT NULL
+			</sqlStatement>
+		</sourceData>
+		<destData>
+			<cfgFile id="ClDMSExcImportData" fileName="loadexception.csv" fieldSeperator="_SEMICOLON_" descr="Define the metadata for the DMS exception information config file">
+                <fields>
+                    <field id="codiid" srcDataColumnIdx="0" translationId="ClInstrumentNameToDmsClass" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="skipDuplicateEntries" operator="_DATA_SET_CONTAINS_" value="/@0;;;@1/" result="_SKIP_ENTRY_"/>
+						</exceptions>
+					</field>
+					<field id="codinstrument" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="codtest" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="_EMPTY_"/>
+					<field id="codexception" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="txtexception" srcDataColumnIdx="2" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="unknownValue" operator="_EQUALS_" value="?" result="_EMPTY_"/>	
+						</exceptions>
+					</field>
+					<field id="flgrerun" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="numrerunlimit" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgpostrerunheld" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="numdilution" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="valdilution" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="jsnreflex" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgignore" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgalarm" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgtoheld" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgdelivery" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgdisabletest" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgdisableinstrument" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgenableinstrument" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgenableinstrument" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgresendtoautomation" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgdropresult" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgcanceltest" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgrestraint" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgerror" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgkeep" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgcomplete" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgchangelevelnotify" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="desnoresult" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgresendsingletest" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+					<field id="flgignoreinternalrerun" srcDataColumnIdx="_NULL_" translationId="_NULL_" defaultValue="0"/>
+                </fields>
+            </cfgFile>
+        </destData>    
+    </config>
+	<config id="dmsV1NonInstrTests" descr="Lists all the tests that are not assigned to an instrument">
+		<sourceData allowNoParsedData="true">
+			<srcFiles>
+				<srcFile id="test.csv" descr="Test table"/>
+			</srcFiles>
+			<sqlStatement>
+				SELECT DISTINCT
+					TestTable.Name,
+					TestTable.SeqNo
+				FROM 
+					[test.csv]TestTable
+				WHERE TestTable.PatientDataType = 'String'
+				ORDER BY TestTable.Name
+			</sqlStatement>
+		</sourceData>
+		<destData>
+			<cfgFile id="ClDMSNonInstrTests" fileName="CL_DMS_Non_Instrument_Tests.txt" fieldSeperator="_TAB_" descr="Defines all tests that are not instrument assigned tests">
+                <fields>
+                    <field id="TestName" srcDataColumnIdx="0" translationId="_NULL_" defaultValue="_NULL_"/>
+					<field id="SequenceNumber" srcDataColumnIdx="1" translationId="_NULL_" defaultValue="_NULL_">
+						<exceptions>
+							<exception id="nullSeqNumber" operator="_EQUALS_" value="_EMPTY_" result="NOT_DEFINED"/>
+						</exceptions>
+					</field>
+                </fields>
+            </cfgFile>
+        </destData>    
+    </config>
+</configs>

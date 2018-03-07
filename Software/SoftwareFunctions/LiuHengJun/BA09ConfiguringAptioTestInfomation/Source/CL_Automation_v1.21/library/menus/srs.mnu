@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<menu id="srs">
+	<submenu id="install">
+		<routine id="installI2IAgent">
+			<params>
+				<param id="imagePath" type="string"/>
+				<param id="tmpPath" type="string"/>
+				<param id="packagePath" type="string" defaultValue="$tmpPath$\I2IAgent.msi"/>
+				<param id="mode" type="string" defaultValue="quiet"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="ExtractZipArchive">imagePath tmpPath</subRoutine>
+				<subRoutine id="InstallMSI">packagePath mode</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Install the i2i agent </summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+		<routine id="installI2IVNCService">
+			<params>
+				<param id="imagePath" type="string"/>
+				<param id="tmpPath" type="string"/>
+				<param id="packagePath" type="string" defaultValue="$tmpPath$\i2i VNC Server Setup.msi"/>
+				<param id="mode" type="string" defaultValue="quiet"/>
+			</params>
+			<executionQueue>
+				<subRoutine id="ExtractZipArchive">imagePath tmpPath</subRoutine>
+				<subRoutine id="InstallMSI">packagePath mode</subRoutine>
+			</executionQueue>
+			<help>
+				<summary>Install the i2i agent </summary>
+				<doc>TODO</doc>
+			</help>
+		</routine>
+	</submenu>
+	<submenu id="config">
+		<routine id="copyConfigFilesToDir">
+            <params>
+                <param id="srcPath" type="string"/>
+				<param id="dstPath" type="string"/>
+				<param id="_agentPath" type="string" defaultValue="$srcPath$Agent.config"/>
+				<param id="_devPath" type="string" defaultValue="$srcPath$DeviceDataSources.config"/>
+				<param id="_propPath" type="string" defaultValue="$srcPath$PropertyData.xml"/>
+				<param id="_clpropPath" type="string" defaultValue="$srcPath$CentraLinkPropertyInfoData.xml"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="CopyFile">_agentPath dstPath</subRoutine>
+				<subRoutine id="CopyFile">_devPath dstPath</subRoutine>
+				<subRoutine id="CopyFile">_agentPath dstPath</subRoutine>
+				<subRoutine id="CopyFile">_propPath dstPath</subRoutine>
+				<subRoutine id="CopyFile">_clpropPath dstPath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="setLcmIpAddress">
+            <params>
+                <param id="ipAddress" type="IPV4ADDRESS"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="server address=&quot;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&quot;"/>
+                <param id="_newToken"  type="string" defaultValue="server address=&quot;$ipAddress$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setSoftwareUpdatePath">
+            <params>
+                <param id="updatePath" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="updateFolder=&quot;.+&quot;"/>
+                <param id="_newToken" type="string" defaultValue="updateFolder=&quot;$updatePath$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setPropertyInfoPath">
+            <params>
+                <param id="infoPath" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="connection source=&quot;.+\\CentraLinkPropertyInfoData.xml&quot;"/>
+                <param id="_newToken" type="string" defaultValue="connection source=&quot;$infoPath$CentraLinkPropertyInfoData.xml&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setPropertyFilePath">
+            <params>
+                <param id="propertyPath" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="connection source=&quot;.+\\PropertyData.xml&quot;"/>
+                <param id="_newToken" type="string" defaultValue="connection source=&quot;$propertyPath$PropertyData.xml&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setFileUploadPath">
+            <params>
+                <param id="uploadPath" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="fileUploadFolder=&quot;.+&quot;"/>
+                <param id="_newToken" type="string" defaultValue="fileUploadFolder=&quot;$uploadPath$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setDeviceModel">
+            <params>
+                <param id="deviceModel" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="name=&quot;DX-DeviceModel&quot; value=&quot;\w+&quot;"/>
+                <param id="_newToken" type="string" defaultValue="name=&quot;DX-DeviceModel&quot; value=&quot;$deviceModel$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setDeviceType">
+            <params>
+                <param id="deviceType" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="name=&quot;DX-DeviceType&quot; value=&quot;\w+&quot;"/>
+				<!--param id="_regexPattern" type="string" defaultValue="DX-DeviceType[^\n\r]+"/ -->
+                <param id="_newToken" type="string" defaultValue="name=&quot;DX-DeviceType&quot; value=&quot;$deviceType$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setMaterialNumber">
+            <params>
+                <param id="materialNumber" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="name=&quot;DX-MaterialNumber&quot; value=&quot;\w+&quot;"/>
+                <param id="_newToken" type="string" defaultValue="name=&quot;DX-MaterialNumber&quot; value=&quot;$materialNumber$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setSerialNumber">
+            <params>
+                <param id="serialNumber" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="name=&quot;DX-SerialNumber&quot; value=&quot;.+&quot;"/>
+                <param id="_newToken" type="string" defaultValue="name=&quot;DX-SerialNumber&quot; value=&quot;$serialNumber$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+        <routine id="setSoftwareVersion">
+            <params>
+                <param id="softwareVersion" type="string"/>
+                <param id="path" type="string"/>
+                <param id="_regexPattern" type="string" defaultValue="name=&quot;DX-SoftwareVersion&quot; value=&quot;.+&quot;"/>
+                <param id="_newToken" type="string" defaultValue="name=&quot;DX-SoftwareVersion&quot; value=&quot;$softwareVersion$&quot;"/>
+            </params>
+            <executionQueue>
+                <subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="setFTPServerParms">
+            <params>
+                <param id="siteName" type="string"/>
+				<param id="serverIpAddress" type="ipv4address"/>
+				<param id="physicalPath" type="string"/>
+				<param id="path" type="string"/>
+				<param id="_siteNameRegexPattern" type="string" defaultValue="_SITE_NAME_HERE_"/>
+				<param id="_ipRegexPattern" type="string" defaultValue="_FTP_SERVER_IP_HERE_"/>
+				<param id="_phypathregexPattern" type="string" defaultValue="physicalPath=&quot;_PHYSICAL_PATH_HERE_"/>
+				<param id="_phypathNewValue" type="string" defaultValue="physicalPath=&quot;$physicalPath$"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="ReplaceTokensInFile">path _siteNameRegexPattern siteName</subRoutine>
+                <subRoutine id="ReplaceTokensInFile">path _ipRegexPattern serverIpAddress</subRoutine>
+				<subRoutine id="ReplaceTokensInFile">path _phypathregexPattern _phypathNewValue</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO - NOTE - Leaving the default syngolab user in the file for now</doc>
+            </help>
+        </routine>
+		<routine id="setFirewallPermissions">
+            <params>
+				<param id="i2iAgentExePath" type="string"/>
+				<param id="i2iVncExePath" type="string"/>
+                <param id="i2iAgentRuleName" type="string" defaultValue="i2i Agent"/>
+				<param id="i2iVncRuleName" type="string" defaultValue="i2i VNC"/>
+				<param id="i2iAgentDescr" type="string" defaultValue="Siemens SRS i2i Agent"/>
+				<param id="i2iVncDescr" type="string" defaultValue="Siemens SRS i2i VNC service"/>
+				<param id="direction" type="string" defaultValue="in"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="FirewallAllowProgram">i2iAgentRuleName direction i2iAgentDescr i2iAgentExePath</subRoutine>
+				<subRoutine id="FirewallAllowProgram">i2iVncRuleName direction i2iVncDescr i2iVncExePath</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<routine id="setLcmFtpFirewallPermission">
+            <params>
+				<param id="lcmIpAddress" type="string"/>
+				<param id="_name" type="string" defaultValue="i2i FTP"/>
+				<param id="_direction" type="string" defaultValue="in"/>
+				<param id="_descr" type="string" defaultValue="Siemens SRS FTP"/>
+				<param id="_protocol" type="string" defaultValue="tcp"/>
+            </params>
+            <executionQueue>
+				<subRoutine id="FirewallAllowRemoteIPAddresses">_name _direction _descr _protocol lcmIpAddress</subRoutine>
+            </executionQueue>
+            <help>
+                <summary>TODO</summary>
+                <doc>TODO</doc>
+            </help>
+        </routine>
+		<submenu id="vnc">
+			<routine id="enableVNCAuthentication">
+				<params>
+					<param id="path" type="string"/>
+					<param id="_regexPattern" type="string" defaultValue="AuthRequired=\d+"/>
+					<param id="_newToken" type="string" defaultValue="AuthRequired=1"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="ReplaceTokensInFile">path _regexPattern _newToken</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+			<routine id="addVNCAuthentication">
+				<params>
+					<param id="path" type="string"/>
+					<param id="data" type="string"/>
+				</params>
+				<executionQueue>
+					<subRoutine id="AppendToFile">path data</subRoutine>
+				</executionQueue>
+				<help>
+					<summary>TODO</summary>
+					<doc>TODO</doc>
+				</help>
+			</routine>
+		</submenu>
+    </submenu>
+</menu>
+        

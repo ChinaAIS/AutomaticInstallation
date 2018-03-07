@@ -1,0 +1,41 @@
+Value,Set.Query.Table.Name,Set.Query.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualQueryParameter
+%% Exported on: 02/28/18 at 23:39:34
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+?,Sample,Default,MarkForDelQry,MinimalCollectionTime
+?,Sample,Default,MarkForDelQry,MaximalCollectionTime
+?,Sample,Default,MarkForDelQry,Physician
+?,Sample,Default,MarkForDelQry,Patient
+?,Sample,Default,MarkForDelQry,PatientLocation
+?,Sample,Default,MarkForDelQry,Instrument
+?,Sample,Default,MarkForDelQry,Species
+?,Sample,Default,MarkForDelQry,MinimalAspirationTime
+?,Sample,Default,MarkForDelQry,MaximalAspirationTime
+?,Sample,Default,MarkForDelQry,Identifier
+?,Sample,Default,MarkForDelQry,MinimalPriority
+?,Sample,Default,MarkForDelQry,Type
+?,Sample,Default,MarkForDelQry,InstrumentGroup
+?,Sample,Default,MarkForDelQry,MaxSampleCount
+1,Sample,Default,MarkForDelQry,SortCriterion
+1,Sample,Default,MarkForDelQry,SlideRequest
+10080,Sample,Default,MarkForDelQry,MinimalStatusMinutes
+1,Sample,Default,MarkForDelQry,MinimalStatus
+5,Sample,Default,MarkForDelQry,MaximalStatus
+no,Sample,Default,MarkForDelQry,NotReported
+?,Sample,Default,MarkForDelQry,TestGroup
+no,Sample,Default,MarkForDelQry,AtLeastOneRequestInStatus
+?,Sample,Default,MarkForDelQry,Filter
+?,Sample,Default,MarkForDelQry,Test
+?,Sample,Default,MarkForDelQry,MaximalStatusMinutes
+?,Sample,Default,MarkForDelQry,LASStatusNeedsUpload
+?,Sample,Default,MarkForDelQry,LISChannel
+no,Sample,Default,MarkForDelQry,SearchTargetted
+?,Sample,Default,MarkForDelQry,LASFlagRejectResults
+no,Sample,Default,MarkForDelQry,CheckLASUpdateRequired
+?,Sample,Default,MarkForDelQry,LASChannel

@@ -1,0 +1,3 @@
+Name,InternalLanguage,AutoStart,SeqNo,Description,TimeOut,Server.Name,ExternalHost,ExternalPort,ExternalTimeOut,Driver,DriverVersion,SpecificOptions,ProcessId,LogVerbosity,LogFileRefresh,LogFileRefreshUnit,LogFileKeep,LogFileKeepUnit,LogFileMaxSize,LogFileRefrshOnMaxSize,ServiceGroup.Mnemonic
+Auto_Receive,XML,no,?,?,10,ServerAuto,?,?,10,auto,?,-s 9001,?,Medium,1,Day,21,Day,10,yes,DefaultServiceGroup
+Auto_Transmit,XML,no,?,?,10,ServerAuto,?,?,10,auto,?,-s 9002,?,Medium,1,Day,21,Day,10,yes,DefaultServiceGroup

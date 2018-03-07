@@ -1,0 +1,29 @@
+Code,LASChannel.Name,WatchdogNotification,UploadToLIS,DisplayExpansion,Expansion:E,SampleRejectResults,OnReceipt.Description
+A01,Automation1,None,no,no,Aliquoting Error on Primary Tube,No rejection,?
+A02,Automation1,None,no,no,Aliquoting Error on Secondary Tube,No rejection,?
+B01,Automation1,None,no,no,Centrifugation Error,No rejection,?
+B02,Automation1,None,no,no,Tube is outside weight range supported by Centrifuge,No rejection,?
+C01,Automation1,None,no,no,Error in Decapper Module,No rejection,?
+D01,Automation1,None,no,no,Error in Desealer Module,No rejection,?
+D02,Automation1,None,no,no,Desealer Error,No rejection,?
+I01,Automation1,None,no,no,Sample Identification is invalid,No rejection,?
+I02,Automation1,None,no,no,Invalid Tube Type,No rejection,?
+I03,Automation1,None,no,no,Invalid cap type,No rejection,?
+L01,Automation1,None,no,no,Tube Lost,No rejection,?
+M01,Automation1,None,no,no,Sample Identification Mismatch,No rejection,?
+M02,Automation1,None,no,no,Unreadable Sample Identification,No rejection,?
+R01,Automation1,None,no,no,Recapper error,No rejection,?
+S01,Automation1,None,no,no,Error in Sealer Module,No rejection,?
+U02,Automation1,None,no,no,Probe Motion error,No rejection,?
+U03,Automation1,None,no,no,Insufficient Sample,No rejection,?
+U04,Automation1,None,no,no,Clot detection Error,No rejection,?
+U07,Automation1,None,no,no,No work orders pending when instrument queried,No rejection,?
+U08,Automation1,None,no,no,Sampling Operation not executed,No rejection,?
+U09,Automation1,None,no,no,Sampling error reported by a module,No rejection,?
+U10,Automation1,None,no,no,Sampling completed with error on a module,No rejection,?
+U11,Automation1,None,no,no,Aspiration failed on a module,No rejection,?
+U12,Automation1,None,no,no,Reagent Error,No rejection,?
+X01,Automation1,Alert,yes,yes,"Sample Presentation error at a module, sample results are suspect",Temporary (concerning instrument),?
+X02,Automation1,Alert,yes,yes,Sample Queue Error,Permanent (all instruments),?
+Y01,Automation1,None,no,no,Duplicate Sample Identification detected,No rejection,?
+Z02,Automation1,Warning,no,no,Overdue Incomplete sample,No rejection,?

@@ -1,0 +1,9 @@
+CodingSystem.Name,Event.Name,Value
+Auto_CodingSystem,Centrifuged,1
+Auto_CodingSystem,Decapped,2
+Auto_CodingSystem,Aliquoted,3
+Auto_CodingSystem,Sealed,4
+Auto_CodingSystem,Recapped,5
+Auto_CodingSystem,Removed,6
+Auto_CodingSystem,Disposed,7
+Auto_CodingSystem,Unsealed,8

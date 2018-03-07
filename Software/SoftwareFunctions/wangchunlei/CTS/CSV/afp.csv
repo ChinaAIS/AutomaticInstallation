@@ -1,0 +1,14 @@
+Value,Set.Function.Table.Name,Set.Function.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_ActualFunctionParameter
+%% Exported on: 02/14/17 at 11:37:28
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+?,gp_Site,OnlineBackup,Online_Bckp_set,LastBackupTime
+4,gp_Site,OnlineBackup,Online_Bckp_set,KeepPeriod
+F:\OnlineBackup,gp_Site,OnlineBackup,Online_Bckp_set,BackupRootFolder
+Bckp,gp_Site,OnlineBackup,Online_Bckp_set,BackupFolderPrefix

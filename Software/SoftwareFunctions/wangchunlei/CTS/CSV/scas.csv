@@ -1,0 +1,12 @@
+Command.Table.Name,Command.Description,TaskScheduler.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_SchedulerAssignment
+%% Exported on: 02/14/17 at 11:19:43
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+QCLot,Upload results,LIS_Upload_Service
+Sample,Upload validated results,LIS_Upload_Service

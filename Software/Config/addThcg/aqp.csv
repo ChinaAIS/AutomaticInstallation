@@ -1,0 +1,40 @@
+Value,Set.Query.Table.Name,Set.Query.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_ActualQueryParameter
+%% Exported on: 02/15/17 at 11:46:49
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+?,Sample,Default,FindThcg,MinimalCollectionTime
+?,Sample,Default,FindThcg,MaximalCollectionTime
+?,Sample,Default,FindThcg,Physician
+?,Sample,Default,FindThcg,Patient
+?,Sample,Default,FindThcg,PatientLocation
+?,Sample,Default,FindThcg,Instrument
+?,Sample,Default,FindThcg,Species
+?,Sample,Default,FindThcg,MinimalAspirationTime
+?,Sample,Default,FindThcg,MaximalAspirationTime
+?,Sample,Default,FindThcg,Identifier
+?,Sample,Default,FindThcg,MinimalPriority
+?,Sample,Default,FindThcg,Type
+?,Sample,Default,FindThcg,InstrumentGroup
+?,Sample,Default,FindThcg,MaxSampleCount
+1,Sample,Default,FindThcg,SortCriterion
+1,Sample,Default,FindThcg,SlideRequest
+?,Sample,Default,FindThcg,MinimalStatusMinutes
+1,Sample,Default,FindThcg,MinimalStatus
+1,Sample,Default,FindThcg,MaximalStatus
+no,Sample,Default,FindThcg,NotReported
+?,Sample,Default,FindThcg,TestGroup
+yes,Sample,Default,FindThcg,AtLeastOneRequestInStatus
+?,Sample,Default,FindThcg,Filter
+200,Sample,Default,FindThcg,MaximalStatusMinutes
+?,Sample,Default,FindThcg,LASStatusNeedsUpload
+?,Sample,Default,FindThcg,LISChannel
+no,Sample,Default,FindThcg,SearchTargetted
+?,Sample,Default,FindThcg,LASFlagRejectResults
+no,Sample,Default,FindThcg,CheckLASUpdateRequired
+?,Sample,Default,FindThcg,LASChannel

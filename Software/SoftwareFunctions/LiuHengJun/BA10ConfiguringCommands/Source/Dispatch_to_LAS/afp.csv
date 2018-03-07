@@ -1,0 +1,14 @@
+Value,Set.Function.Table.Name,Set.Function.Mnemonic,Set.ShortDescription,FormalParameter.Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualFunctionParameter
+%% Exported on: 02/28/18 at 23:21:58
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+no,Sample,DispatchToLAS,Target,IncludeDispatched
+Automation1,Sample,DispatchToLAS,Target,LASChannel
+no,Sample,DispatchToLAS,Target,SendAsNew
+no,Sample,DispatchToLAS,Target,IgnoreLASPriorityBands

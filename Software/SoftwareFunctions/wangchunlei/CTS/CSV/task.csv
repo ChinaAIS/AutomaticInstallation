@@ -1,0 +1,30 @@
+Command.Table.Name,Command.Description,Name,StartDate,StartDayTime,EndDate,EndDayTime,Type,Interval,LatestRun,NextRun,Running,ExecutingService.Name,ExecutingSvcHost,ExecutingSvcProcessId,OnHoliday,OnMonday,OnTuesday,OnWednesday,OnThursday,OnFriday,OnSaturday,OnSunday,DayTypeInMonth,DayType,Day,Month
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_Task
+%% Exported on: 02/14/17 at 11:13:41
+%% Exported by: advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Mark_For_Deletion,MarkForDel,2016/9/5,0:10:00,?,?,Daily,1,2017/1/9 00:10:00,2017/1/10 00:10:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+Sample,Mark_For_Deletion_manual,MarkForDelManual,2016/9/5,0:20:00,?,?,Daily,1,2017/1/9 00:20:00,2017/1/10 00:20:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+Sample,Upload validated results,Upload validated results,2016/9/6,0:01:00,?,23:59:00,Instantly,1,2017/2/13 14:34:00,2017/2/13 14:35:00,yes,LIS_Upload_Service,CENTRALINKSVR,2936,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+QCLot,Upload results,Upload results Task,2016/9/6,0:01:00,?,23:59:00,Instantly,1,2017/2/13 14:34:00,2017/2/13 14:35:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+Sample,Waiting Command,Waiting Command,2016/9/18,0:01:00,?,23:59:00,Instantly,1,2017/2/13 14:35:00,2017/2/13 14:36:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+Sample,Dispatch to LAS,Dispatch to LAS Task,2016/9/6,0:01:00,?,23:59:00,Instantly,1,2017/2/13 14:35:00,2017/2/13 14:36:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+Sample,Automatic_Unschedule,AutomaticUnschedule,2016/9/8,0:00:00,?,23:59:00,Instantly,2,2017/2/13 14:34:00,2017/2/13 14:36:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+Sample,Upload LAS info,Upload LAS info Task,2016/9/12,0:01:00,?,23:59:00,Instantly,1,2017/2/13 14:35:00,2017/2/13 14:36:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+Sample,LAS_Flag_u09_notInlabbed,LAS_Flag_u09_notInlabbed,2016/9/18,5:01:00,?,20:00:00,Instantly,3,2017/2/13 14:34:00,2017/2/13 14:37:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+Sample,Aptio_KeepAlive,AptioKeepAliveTask,2016/9/8,0:01:00,?,23:59:00,Instantly,240,2017/2/13 12:01:00,2017/2/13 16:01:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+Sample,OmitPendingSample,OmitPendingSample,2016/9/8,0:30:00,?,?,Daily,1,2017/1/14 00:30:00,2017/2/14 00:30:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+gp_Site,DB_Expand,Bexpand,2016/9/5,1:00:00,?,?,Daily,1,2017/1/14 01:00:00,2017/2/14 01:00:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+gp_Site,Online_Backup,OnlineBackup,2016/9/5,2:00:00,?,?,Daily,1,2017/1/14 02:00:00,2017/2/14 02:00:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+gp_Site,Purge data,Purge data task,2015/7/9,3:10:00,?,?,Daily,1,2017/1/14 03:10:00,2017/2/14 03:10:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+QCPopulation,QC Purge,QC Purge,2016/11/3,3:30:00,?,?,Daily,1,2017/1/14 03:30:00,2017/2/14 03:30:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+gp_Site,Check saturation,Check saturation,2015/7/9,5:00:00,?,?,Daily,1,2017/1/14 05:00:00,2017/2/14 05:00:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+QCPopulation,ResetQCSeverity,ResetQCSeverity,2016/11/3,5:30:00,?,?,Daily,1,2017/1/14 05:30:00,2017/2/14 05:30:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+gp_Site,Check storage,Check storage,2015/7/9,6:00:00,?,?,Daily,1,2017/1/14 06:00:00,2017/2/14 06:00:00,no,?,?,?,Ignore,no,no,no,no,no,no,no,First,Sunday,?,January
+gp_Site,QC Closeout,QCCloseout,2016/9/6,22:00:00,?,?,Monthly,1,2017/2/5 22:00:00,2017/3/5 22:00:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,First,Sunday,?,January
+lg_Type,Audit log purge,Purge Audit Logs,2015/7/9,2:00:00,?,?,Monthly,1,2017/1/30 02:00:00,2017/3/30 02:00:00,no,?,?,?,Ignore,yes,yes,yes,yes,yes,yes,yes,?,?,30,January
