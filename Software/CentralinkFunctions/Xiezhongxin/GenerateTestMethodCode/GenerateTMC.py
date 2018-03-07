@@ -77,8 +77,8 @@ def GenerateTestCsvFile():
                   strDataType= sheet.cell(i,2).value
                   strUnit= sheet.cell(i,3).value
                   testFile.write(strTestName+','+strDescription+','+strSampleType+',no,'+strDataType+','+strDataType+','+strUnit+','+strUnit+','+'?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,?'+'\n')
-                  print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write '+strTestName+','+strDescription+','+strSampleType+',no,'+strDataType+','+strDataType+','+strUnit+','+strUnit+','+'?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,?'+' to test.csv' )
-                  WriteLogFile('Write '+strTestName+','+strDescription+','+strSampleType+',no,'+strDataType+','+strDataType+','+strUnit+','+strUnit+','+'?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,?'+' to test.csv' )
+                  print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write \''+strTestName+','+strDescription+','+strSampleType+',no,'+strDataType+','+strDataType+','+strUnit+','+strUnit+','+'?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,?'+'\' to test.csv')
+                  WriteLogFile('Write \''+strTestName+','+strDescription+','+strSampleType+',no,'+strDataType+','+strDataType+','+strUnit+','+strUnit+','+'?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,?'+'\' to test.csv')
                   
                   #2)write to mtd.csv 
                   strInstrumentList= str(sheet.cell(i,5).value)
@@ -95,8 +95,8 @@ def GenerateTestCsvFile():
                                                 if strInstrumentType=='ACH':
                                                       strInstrumentName='ChemistryXPT_'+arrInstrumentList[j]
                                     mtdFile.write(strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+'\n')
-                                    print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write '+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+' to mtd.csv')
-                                    WriteLogFile('Write '+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+' to mtd.csv')
+                                    print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write \''+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+'\' to mtd.csv')
+                                    WriteLogFile('Write \''+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+'\' to mtd.csv')
                         else:
                               if strInstrumentType=='A24':
                                     strInstrumentName='Advia2400_'+strInstrumentList
@@ -107,8 +107,8 @@ def GenerateTestCsvFile():
                                           if strInstrumentType=='ACH':
                                                 strInstrumentName='ChemistryXPT_'+strInstrumentList
                               mtdFile.write(strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+'\n')
-                              print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write '+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+' to mtd.csv')
-                              WriteLogFile('Write '+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+' to mtd.csv')
+                              print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write \''+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+'\' to mtd.csv')
+                              WriteLogFile('Write \''+strTestName+','+strInstrumentName+',1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?'+'\' to mtd.csv')
                               
                   #3)write to tstc.csv
                   strBoundValue=str(sheet.cell(i,6).value)
@@ -116,16 +116,16 @@ def GenerateTestCsvFile():
                         if strInstrumentType=='A24':
                               strCodingSystem='Advia 2400'
                               tstcFile.write(strCodingSystem+','+strTestName+','+strBoundValue+','+strBoundValue+'\n')
-                              print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write '+strCodingSystem+','+strTestName+','+strBoundValue+','+strBoundValue+' to tstc.csv')
-                              WriteLogFile('Write '+strCodingSystem+','+strTestName+','+strBoundValue+','+strBoundValue+' to tstc.csv')
+                              print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write \''+strCodingSystem+','+strTestName+','+strBoundValue+','+strBoundValue+'\' to tstc.csv')
+                              WriteLogFile('Write \''+strCodingSystem+','+strTestName+','+strBoundValue+','+strBoundValue+'\' to tstc.csv')
                   #4)write to Analyzer-Test-Codes.ini
                   AnalyzerTestCodesFile.write(strInstrumentType+'\t'+strTestName+'\t'+strTestName+'\t'+strTestName+'\t'+'NO'+'\t'+'\n')
-                  print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write '+strCodingSystem+','+strInstrumentType+'\t'+strTestName+'\t'+strTestName+'\t'+strTestName+'\t'+'NO'+'\t'+' to Analyzer-Test-Codes.ini.csv')
-                  WriteLogFile('Write '+strCodingSystem+','+strInstrumentType+'\t'+strTestName+'\t'+strTestName+'\t'+strTestName+'\t'+'NO'+'\t'+' to Analyzer-Test-Codes.ini.csv')
+                  print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write \''+strCodingSystem+','+strInstrumentType+'\t'+strTestName+'\t'+strTestName+'\t'+strTestName+'\t'+'NO'+'\t'+'\' to Analyzer-Test-Codes.ini.csv')
+                  WriteLogFile('Write \''+strCodingSystem+','+strInstrumentType+'\t'+strTestName+'\t'+strTestName+'\t'+strTestName+'\t'+'NO'+'\t'+'\' to Analyzer-Test-Codes.ini.csv')
                   #5)write to Test-Information.ini
                   TestInformationFile.write(strTestName+'\t'+strTestName+'\t'+strInstrumentType+'-'+strTestName+'\t'+strInstrumentType+'\t'+'\n')
-                  print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write '+strTestName+'\t'+strTestName+'\t'+strInstrumentType+'-'+strTestName+'\t'+strInstrumentType+'\t'+' to Test-Information.ini')
-                  WriteLogFile('Write '+strTestName+'\t'+strTestName+'\t'+strInstrumentType+'-'+strTestName+'\t'+strInstrumentType+'\t'+' to Test-Information.ini')
+                  print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Write \''+strTestName+'\t'+strTestName+'\t'+strInstrumentType+'-'+strTestName+'\t'+strInstrumentType+'\t'+'\' to Test-Information.ini')
+                  WriteLogFile('Write \''+strTestName+'\t'+strTestName+'\t'+strInstrumentType+'-'+strTestName+'\t'+strInstrumentType+'\t'+'\' to Test-Information.ini')
                   
       testFile.close();
       print('['+now.strftime('%Y-%m-%d %H:%M:%S')+']'+' '+'Generate test.csv successful')
