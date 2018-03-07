@@ -1,0 +1,10 @@
+Test.Name,Instrument.Name,Westgard12sSeverity,Westgard13sSeverity,Westgard10xSeverity,Westgard22sSeverity,Westgard41sSeverity,WestgardR4sSeverity,ApplyWestgardChecks,QCSeverity,Unit.Name,LowDetectionLimit,HighDetectionLimit,EnableTargeting,AutoTargetSeqNo,EnableWorkOrders,DownloadDilution,CheckMovingAverage,QCSeverityOnTypeError,QCSeverityOnInvalidRef,ValidateOnTypeError,ValidateOnInvalidRange,NormSeverityLimit,DeltaNormSeverityLimit,QCSeverityLimit,InstSeverityLimit,CounterKeyLabel,ReagentInformation,WGCheckIfCompForQC,InstrRerunSelection,PatientResultSelector.Name,ControlResultSelector.Name,OnQualityResultProcess.Description,LASTestAvailAlias.Test.Name,$ImportLog
+Na,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+Na,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+K,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+K,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+Cl,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+Cl,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+TBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+TBIL_2,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available
+DBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,?,Instrument not available

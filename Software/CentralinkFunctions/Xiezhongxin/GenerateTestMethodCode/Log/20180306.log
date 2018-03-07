@@ -1,0 +1,682 @@
+[2018-03-06 18:00:22] Start system
+[2018-03-06 18:00:22] Create test.csv File
+[2018-03-06 18:00:22] Create mtd.csv File
+[2018-03-06 18:00:22] Create tstc.csv File
+[2018-03-06 18:00:22] Create Analyzer-Test-Codes.ini File
+[2018-03-06 18:00:22] Create Test-Information.ini File
+[2018-03-06 18:00:22] Write Na,A24-Na,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Na,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write Na,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write Advia 2400,Na,301,301 to tstc.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	Na	Na	Na	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write Na	Na	A24-Na	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write K,A24-K,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write K,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write K,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write Advia 2400,K,302,302 to tstc.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	K	K	K	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write K	K	A24-K	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write Cl,A24-Cl,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Cl,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write Cl,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write Advia 2400,Cl,303,303 to tstc.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	Cl	Cl	Cl	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write Cl	Cl	A24-Cl	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write TBIL_2,A24-TBIL_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write TBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write TBIL_2,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	TBIL_2	TBIL_2	TBIL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write TBIL_2	TBIL_2	A24-TBIL_2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write DBIL_2,A24-DBIL_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write DBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	DBIL_2	DBIL_2	DBIL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write DBIL_2	DBIL_2	A24-DBIL_2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write TP,A24-TP,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	TP	TP	TP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write TP	TP	A24-TP	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ALB,A24-ALB,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ALB	ALB	ALB	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ALB	ALB	A24-ALB	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write PA,A24-PA,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	PA	PA	PA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write PA	PA	A24-PA	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write TBA,A24-TBA,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	TBA	TBA	TBA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write TBA	TBA	A24-TBA	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write AST,A24-AST,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	AST	AST	AST	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write AST	AST	A24-AST	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ALT,A24-ALT,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ALT	ALT	ALT	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ALT	ALT	A24-ALT	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ALPAMP,A24-ALPAMP,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ALPAMP	ALPAMP	ALPAMP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ALPAMP	ALPAMP	A24-ALPAMP	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write GGT,A24-GGT,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	GGT	GGT	GGT	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write GGT	GGT	A24-GGT	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write LDH,A24-LDH,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	LDH	LDH	LDH	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write LDH	LDH	A24-LDH	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CKNAC,A24-CKNAC,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CKNAC	CKNAC	CKNAC	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CKNAC	CKNAC	A24-CKNAC	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CKMB_sh,A24-CKMB_sh,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CKMB_sh	CKMB_sh	CKMB_sh	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CKMB_sh	CKMB_sh	A24-CKMB_sh	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write HBDH,A24-HBDH,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	HBDH	HBDH	HBDH	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write HBDH	HBDH	A24-HBDH	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write UN,A24-UN,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	UN	UN	UN	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write UN	UN	A24-UN	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ECRE_2,A24-ECRE_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ECRE_2	ECRE_2	ECRE_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ECRE_2	ECRE_2	A24-ECRE_2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write UA,A24-UA,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	UA	UA	UA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write UA	UA	A24-UA	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write GLUH_3,A24-GLUH_3,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	GLUH_3	GLUH_3	GLUH_3	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write GLUH_3	GLUH_3	A24-GLUH_3	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CO2,A24-CO2,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CO2	CO2	CO2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CO2	CO2	A24-CO2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CA,A24-CA,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CA	CA	CA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CA	CA	A24-CA	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write MG,A24-MG,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	MG	MG	MG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write MG	MG	A24-MG	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write P,A24-P,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	P	P	P	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write P	P	A24-P	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CHOL_2,A24-CHOL_2,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CHOL_2	CHOL_2	CHOL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CHOL_2	CHOL_2	A24-CHOL_2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write TRIG,A24-TRIG,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	TRIG	TRIG	TRIG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write TRIG	TRIG	A24-TRIG	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write D-HDL,A24-D-HDL,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	D-HDL	D-HDL	D-HDL	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write D-HDL	D-HDL	A24-D-HDL	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write DLDL,A24-DLDL,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	DLDL	DLDL	DLDL	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write DLDL	DLDL	A24-DLDL	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write APO A1,A24-APO A1,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	APO A1	APO A1	APO A1	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write APO A1	APO A1	A24-APO A1	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write APO B,A24-APO B,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	APO B	APO B	APO B	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write APO B	APO B	A24-APO B	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write IGA_2,A24-IGA_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	IGA_2	IGA_2	IGA_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write IGA_2	IGA_2	A24-IGA_2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write IGM_2,A24-IGM_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	IGM_2	IGM_2	IGM_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write IGM_2	IGM_2	A24-IGM_2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write IGG_2,A24-IGG_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	IGG_2	IGG_2	IGG_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write IGG_2	IGG_2	A24-IGG_2	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write C3,A24-C3,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	C3	C3	C3	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write C3	C3	A24-C3	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write C4,A24-C4,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	C4	C4	C4	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write C4	C4	A24-C4	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CHE,A24-CHE,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CHE	CHE	CHE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CHE	CHE	A24-CHE	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write Cysc,A24-Cysc,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	Cysc	Cysc	Cysc	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write Cysc	Cysc	A24-Cysc	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write UMA,A24-UMA,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	UMA	UMA	UMA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write UMA	UMA	A24-UMA	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write LIP,A24-LIP,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	LIP	LIP	LIP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write LIP	LIP	A24-LIP	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write MYO,A24-MYO,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	MYO	MYO	MYO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write MYO	MYO	A24-MYO	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write HBA1C,A24-HBA1C,Serum,no,Numeric,Numeric,%,%,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	HBA1C	HBA1C	HBA1C	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write HBA1C	HBA1C	A24-HBA1C	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ASO,A24-ASO,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ASO	ASO	ASO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ASO	ASO	A24-ASO	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write RF,A24-RF,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	RF	RF	RF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write RF	RF	A24-RF	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CSF,A24-CSF,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CSF	CSF	CSF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CSF	CSF	A24-CSF	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CRP,A24-CRP,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CRP	CRP	CRP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CRP	CRP	A24-CRP	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write AMYLAS,A24-AMYLAS,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	AMYLAS	AMYLAS	AMYLAS	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write AMYLAS	AMYLAS	A24-AMYLAS	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write hcyc,A24-hcyc,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	hcyc	hcyc	hcyc	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write hcyc	hcyc	A24-hcyc	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write b2-mg,A24-b2-mg,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	b2-mg	b2-mg	b2-mg	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write b2-mg	b2-mg	A24-b2-mg	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ThCG,A24-ThCG,Serum,no,Numeric,Numeric,mIU/mL,mIU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ThCG	ThCG	ThCG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ThCG	ThCG	A24-ThCG	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write BNP,A24-BNP,Serum,no,Numeric,Numeric,pg/mL,pg/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	BNP	BNP	BNP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write BNP	BNP	A24-BNP	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write TnIUltra,A24-TnIUltra,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	TnIUltra	TnIUltra	TnIUltra	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write TnIUltra	TnIUltra	A24-TnIUltra	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write HCY,A24-HCY,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	HCY	HCY	HCY	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write HCY	HCY	A24-HCY	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write HEMO,A24-HEMO,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	HEMO	HEMO	HEMO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write HEMO	HEMO	A24-HEMO	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ICTE,A24-ICTE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ICTE	ICTE	ICTE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ICTE	ICTE	A24-ICTE	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write LIPE,A24-LIPE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	LIPE	LIPE	LIPE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write LIPE	LIPE	A24-LIPE	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write SALINE,A24-SALINE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	SALINE	SALINE	SALINE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write SALINE	SALINE	A24-SALINE	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write LPa,A24-LPa,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	LPa	LPa	LPa	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write LPa	LPa	A24-LPa	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write VitD,A24-VitD,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	VitD	VitD	VitD	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write VitD	VitD	A24-VitD	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write VitaminD,A24-VitaminD,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	VitaminD	VitaminD	VitaminD	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write VitaminD	VitaminD	A24-VitaminD	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write IgE,A24-IgE,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	IgE	IgE	IgE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write IgE	IgE	A24-IgE	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CF,A24-CF,Serum,no,String,String,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CF	CF	CF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CF	CF	A24-CF	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write ADA,A24-ADA,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	ADA	ADA	ADA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write ADA	ADA	A24-ADA	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write AFU,A24-AFU,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	AFU	AFU	AFU	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write AFU	AFU	A24-AFU	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write CKMB,A24-CKMB,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	CKMB	CKMB	CKMB	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write CKMB	CKMB	A24-CKMB	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Write Fe,A24-Fe,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:00:22] Write Advia 2400,A24	Fe	Fe	Fe	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:00:22] Write Fe	Fe	A24-Fe	A24	 to Test-Information.ini
+[2018-03-06 18:00:22] Generate test.csv successful
+[2018-03-06 18:00:22] Generate mtd.csv successful
+[2018-03-06 18:00:22] Generate tstc.csv successful
+[2018-03-06 18:00:22] Generate Analyzer-Test-Codes.ini successful
+[2018-03-06 18:00:22] Generate Test-Information.ini successful
+[2018-03-06 18:00:22] Generate sslf_imp.txt successful
+[2018-03-06 18:00:22] Login Centralink successful
+[2018-03-06 18:00:22] Start import .csv file to Centralink
+[2018-03-06 18:00:22] Import .csv file to Centralink fail
+[2018-03-06 18:00:22] Copy .ini file to Aptio successful
+[2018-03-06 18:01:31] Start system
+[2018-03-06 18:01:31] Create test.csv File
+[2018-03-06 18:01:31] Create mtd.csv File
+[2018-03-06 18:01:31] Create tstc.csv File
+[2018-03-06 18:01:31] Create Analyzer-Test-Codes.ini File
+[2018-03-06 18:01:31] Create Test-Information.ini File
+[2018-03-06 18:01:31] Write Na,A24-Na,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Na,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write Na,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write Advia 2400,Na,301,301 to tstc.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	Na	Na	Na	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write Na	Na	A24-Na	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write K,A24-K,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write K,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write K,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write Advia 2400,K,302,302 to tstc.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	K	K	K	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write K	K	A24-K	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write Cl,A24-Cl,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Cl,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write Cl,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write Advia 2400,Cl,303,303 to tstc.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	Cl	Cl	Cl	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write Cl	Cl	A24-Cl	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write TBIL_2,A24-TBIL_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write TBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write TBIL_2,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	TBIL_2	TBIL_2	TBIL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write TBIL_2	TBIL_2	A24-TBIL_2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write DBIL_2,A24-DBIL_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write DBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	DBIL_2	DBIL_2	DBIL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write DBIL_2	DBIL_2	A24-DBIL_2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write TP,A24-TP,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	TP	TP	TP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write TP	TP	A24-TP	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ALB,A24-ALB,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ALB	ALB	ALB	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ALB	ALB	A24-ALB	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write PA,A24-PA,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	PA	PA	PA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write PA	PA	A24-PA	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write TBA,A24-TBA,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	TBA	TBA	TBA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write TBA	TBA	A24-TBA	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write AST,A24-AST,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	AST	AST	AST	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write AST	AST	A24-AST	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ALT,A24-ALT,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ALT	ALT	ALT	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ALT	ALT	A24-ALT	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ALPAMP,A24-ALPAMP,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ALPAMP	ALPAMP	ALPAMP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ALPAMP	ALPAMP	A24-ALPAMP	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write GGT,A24-GGT,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	GGT	GGT	GGT	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write GGT	GGT	A24-GGT	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write LDH,A24-LDH,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	LDH	LDH	LDH	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write LDH	LDH	A24-LDH	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CKNAC,A24-CKNAC,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CKNAC	CKNAC	CKNAC	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CKNAC	CKNAC	A24-CKNAC	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CKMB_sh,A24-CKMB_sh,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CKMB_sh	CKMB_sh	CKMB_sh	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CKMB_sh	CKMB_sh	A24-CKMB_sh	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write HBDH,A24-HBDH,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	HBDH	HBDH	HBDH	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write HBDH	HBDH	A24-HBDH	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write UN,A24-UN,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	UN	UN	UN	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write UN	UN	A24-UN	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ECRE_2,A24-ECRE_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ECRE_2	ECRE_2	ECRE_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ECRE_2	ECRE_2	A24-ECRE_2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write UA,A24-UA,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	UA	UA	UA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write UA	UA	A24-UA	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write GLUH_3,A24-GLUH_3,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	GLUH_3	GLUH_3	GLUH_3	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write GLUH_3	GLUH_3	A24-GLUH_3	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CO2,A24-CO2,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CO2	CO2	CO2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CO2	CO2	A24-CO2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CA,A24-CA,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CA	CA	CA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CA	CA	A24-CA	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write MG,A24-MG,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	MG	MG	MG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write MG	MG	A24-MG	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write P,A24-P,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	P	P	P	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write P	P	A24-P	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CHOL_2,A24-CHOL_2,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CHOL_2	CHOL_2	CHOL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CHOL_2	CHOL_2	A24-CHOL_2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write TRIG,A24-TRIG,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	TRIG	TRIG	TRIG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write TRIG	TRIG	A24-TRIG	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write D-HDL,A24-D-HDL,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	D-HDL	D-HDL	D-HDL	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write D-HDL	D-HDL	A24-D-HDL	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write DLDL,A24-DLDL,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	DLDL	DLDL	DLDL	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write DLDL	DLDL	A24-DLDL	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write APO A1,A24-APO A1,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	APO A1	APO A1	APO A1	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write APO A1	APO A1	A24-APO A1	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write APO B,A24-APO B,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	APO B	APO B	APO B	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write APO B	APO B	A24-APO B	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write IGA_2,A24-IGA_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	IGA_2	IGA_2	IGA_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write IGA_2	IGA_2	A24-IGA_2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write IGM_2,A24-IGM_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	IGM_2	IGM_2	IGM_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write IGM_2	IGM_2	A24-IGM_2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write IGG_2,A24-IGG_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	IGG_2	IGG_2	IGG_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write IGG_2	IGG_2	A24-IGG_2	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write C3,A24-C3,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	C3	C3	C3	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write C3	C3	A24-C3	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write C4,A24-C4,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	C4	C4	C4	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write C4	C4	A24-C4	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CHE,A24-CHE,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CHE	CHE	CHE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CHE	CHE	A24-CHE	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write Cysc,A24-Cysc,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	Cysc	Cysc	Cysc	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write Cysc	Cysc	A24-Cysc	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write UMA,A24-UMA,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	UMA	UMA	UMA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write UMA	UMA	A24-UMA	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write LIP,A24-LIP,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	LIP	LIP	LIP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write LIP	LIP	A24-LIP	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write MYO,A24-MYO,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	MYO	MYO	MYO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write MYO	MYO	A24-MYO	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write HBA1C,A24-HBA1C,Serum,no,Numeric,Numeric,%,%,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	HBA1C	HBA1C	HBA1C	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write HBA1C	HBA1C	A24-HBA1C	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ASO,A24-ASO,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ASO	ASO	ASO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ASO	ASO	A24-ASO	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write RF,A24-RF,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	RF	RF	RF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write RF	RF	A24-RF	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CSF,A24-CSF,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CSF	CSF	CSF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CSF	CSF	A24-CSF	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CRP,A24-CRP,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CRP	CRP	CRP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CRP	CRP	A24-CRP	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write AMYLAS,A24-AMYLAS,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	AMYLAS	AMYLAS	AMYLAS	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write AMYLAS	AMYLAS	A24-AMYLAS	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write hcyc,A24-hcyc,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	hcyc	hcyc	hcyc	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write hcyc	hcyc	A24-hcyc	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write b2-mg,A24-b2-mg,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	b2-mg	b2-mg	b2-mg	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write b2-mg	b2-mg	A24-b2-mg	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ThCG,A24-ThCG,Serum,no,Numeric,Numeric,mIU/mL,mIU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ThCG	ThCG	ThCG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ThCG	ThCG	A24-ThCG	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write BNP,A24-BNP,Serum,no,Numeric,Numeric,pg/mL,pg/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	BNP	BNP	BNP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write BNP	BNP	A24-BNP	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write TnIUltra,A24-TnIUltra,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	TnIUltra	TnIUltra	TnIUltra	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write TnIUltra	TnIUltra	A24-TnIUltra	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write HCY,A24-HCY,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	HCY	HCY	HCY	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write HCY	HCY	A24-HCY	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write HEMO,A24-HEMO,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	HEMO	HEMO	HEMO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write HEMO	HEMO	A24-HEMO	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ICTE,A24-ICTE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ICTE	ICTE	ICTE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ICTE	ICTE	A24-ICTE	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write LIPE,A24-LIPE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	LIPE	LIPE	LIPE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write LIPE	LIPE	A24-LIPE	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write SALINE,A24-SALINE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	SALINE	SALINE	SALINE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write SALINE	SALINE	A24-SALINE	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write LPa,A24-LPa,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	LPa	LPa	LPa	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write LPa	LPa	A24-LPa	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write VitD,A24-VitD,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	VitD	VitD	VitD	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write VitD	VitD	A24-VitD	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write VitaminD,A24-VitaminD,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	VitaminD	VitaminD	VitaminD	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write VitaminD	VitaminD	A24-VitaminD	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write IgE,A24-IgE,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	IgE	IgE	IgE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write IgE	IgE	A24-IgE	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CF,A24-CF,Serum,no,String,String,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CF	CF	CF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CF	CF	A24-CF	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write ADA,A24-ADA,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	ADA	ADA	ADA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write ADA	ADA	A24-ADA	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write AFU,A24-AFU,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	AFU	AFU	AFU	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write AFU	AFU	A24-AFU	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write CKMB,A24-CKMB,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	CKMB	CKMB	CKMB	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write CKMB	CKMB	A24-CKMB	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Write Fe,A24-Fe,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:01:31] Write Advia 2400,A24	Fe	Fe	Fe	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:01:31] Write Fe	Fe	A24-Fe	A24	 to Test-Information.ini
+[2018-03-06 18:01:31] Generate test.csv successful
+[2018-03-06 18:01:31] Generate mtd.csv successful
+[2018-03-06 18:01:31] Generate tstc.csv successful
+[2018-03-06 18:01:31] Generate Analyzer-Test-Codes.ini successful
+[2018-03-06 18:01:31] Generate Test-Information.ini successful
+[2018-03-06 18:01:31] Generate sslf_imp.txt successful
+[2018-03-06 18:01:31] Centralink is already running
+[2018-03-06 18:01:31] Login Centralink successful
+[2018-03-06 18:01:31] Start import .csv file to Centralink
+[2018-03-06 18:01:31] Import .csv file to Centralink successful
+[2018-03-06 18:01:31] Logout Centralink
+[2018-03-06 18:01:31] Copy .ini file to Aptio successful
+[2018-03-06 18:05:40] Start system
+[2018-03-06 18:05:40] Create test.csv File
+[2018-03-06 18:05:40] Create mtd.csv File
+[2018-03-06 18:05:40] Create tstc.csv File
+[2018-03-06 18:05:40] Create Analyzer-Test-Codes.ini File
+[2018-03-06 18:05:40] Create Test-Information.ini File
+[2018-03-06 18:05:40] Write Na,A24-Na,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Na,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write Na,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write Advia 2400,Na,301,301 to tstc.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	Na	Na	Na	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write Na	Na	A24-Na	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write K,A24-K,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write K,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write K,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write Advia 2400,K,302,302 to tstc.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	K	K	K	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write K	K	A24-K	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write Cl,A24-Cl,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Cl,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write Cl,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write Advia 2400,Cl,303,303 to tstc.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	Cl	Cl	Cl	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write Cl	Cl	A24-Cl	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write TBIL_2,A24-TBIL_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write TBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write TBIL_2,Advia2400_2,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	TBIL_2	TBIL_2	TBIL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write TBIL_2	TBIL_2	A24-TBIL_2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write DBIL_2,A24-DBIL_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write DBIL_2,Advia2400_1,1,1,1,1,1,1,yes,0,?,?,?,no,?,yes,no,no,5,5,no,no,6,6,6,6,?,?,no,Any,?,?,?,? to mtd.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	DBIL_2	DBIL_2	DBIL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write DBIL_2	DBIL_2	A24-DBIL_2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write TP,A24-TP,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	TP	TP	TP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write TP	TP	A24-TP	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ALB,A24-ALB,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ALB	ALB	ALB	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ALB	ALB	A24-ALB	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write PA,A24-PA,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	PA	PA	PA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write PA	PA	A24-PA	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write TBA,A24-TBA,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	TBA	TBA	TBA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write TBA	TBA	A24-TBA	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write AST,A24-AST,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	AST	AST	AST	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write AST	AST	A24-AST	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ALT,A24-ALT,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ALT	ALT	ALT	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ALT	ALT	A24-ALT	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ALPAMP,A24-ALPAMP,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ALPAMP	ALPAMP	ALPAMP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ALPAMP	ALPAMP	A24-ALPAMP	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write GGT,A24-GGT,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	GGT	GGT	GGT	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write GGT	GGT	A24-GGT	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write LDH,A24-LDH,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	LDH	LDH	LDH	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write LDH	LDH	A24-LDH	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CKNAC,A24-CKNAC,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CKNAC	CKNAC	CKNAC	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CKNAC	CKNAC	A24-CKNAC	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CKMB_sh,A24-CKMB_sh,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CKMB_sh	CKMB_sh	CKMB_sh	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CKMB_sh	CKMB_sh	A24-CKMB_sh	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write HBDH,A24-HBDH,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	HBDH	HBDH	HBDH	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write HBDH	HBDH	A24-HBDH	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write UN,A24-UN,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	UN	UN	UN	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write UN	UN	A24-UN	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ECRE_2,A24-ECRE_2,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ECRE_2	ECRE_2	ECRE_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ECRE_2	ECRE_2	A24-ECRE_2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write UA,A24-UA,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	UA	UA	UA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write UA	UA	A24-UA	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write GLUH_3,A24-GLUH_3,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	GLUH_3	GLUH_3	GLUH_3	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write GLUH_3	GLUH_3	A24-GLUH_3	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CO2,A24-CO2,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CO2	CO2	CO2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CO2	CO2	A24-CO2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CA,A24-CA,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CA	CA	CA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CA	CA	A24-CA	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write MG,A24-MG,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	MG	MG	MG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write MG	MG	A24-MG	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write P,A24-P,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	P	P	P	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write P	P	A24-P	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CHOL_2,A24-CHOL_2,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CHOL_2	CHOL_2	CHOL_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CHOL_2	CHOL_2	A24-CHOL_2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write TRIG,A24-TRIG,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	TRIG	TRIG	TRIG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write TRIG	TRIG	A24-TRIG	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write D-HDL,A24-D-HDL,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	D-HDL	D-HDL	D-HDL	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write D-HDL	D-HDL	A24-D-HDL	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write DLDL,A24-DLDL,Serum,no,Numeric,Numeric,mmol/L,mmol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	DLDL	DLDL	DLDL	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write DLDL	DLDL	A24-DLDL	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write APO A1,A24-APO A1,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	APO A1	APO A1	APO A1	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write APO A1	APO A1	A24-APO A1	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write APO B,A24-APO B,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	APO B	APO B	APO B	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write APO B	APO B	A24-APO B	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write IGA_2,A24-IGA_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	IGA_2	IGA_2	IGA_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write IGA_2	IGA_2	A24-IGA_2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write IGM_2,A24-IGM_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	IGM_2	IGM_2	IGM_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write IGM_2	IGM_2	A24-IGM_2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write IGG_2,A24-IGG_2,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	IGG_2	IGG_2	IGG_2	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write IGG_2	IGG_2	A24-IGG_2	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write C3,A24-C3,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	C3	C3	C3	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write C3	C3	A24-C3	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write C4,A24-C4,Serum,no,Numeric,Numeric,g/L,g/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	C4	C4	C4	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write C4	C4	A24-C4	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CHE,A24-CHE,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CHE	CHE	CHE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CHE	CHE	A24-CHE	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write Cysc,A24-Cysc,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	Cysc	Cysc	Cysc	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write Cysc	Cysc	A24-Cysc	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write UMA,A24-UMA,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	UMA	UMA	UMA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write UMA	UMA	A24-UMA	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write LIP,A24-LIP,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	LIP	LIP	LIP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write LIP	LIP	A24-LIP	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write MYO,A24-MYO,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	MYO	MYO	MYO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write MYO	MYO	A24-MYO	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write HBA1C,A24-HBA1C,Serum,no,Numeric,Numeric,%,%,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	HBA1C	HBA1C	HBA1C	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write HBA1C	HBA1C	A24-HBA1C	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ASO,A24-ASO,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ASO	ASO	ASO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ASO	ASO	A24-ASO	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write RF,A24-RF,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	RF	RF	RF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write RF	RF	A24-RF	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CSF,A24-CSF,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CSF	CSF	CSF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CSF	CSF	A24-CSF	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CRP,A24-CRP,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CRP	CRP	CRP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CRP	CRP	A24-CRP	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write AMYLAS,A24-AMYLAS,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	AMYLAS	AMYLAS	AMYLAS	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write AMYLAS	AMYLAS	A24-AMYLAS	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write hcyc,A24-hcyc,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	hcyc	hcyc	hcyc	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write hcyc	hcyc	A24-hcyc	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write b2-mg,A24-b2-mg,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	b2-mg	b2-mg	b2-mg	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write b2-mg	b2-mg	A24-b2-mg	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ThCG,A24-ThCG,Serum,no,Numeric,Numeric,mIU/mL,mIU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ThCG	ThCG	ThCG	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ThCG	ThCG	A24-ThCG	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write BNP,A24-BNP,Serum,no,Numeric,Numeric,pg/mL,pg/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	BNP	BNP	BNP	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write BNP	BNP	A24-BNP	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write TnIUltra,A24-TnIUltra,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	TnIUltra	TnIUltra	TnIUltra	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write TnIUltra	TnIUltra	A24-TnIUltra	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write HCY,A24-HCY,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	HCY	HCY	HCY	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write HCY	HCY	A24-HCY	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write HEMO,A24-HEMO,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	HEMO	HEMO	HEMO	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write HEMO	HEMO	A24-HEMO	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ICTE,A24-ICTE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ICTE	ICTE	ICTE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ICTE	ICTE	A24-ICTE	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write LIPE,A24-LIPE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	LIPE	LIPE	LIPE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write LIPE	LIPE	A24-LIPE	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write SALINE,A24-SALINE,Serum,no,Enumerated,Enumerated,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	SALINE	SALINE	SALINE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write SALINE	SALINE	A24-SALINE	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write LPa,A24-LPa,Serum,no,Numeric,Numeric,mg/L,mg/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	LPa	LPa	LPa	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write LPa	LPa	A24-LPa	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write VitD,A24-VitD,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	VitD	VitD	VitD	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write VitD	VitD	A24-VitD	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write VitaminD,A24-VitaminD,Serum,no,Numeric,Numeric,ng/mL,ng/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	VitaminD	VitaminD	VitaminD	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write VitaminD	VitaminD	A24-VitaminD	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write IgE,A24-IgE,Serum,no,Numeric,Numeric,IU/mL,IU/mL,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	IgE	IgE	IgE	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write IgE	IgE	A24-IgE	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CF,A24-CF,Serum,no,String,String,?,?,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CF	CF	CF	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CF	CF	A24-CF	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write ADA,A24-ADA,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	ADA	ADA	ADA	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write ADA	ADA	A24-ADA	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write AFU,A24-AFU,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	AFU	AFU	AFU	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write AFU	AFU	A24-AFU	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write CKMB,A24-CKMB,Serum,no,Numeric,Numeric,U/L,U/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	CKMB	CKMB	CKMB	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write CKMB	CKMB	A24-CKMB	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Write Fe,A24-Fe,Serum,no,Numeric,Numeric,umol/L,umol/L,?,?,?,?,?,?,?,?,?,?,?,?,yes,yes,Allow always,?,?,yes,?,?,? to test.csv
+[2018-03-06 18:05:40] Write Advia 2400,A24	Fe	Fe	Fe	NO	 to Analyzer-Test-Codes.ini.csv
+[2018-03-06 18:05:40] Write Fe	Fe	A24-Fe	A24	 to Test-Information.ini
+[2018-03-06 18:05:40] Generate test.csv successful
+[2018-03-06 18:05:40] Generate mtd.csv successful
+[2018-03-06 18:05:40] Generate tstc.csv successful
+[2018-03-06 18:05:40] Generate Analyzer-Test-Codes.ini successful
+[2018-03-06 18:05:40] Generate Test-Information.ini successful
+[2018-03-06 18:05:40] Generate sslf_imp.txt successful
+[2018-03-06 18:05:40] Centralink is already running
+[2018-03-06 18:05:40] Login Centralink successful
+[2018-03-06 18:05:40] Start import .csv file to Centralink
+[2018-03-06 18:05:40] Import .csv file to Centralink successful
+[2018-03-06 18:05:40] Logout Centralink
+[2018-03-06 18:05:40] Copy .ini file to Aptio successful
