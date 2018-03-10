@@ -6,9 +6,9 @@ except ImportError:
 class config_XML(object):
     def __init__(self):
         try:
-           tree = ET.ElementTree(file="C:\\config\\config.xml")
+           tree = ET.ElementTree(file="..\\config\\config.xml")
         except:
-            with open("C:\\config\\config.xml","w") as f:
+            with open("..\\config\\config.xml","w") as f:
                 f.write("<config>\n")
                 f.write(" "* 4 + "<environment>\n" )
                 f.write(" "* 6 + "<function name='NotePad'>")

@@ -10,7 +10,7 @@ class myfrom_setup(Ui_MainWindow):
           self.Page1_CheckBox =[]
           self.Page2_CheckBox =[]
           self.Page3_CheckBox =[]
-          tree = ET.ElementTree(file="C:\\config\\config.xml")
+          tree = ET.ElementTree(file="..\\config\\config.xml")
           root = tree.getroot()
           i = 0
           for child in root[0]:
