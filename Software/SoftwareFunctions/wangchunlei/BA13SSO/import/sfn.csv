@@ -1,0 +1,29 @@
+Table.Name,Description,DataType,Definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: gp_SiteFunction
+%% Exported on: 03/02/18 at 12:00:11
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Filter_FindTJ,Logical,"if substr(.Identifier,1,1)=""8"" then
+RETURN True;
+endif;
+Return False;"
+Sample,Filter_FindRerunSampleOffLink,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], FindLasEventByName(""Removed""));
+
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+    If (? <> RemovedFromLAS) Then
+	     RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		 LastLASUpdateDatetime := .LASTime;
+		 	If RemovedDateTime > LastLASUpdateDatetime Then	
+			    Return True;
+		    Endif;
+	 endif;
+endif;
+Return false;	 "

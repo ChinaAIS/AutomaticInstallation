@@ -1,0 +1,16 @@
+Function.Table.Name,Function.Mnemonic,ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: bt_ActualFunctionParameterSet
+%% Exported on: 03/02/18 at 11:14:16
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+gp_Site,SamplesByIdentifierQueryable,FindTodaySample
+gp_Site,SamplesByIdentifierQueryable,FindSchedule
+gp_Site,SamplesByIdentifierQueryable,FindReview
+gp_Site,SamplesByIdentifierQueryable,FindRerun
+gp_Site,SamplesByIdentifierQueryable,FindManualSample
+gp_Site,SamplesByIdentifierQueryable,FindError

@@ -1,0 +1,30 @@
+Mnemonic,Label:E,ToolTip:E,SmallIcon,LargeIcon,Table.Name,Function.Table.Name,Function.Mnemonic,FunctionPathName,FunctionPathRefs,SkipSetup,FunctionParameterSet.ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: um_Tool
+%% Exported on: 12/14/17 at 10:23:44
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+byidentifierqueryable_FindLane01,Lane 01,Lane 01,D:/CentraLink/icon_CentraLink/1.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 01
+byidentifierqueryable_FindLane02,Lane 02,Lane 02,D:/CentraLink/icon_CentraLink/2.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 02
+byidentifierqueryable_FindLane03,Lane 03,Lane 03,D:/CentraLink/icon_CentraLink/3.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 03
+byidentifierqueryable_FindLane04,Lane 04,Lane 04,D:/CentraLink/icon_CentraLink/4.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 04
+byidentifierqueryable_FindLane05,Lane 05,Lane 05,D:/CentraLink/icon_CentraLink/5.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 05
+byidentifierqueryable_FindLane06,Lane 06,Lane 06,D:/CentraLink/icon_CentraLink/6.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 06
+byidentifierqueryable_FindLane07,Lane 07,Lane 07,D:/CentraLink/icon_CentraLink/7.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 07
+byidentifierqueryable_FindLane08,Lane 08,Lane 08,D:/CentraLink/icon_CentraLink/8.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 08
+byidentifierqueryable_FindLane09,Lane 09,Lane 09,D:/CentraLink/icon_CentraLink/9.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 09
+byidentifierqueryable_FindLane10,Lane 10,Lane 10,D:/CentraLink/icon_CentraLink/10.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 10
+byidentifierqueryable_FindLane11,Lane 11,Lane 11,D:/CentraLink/icon_CentraLink/11.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 11
+byidentifierqueryable_FindLane12,Lane 12,Lane 12,D:/CentraLink/icon_CentraLink/12.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 12
+byidentifierqueryable_FindLane13,Lane 13,Lane 13,D:/CentraLink/icon_CentraLink/13.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 13
+byidentifierqueryable_FindLane14,Lane 14,Lane 14,D:/CentraLink/icon_CentraLink/14.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 14
+byidentifierqueryable_FindLane15,Lane 15,Lane 15,D:/CentraLink/icon_CentraLink/15.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 15
+byidentifierqueryable_FindLane16,Lane 16,Lane 16,D:/CentraLink/icon_CentraLink/16.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 16
+byidentifierqueryable_FindLane17,Lane 17,Lane 17,D:/CentraLink/icon_CentraLink/17.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 17
+byidentifierqueryable_FindLane18,Lane 18,Lane 18,D:/CentraLink/icon_CentraLink/18.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 18
+byidentifierqueryable_FindLane19,Lane 19,Lane 19,D:/CentraLink/icon_CentraLink/19.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 19
+byidentifierqueryable_FindLane20,Lane 20,Lane 20,D:/CentraLink/icon_CentraLink/20.bmp,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",yes,Find Lane 20

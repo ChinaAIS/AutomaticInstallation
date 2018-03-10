@@ -1,0 +1,16 @@
+Mnemonic,Label:E,ToolTip:E,SmallIcon,LargeIcon,Table.Name,Function.Table.Name,Function.Mnemonic,FunctionPathName,FunctionPathRefs,SkipSetup,FunctionParameterSet.ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: um_Tool
+%% Exported on: 03/02/18 at 11:10:36
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+FindTodaySample,FindTodaySample,FindTodaySample,?,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",no,FindTodaySample
+FindScheduled,FindScheduled,FindScheduled,?,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",no,FindSchedule
+FindReview,FindReview,FindReview,?,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",no,FindReview
+FindRerun,FindRerun,FindRerun,?,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",no,FindRerun
+FindManualSample,FindManualSample,FindManualSample,?,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",no,FindManualSample
+FindError,FindError,FindError,?,?,gp_Site,gp_Site,SamplesByIdentifierQueryable,"","",no,FindError

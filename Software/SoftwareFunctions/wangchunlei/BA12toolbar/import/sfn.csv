@@ -1,0 +1,33 @@
+Table.Name,Description,DataType,Definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: gp_SiteFunction
+%% Exported on: 03/02/18 at 11:25:33
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Find_ResultError,Logical,"String Requests;
+Request RQ;
+Integer i,n;
+
+Requests:= .Attribute(""Testlist"");
+i := 1;
+n:=NumEntries(Requests,?);
+
+While i <=n DO
+	RQ:= .Getrequest(Entry(i,Requests,?));
+      if RQ.StringValue=""X-NORESULT"" then
+        return True;
+	Endif;
+	i:=i+1;
+Done; 
+Return False;
+"
+Sample,FindManualSample,Logical,"
+IF Len(.Identifier)<8 then
+  Return True;
+endif ;
+
+RETURN False;"

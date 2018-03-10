@@ -1,0 +1,490 @@
+Table.Name,Description,DataType,Definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: gp_SiteFunction
+%% Exported on: 12/14/17 at 10:27:22
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sample,Find Lane 20,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""20"");
+
+Return Found;"
+Sample,Find Lane 19,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""19"");
+
+Return Found;"
+Sample,Find Lane 18,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""18"");
+
+Return Found;"
+Sample,Find Lane 17,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""17"");
+
+Return Found;"
+Sample,Find Lane 16,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""16"");
+
+Return Found;"
+Sample,Find Lane 15,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""15"");
+
+Return Found;"
+Sample,Find Lane 14,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""14"");
+
+Return Found;"
+Sample,Find Lane 13,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""13"");
+
+Return Found;"
+Sample,Find Lane 12,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""12"");
+
+Return Found;"
+Sample,Find Lane 11,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""11"");
+
+Return Found;"
+Sample,Find Lane 10,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""10"");
+
+Return Found;"
+Sample,Find Lane 09,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""09"");
+
+Return Found;"
+Sample,Find Lane 08,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""08"");
+
+Return Found;"
+Sample,Find Lane 07,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""07"");
+
+Return Found;"
+Sample,Find Lane 06,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""06"");
+
+Return Found;"
+Sample,Find Lane 05,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""05"");
+
+Return Found;"
+Sample,Find Lane 04,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""04"");
+
+Return Found;"
+Sample,Find Lane 03,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""03"");
+
+Return Found;"
+Sample,Find Lane 02,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""02"");
+
+Return Found;"
+Sample,Find Lane 01,Logical,"DateTime RemovedDateTime,LastLASUpdateDatetime;
+SampleLog RemovedFromLAS;
+Logical bReturnedToLASandStayInModule, bNeverLeftLASandStayInModule, bDisposed, Found;
+
+Found := False;
+RemovedFromLAS := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Removed""]);
+If .LASStatus = SampleLogLASStatus[""Left equipment""] Then
+	If (? = RemovedFromLAS) Then
+		bNeverLeftLASandStayInModule := True;
+	Endif;
+	If (? <> RemovedFromLAS) Then		
+		RemovedDateTime := RemovedFromLAS.EffectiveTime;
+		LastLASUpdateDatetime := .LASTime;
+		bReturnedToLASandStayInModule := False;
+		If RemovedDateTime < LastLASUpdateDatetime Then	
+			bReturnedToLASandStayInModule := True;
+		Endif;
+	Endif;
+Endif;
+bDisposed := .GetSampleLogLastLASEvent(FindLASChannelByName(""Automation1""), SampleLogType[""LAS Processing Notification""], LASEventType[""Disposed""])<>?;
+Found := (True = bNeverLeftLASandStayInModule Or True = bReturnedToLASandStayInModule) and (False = bDisposed) and
+		 (.LASGeneralArea.Name = ""01"" and .LASLane.Name = ""01"");
+
+Return Found;"

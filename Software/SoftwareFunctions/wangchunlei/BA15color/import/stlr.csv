@@ -1,0 +1,18 @@
+Id,StyleSheet.Table.Name,Criterion1,Criterion2,ForeGroundColor,BackGroundColor,TTYColor,Style.Mnemonic
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: ux_StyleRule
+%% Exported on: 02/28/18 at 15:48:55
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+12,Request,0,6,128,130,0,?
+13,Sample,1,4,128,140,0,?
+14,Sample,1,1,128,141,0,?
+16,Sample,1,6,128,130,0,?
+17,Sample,1,3,128,143,0,?
+18,Request,0,4,128,140,0,?
+19,Request,0,3,128,143,0,?
+21,Request,0,1,128,141,0,?

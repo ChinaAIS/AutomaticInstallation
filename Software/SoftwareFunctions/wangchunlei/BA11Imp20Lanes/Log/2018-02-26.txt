@@ -1,0 +1,5 @@
+20180226153638538  is imported successfully.
+20180226153804311  is imported successfully.
+2018-02-26 15:41:18.919  is imported successfully.
+2018-02-26 15:44:43.896 G:\Works\Pythonlearn1\src\Imp20Lanes\import\sslf_imp.txt Start importing
+2018-02-26 15:44:46.105 G:\Works\Pythonlearn1\src\Imp20Lanes\import\sslf_imp.txt imported successfully

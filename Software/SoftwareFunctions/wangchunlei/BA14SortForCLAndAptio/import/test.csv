@@ -1,0 +1,12 @@
+Name,Type,Description:E,SampleType.Name,OmitOnLASUpdate,PatientDataType,ControlDataType,PatientUnit.Name,ControlUnit.Name,AlternateUnit.Name,UnitCoefficient,UnitTerm,SeqNo,DefaultValue,CalculatedQCRequired,Calculation,CalcNormSevLimit,CalcDeltaNormSevLimit,CalcQCSevLimit,CalcInstSevLimit,EditWarning,AllowAutovalidation,AllowLISDownload,LISUploadMode,ControlReportDecimals,PatientReportDecimals,AllowLASDownload,DeltaNormForCompRslt,BloodTypingTest.Name,BloodTypingTest.Panel.Name,BloodTypingCell.Name,BloodTypingCell.Test.Name,BloodTypingCell.Test.Panel.Name,StrictTargeting,Trigger.Description,OnNewRequest.Description
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: Test
+%% Exported on: 03/01/18 at 16:08:41
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+KeepAlive,Simple,Aptio KeepAlive,?,no,String,String,?,?,?,?,?,?,?,yes,?,0,0,0,0,?,yes,yes,Allow always,?,?,yes,yes,?,?,?,?,?,no,?,?
+Waiting,Simple,Aptio Flag U09 Waiting,?,no,String,String,?,?,?,?,?,?,?,yes,?,0,0,0,0,?,yes,yes,Allow always,?,?,yes,yes,?,?,?,?,?,no,?,?

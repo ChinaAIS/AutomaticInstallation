@@ -1,0 +1,30 @@
+Function.Table.Name,Function.Mnemonic,ShortDescription
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: bt_ActualFunctionParameterSet
+%% Exported on: 12/14/17 at 10:26:10
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+gp_Site,SamplesByIdentifierQueryable,Find Lane 01
+gp_Site,SamplesByIdentifierQueryable,Find Lane 02
+gp_Site,SamplesByIdentifierQueryable,Find Lane 03
+gp_Site,SamplesByIdentifierQueryable,Find Lane 04
+gp_Site,SamplesByIdentifierQueryable,Find Lane 05
+gp_Site,SamplesByIdentifierQueryable,Find Lane 06
+gp_Site,SamplesByIdentifierQueryable,Find Lane 07
+gp_Site,SamplesByIdentifierQueryable,Find Lane 08
+gp_Site,SamplesByIdentifierQueryable,Find Lane 09
+gp_Site,SamplesByIdentifierQueryable,Find Lane 10
+gp_Site,SamplesByIdentifierQueryable,Find Lane 11
+gp_Site,SamplesByIdentifierQueryable,Find Lane 12
+gp_Site,SamplesByIdentifierQueryable,Find Lane 13
+gp_Site,SamplesByIdentifierQueryable,Find Lane 14
+gp_Site,SamplesByIdentifierQueryable,Find Lane 15
+gp_Site,SamplesByIdentifierQueryable,Find Lane 16
+gp_Site,SamplesByIdentifierQueryable,Find Lane 17
+gp_Site,SamplesByIdentifierQueryable,Find Lane 18
+gp_Site,SamplesByIdentifierQueryable,Find Lane 19
+gp_Site,SamplesByIdentifierQueryable,Find Lane 20

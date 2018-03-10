@@ -1,0 +1,18 @@
+Row,Order,Tool.Mnemonic,Tool.Table.Name,Label:E,HelpText:E,ImageUp,ImageDown,ImageDisabled,InsertRuler
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 16.0.2
+%% Table: um_ToolbarButton
+%% Exported on: 03/02/18 at 11:07:43
+%% Exported by: SiemensService
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+1,15,ShutdownServices,gp_Site,Shutdown Services,ShutdownServices,D:/CentraLink/icon_CentraLink/_DFW.bmp,?,?,no
+1,17,FindScheduled,gp_Site,FindScheduled,FindScheduled,D:/CentraLink/icon_CentraLink/_BP.bmp,D:/CentraLink/icon_CentraLink/_BP.bmp,?,no
+1,16,StartupServices,gp_Site,Startup Services,Startup Services,D:/CentraLink/icon_CentraLink/_LFW.bmp,?,?,no
+1,18,FindReview,gp_Site,FindReview,FindReview,D:/CentraLink/icon_CentraLink/_JG.bmp,D:/CentraLink/icon_CentraLink/_JG.bmp,?,no
+1,19,FindRerun,gp_Site,FindRerun,FindRerun,D:/CentraLink/icon_CentraLink/_CZ.bmp,D:/CentraLink/icon_CentraLink/_CZ.bmp,?,no
+1,21,FindManualSample,gp_Site,FindManualSample,FindManualSample,D:/CentraLink/icon_CentraLink/_SG.bmp,D:/CentraLink/icon_CentraLink/_SG.bmp,?,no
+1,22,FindTodaySample,gp_Site,FindTodaySample,FindTodaySample,D:/CentraLink/icon_CentraLink/_CDT.bmp,D:/CentraLink/icon_CentraLink/_CDT.bmp,?,no
+1,20,FindError,gp_Site,FindError,FindError,D:/CentraLink/icon_CentraLink/_WTJG.bmp,D:/CentraLink/icon_CentraLink/_WTJG.bmp,?,no

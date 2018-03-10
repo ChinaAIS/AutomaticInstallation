@@ -1,0 +1,4 @@
+2018-03-07 17:09:04.355 G:\Works\Pythonlearn1\src\SSO\import\sslf_imp.txt Start importing
+2018-03-07 17:09:04.384 G:\Works\Pythonlearn1\src\SSO\import\sslf_imp.txt Start importing
+2018-03-07 17:13:00.152 G:\Works\Pythonlearn1\src\SSO\import\sslf_imp.txt Start importing
+2018-03-07 17:13:04.250 G:\Works\Pythonlearn1\src\SSO\import\sslf_imp.txt imported successfully

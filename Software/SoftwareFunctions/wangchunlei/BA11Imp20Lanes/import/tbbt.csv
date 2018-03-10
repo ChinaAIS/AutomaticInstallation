@@ -1,0 +1,30 @@
+Row,Order,Tool.Mnemonic,Tool.Table.Name,Label:E,HelpText:E,ImageUp,ImageDown,ImageDisabled,InsertRuler
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Application: CENTRALINK
+%% Version: 15.0.3
+%% Table: um_ToolbarButton
+%% Exported on: 12/14/17 at 10:32:18
+%% Exported by: Advia
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+2,1,byidentifierqueryable_FindLane01,gp_Site,Lane 01,Lane 01,D:/CentraLink/icon_CentraLink/1.bmp,?,?,no
+2,2,byidentifierqueryable_FindLane02,gp_Site,Lane 02,Lane 02,D:/CentraLink/icon_CentraLink/2.bmp,?,?,no
+2,3,byidentifierqueryable_FindLane03,gp_Site,Lane 03,Lane 03,D:/CentraLink/icon_CentraLink/3.bmp,?,?,no
+2,4,byidentifierqueryable_FindLane04,gp_Site,Lane 04,Lane 04,D:/CentraLink/icon_CentraLink/4.bmp,?,?,no
+2,5,byidentifierqueryable_FindLane05,gp_Site,Lane 05,Lane 05,D:/CentraLink/icon_CentraLink/5.bmp,?,?,no
+2,6,byidentifierqueryable_FindLane06,gp_Site,Lane 06,Lane 06,D:/CentraLink/icon_CentraLink/6.bmp,?,?,no
+2,7,byidentifierqueryable_FindLane07,gp_Site,Lane 07,Lane 07,D:/CentraLink/icon_CentraLink/7.bmp,?,?,no
+2,8,byidentifierqueryable_FindLane08,gp_Site,Lane 08,Lane 08,D:/CentraLink/icon_CentraLink/8.bmp,?,?,no
+2,9,byidentifierqueryable_FindLane09,gp_Site,Lane 09,Lane 09,D:/CentraLink/icon_CentraLink/9.bmp,?,?,no
+2,10,byidentifierqueryable_FindLane10,gp_Site,Lane 10,Lane 10,D:/CentraLink/icon_CentraLink/10.bmp,?,?,no
+2,11,byidentifierqueryable_FindLane11,gp_Site,Lane 11,Lane 11,D:/CentraLink/icon_CentraLink/11.bmp,?,?,no
+2,12,byidentifierqueryable_FindLane12,gp_Site,Lane 12,Lane 12,D:/CentraLink/icon_CentraLink/12.bmp,?,?,no
+2,13,byidentifierqueryable_FindLane13,gp_Site,Lane 13,Lane 13,D:/CentraLink/icon_CentraLink/13.bmp,?,?,no
+2,14,byidentifierqueryable_FindLane14,gp_Site,Lane 14,Lane 14,D:/CentraLink/icon_CentraLink/14.bmp,?,?,no
+2,15,byidentifierqueryable_FindLane15,gp_Site,Lane 15,Lane 15,D:/CentraLink/icon_CentraLink/15.bmp,?,?,no
+2,16,byidentifierqueryable_FindLane16,gp_Site,Lane 16,Lane 16,D:/CentraLink/icon_CentraLink/16.bmp,?,?,no
+2,17,byidentifierqueryable_FindLane17,gp_Site,Lane 17,Lane 17,D:/CentraLink/icon_CentraLink/17.bmp,?,?,no
+2,18,byidentifierqueryable_FindLane18,gp_Site,Lane 18,Lane 18,D:/CentraLink/icon_CentraLink/18.bmp,?,?,no
+2,19,byidentifierqueryable_FindLane19,gp_Site,Lane 19,Lane 19,D:/CentraLink/icon_CentraLink/19.bmp,?,?,no
+2,20,byidentifierqueryable_FindLane20,gp_Site,Lane 20,Lane 20,D:/CentraLink/icon_CentraLink/20.bmp,?,?,no
