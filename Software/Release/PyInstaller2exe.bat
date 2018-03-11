@@ -1,5 +1,5 @@
 E:\Python36-32\Scripts\pyinstaller ^
--c ^
+-w ^
 --noupx ^
 --distpath=.  ^
 --hidden-import=queue ^
