@@ -16,7 +16,7 @@ from AdvancedFunction import *
 if __name__ == '__main__':
     app = QApplication(sys.argv)  #程序开始
     mainWindow = QMainWindow()    #创建空白窗体实例
-    mainWindow.setWindowIcon(QIcon("c:/config/image/ICO.png"))
+    mainWindow.setWindowIcon(QIcon(r"../config/image/ICO.png"))
 
     myUI = myfrom_setup()  #创建初始化窗体类
     myUI.setupUi(mainWindow)      #初始化主窗体
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     myAdvancedFunction = AdvancedFunction(myUI)
 
     configfile=config_XML()
-    mainWindow.setWindowOpacity(0.8)
+    mainWindow.setWindowOpacity(1.0)
     mainWindow.statusBar().showMessage(mainWindow.tr("Centralink Autoinstall Toos V1.0"))
     mainWindow.show()               #显示主窗体
 

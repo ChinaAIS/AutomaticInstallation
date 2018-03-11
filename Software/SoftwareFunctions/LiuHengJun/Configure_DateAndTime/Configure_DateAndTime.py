@@ -3,7 +3,7 @@ import autoit
 
 autoit.send("#r")
 autoit.win_wait_active("Run")
-autoit.send(r"C:\WINDOWS\system32\timedate.cpl {ENTER}")
+autoit.send(r"timedate.cpl {ENTER}")
 autoit.win_wait_active("Date and Time Properties")
 autoit.send("^{TAB}")
 autoit.control_command("Date and Time Properties", "ComboBox1", "SelectString", 256, extra = "(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi")

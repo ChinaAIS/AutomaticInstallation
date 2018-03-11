@@ -1,6 +1,8 @@
 # 基础功能实现类#
-import autoit,os
-from __init__ import *
+
+#from __init__ import *
+import traceback
+
 try:
     import xml.etree.cElementTree as ET
 except ImportError:
@@ -26,22 +28,23 @@ class PreFunction(object):
 
 
     def myAutoit(self,myWindow):
+        #myWindow.pre_install_log
         myWindow.pre_install_log.append("Start")
         try:
-            with open("C:\\config\\Pre.ini", "r") as f:
+            with open("..\\config\\Pre.ini", "r") as f:
                 for listchild in myWindow.Page1_CheckBox:
                     myWindow.pre_install_log.append("***************************"+ listchild.text()+"*****************************")
                     flag = False
                     if listchild.checkState() and listchild.isEnabled():
                              for temp_line in f:
                                  if "END" in temp_line and flag:
-                                     tree = ET.ElementTree(file="C:\\config\\config.xml")
+                                     tree = ET.ElementTree(file="..\\config\\config.xml")
                                      root = tree.getroot()
                                      for temp_function in root[0].iter("function"):
                                          if str(listchild.text()) == temp_function.attrib['name']:
                                              listchild.setEnabled(False)
                                              temp_function.attrib['action']="True"
-                                     tree.write("C:\\config\\config.xml")
+                                     tree.write("..\\config\\config.xml")
                                      flag = False
                                      break
                                  if str(listchild.text()).strip() in temp_line and temp_line[0]=="[":
@@ -50,6 +53,8 @@ class PreFunction(object):
                                      if temp_line[0]!="[":
                                          myWindow.pre_install_log.append(temp_line.strip())
                                          exec(temp_line.strip())
-        except :
+        except Exception as ex:
+            myWindow.pre_install_log.append("Exception: " + str(ex))
+            myWindow.pre_install_log.append(traceback.format_exc())
             myWindow.pre_install_log.append(listchild.text() + "  Function install unSuccessfull")
 

@@ -3,7 +3,7 @@ import autoit
 
 iFlag = 0
 repairVisible = "0"
-autoit.run(r"C:\config\tools\setup.exe")
+autoit.run(r"..\Config\tools\setup.exe")
 hWnd = autoit.win_wait_active("[TITLE:Adobe Reader 9.4.0 - Setup; CLASS:MsiDialogCloseClass]")
 autoit.send("n")
 sleep(0.5)
